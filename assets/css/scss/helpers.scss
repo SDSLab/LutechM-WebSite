@@ -1,0 +1,100 @@
+
+@mixin size(){
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+@mixin hd3D(){
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	
+	-webkit-perspective: 1000;
+	perspective: 1000;
+	
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+$defaultDuration:0.35s;
+$defaultEase:ease-in-out;
+
+@mixin transition($properties, $duration: $defaultDuration){
+	-webkit-transition: $properties $duration;
+	-moz-transition: $properties $duration;
+	-ms-transition: $properties $duration;
+	-o-transition: $properties $duration;
+	transition: $properties $duration;
+	
+	-webkit-animation-timing-function: $defaultEase;
+	-moz-animation-timing-function: $defaultEase;
+	-ms-animation-timing-function: $defaultEase;
+	-o-animation-timing-function: $defaultEase;
+	animation-timing-function: $defaultEase;
+	
+	@include hd3D();
+}
+
+@mixin double-transition($property1, $property2, $duration: $defaultDuration){	
+	-webkit-transition: $property1 $duration, $property2 $duration;
+	-moz-transition: $property1 $duration, $property2 $duration;
+	-ms-transition: $property1 $duration, $property2 $duration;
+	-o-transition: $property1 $duration, $property2 $duration;
+	transition: $property1 $duration, $property2 $duration;
+	
+	-webkit-animation-timing-function: $defaultEase;
+	-moz-animation-timing-function: $defaultEase;
+	-ms-animation-timing-function: $defaultEase;
+	-o-animation-timing-function: $defaultEase;
+	animation-timing-function: $defaultEase;
+	
+	@include hd3D();
+}
+
+@mixin move($x: 0, $y: 0, $z: 0, $duration: $defaultDuration){
+	-webkit-transform: translate3d($x, $y, $z);
+	-moz-transform: translate3d($x, $y, $z);
+	-ms-transform: translate3d($x, $y, $z);
+	-o-transform: translate3d($x, $y, $z);
+	transform: translate3d($x, $y, $z);
+	
+	-webkit-transition-duration: $duration;
+	-moz-transition-duration: $duration;
+	-ms-transition-duration: $duration; 
+	-o-transition-duration: $duration;
+	transition-duration: $duration;
+	
+	-webkit-animation-timing-function: $defaultEase;
+	-moz-animation-timing-function: $defaultEase;
+	-ms-animation-timing-function: $defaultEase;
+	-o-animation-timing-function: $defaultEase;
+	animation-timing-function: $defaultEase;
+	
+	-webkit-perspective: 1000;
+	perspective: 1000;
+	
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+@mixin animate($animation, $duration: $defaultDuration){
+	-webkit-animation:$animation $duration $defaultEase;
+	-moz-animation:$animation $duration $defaultEase;
+	-ms-animation:$animation $duration $defaultEase;
+	-o-animation:$animation $duration $defaultEase;
+	animation:$animation $duration $defaultEase;
+}
+
+@mixin transform($function){
+	-webkit-transform:$function;
+	-moz-transform:$function;
+	-ms-transform:$function;
+	-o-transform:$function;
+	transform:$function;
+}
+

@@ -1,0 +1,251 @@
+
+#play .content img{
+
+	margin: 30px 0 0 0;
+	height:600px;
+
+}
+
+#play .content {
+
+	padding:30px 15px 40px 15px;
+
+
+}
+
+#play .content h3 {
+
+	margin: 20px 0 10px 0;
+
+	font-size: 18px;
+	font-weight: 600;
+
+	color: #666666;
+
+}
+
+#play .content .display{
+
+	position: absolute;
+
+	width:260px;
+	height:420px;
+
+	top: 220px;
+	left: 319px;
+
+	font-size: 16px;
+
+	overflow: hidden;
+
+	border:2px solid #CCCCCC;
+	
+	@include transition(all);
+
+}
+
+#play .content .display .appMobile{
+
+	position: absolute;
+
+	width:780px;
+	height:349px;
+
+	font-size: 16px;
+
+	top:71px;
+	opacity:0;
+
+	overflow:scroll;
+	overflow-x:hidden;
+	
+	@include transition(all);
+
+}
+
+
+#play .content .display .splashScreen{
+
+	position:absolute;
+
+	width:260px;
+	height:100%;
+
+	top:0;
+	
+	background:#E02920;
+
+	z-index: 300;
+
+	@include size;
+	@include transition(all);
+}
+
+.splashScreen p{
+
+	position: absolute;
+
+	top:60%;
+	left:35%;
+
+	display: block;
+	font-size: 20px;
+	color: white;
+}
+
+.splashScreen i{
+
+	position: absolute;
+	display: block;
+	top:40%;
+	left:35%;
+	color: white;
+	font-size: 80px;
+
+}
+
+#play .content .display .splashScreen.exit{
+
+	@include transform(scale(0));
+}
+
+
+#play .content .display .appMobile.active{
+
+	opacity:1;
+}
+
+#play .content .display  .headerApp{
+
+	position: fixed;
+
+	width:260px;
+	height: 16px;
+	top:0;
+	background:url("../img/status.png");
+
+}
+#play .content .display .navBar{
+
+	position: fixed;
+
+	width:260px;
+	height:55px;
+	top:16px;
+	background: white;
+
+}
+
+.navBar ul{
+
+	position:relative;
+
+	width:260px;
+	height: 100%;
+
+	margin: 0;
+	padding: 0;
+
+	color: #666666;
+	font-size: 15px;
+
+}
+
+.navBar ul li{
+
+	position:relative;
+
+	height: 100%;
+	width:33.33333%;
+	margin: 5px 0 0 0;
+	float: left;
+	display: inline-block;
+	list-style: none;
+}
+.navBar ul li.active{
+
+	color:$redlogo;
+}
+	
+.navBar ul li i{
+
+	position:relative;
+
+	margin:5px 0 0 0;
+	font-size: 16px;
+	display: block;
+	
+	
+}
+
+#play .content .display .appMobile.active .contentApp{
+
+	position:relative;
+
+	width:100%;
+	height:auto;
+
+	z-index: -100;
+}
+
+#play .content .display .appMobile.active .contentApp p{
+
+	margin: 10px;
+	color: #898888;
+	text-align:left;
+	text-align: justify;
+	font-size: 15px;
+}
+
+#play .content .display .appMobile.active .home{
+
+	position:absolute;
+
+	width:260px;
+	height:auto;
+	left:0;
+
+	background: white;
+	
+}
+#play .content .display .appMobile.active .approach{
+
+	position:absolute;
+
+	width:260px;
+	height:360px;
+	left:260px;
+	background: white;
+}
+
+#play .content .display .appMobile.active .picture{
+
+	position:absolute;
+
+	width:260px;
+	height:360px;
+	left:520px;
+	background: white;
+}
+
+.appMobile.active .home .slider{
+
+	position: relative;
+
+	width: 100%;
+	height: 195px;
+
+	background:url("../img/sl1.jpg");
+}
+.appMobile.active .approach .slider{
+
+	position: relative;
+
+	width: 100%;
+	height: 100%;
+
+	background: yellow;
+}
+
+
+

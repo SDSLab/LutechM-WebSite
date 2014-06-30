@@ -1,0 +1,34 @@
+<!DOCTYPE html>	
+<html>
+<head>
+
+	<!-- META -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+
+	<!-- CSS -->
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+
+	<!-- FONT -->
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
+	<link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+
+	<!-- JS -->
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+	<!--compatibilita' ie-->
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<link href="css/css/html5reset-1.6.1.css" rel="stylesheet" type="text/css">
+	<![endif]-->
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	
+	<![endif]-->
+
+	<title>Lutech Mobile </title>
+ </head>

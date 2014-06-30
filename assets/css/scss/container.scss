@@ -1,0 +1,299 @@
+header{
+
+	position: relative;
+	width: 100%;
+	height:100%;
+	background: url('../img/bg3.jpg') no-repeat  center center fixed;
+	background-size: cover;
+
+}
+
+nav {
+
+	position: fixed;
+
+	width: 100%;
+	height: 85px;
+	
+	padding: 15px;
+	box-sizing:border-box;
+	
+	font-size: 16px;
+	color: white;
+	background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
+
+	@include transition(all);
+}
+
+nav img.logo{
+
+	position: absolute;
+	margin:5px 0 0 10px;
+	display: inline-block;  
+	width:216px;
+	height:45px;
+
+}
+
+nav img.logo.black{
+
+	display:none;
+
+}
+
+nav.fixed img.logo.black{
+
+	display: inline-block;  
+}
+
+nav.fixed img.logo.white{
+
+	display: none;  
+}
+
+
+
+nav ul{
+
+	position: absolute;
+
+	right:0;
+
+	margin:10px 60px 0 0;
+	padding: 0;
+
+	display: inline-block;
+
+}
+
+nav ul li{
+
+	position: relative;
+
+	margin: 5px 30px 0 0;
+
+	display: inline-block;
+	
+	list-style: none;
+	
+	font-weight:400;
+	
+}
+
+nav ul li a{
+
+	text-decoration: none;
+	color: white;
+
+
+}
+
+nav.fixed{
+
+	height:80px;
+
+	background: white;
+	
+
+	z-index:200;
+	
+}
+
+nav.fixed ul li a{
+
+	color: #666666;
+
+}
+
+nav .language{
+
+	position: absolute;
+	right: 0;
+	
+	margin:8px 30px  0 0;
+	display: inline-block;
+}
+
+nav .language img.en{
+	display:none;
+}
+
+.presentation{
+
+	position: absolute;
+
+	width: 100%;
+	height: 200px;
+
+	bottom:0px;
+
+	background: linear-gradient( rgba(0,0,0,0),rgba(0,0,0,1));
+
+	color: white;
+	text-align: center;
+}
+
+.presentation h1{
+
+	top:60%;
+
+	margin: 0 auto 0 auto;
+	color: white;
+	line-height:1em;
+
+}
+
+.presentation i{
+
+	top:85%;
+	position: absolute;
+
+}
+
+
+#features .content p{
+
+	margin: 10px 0 0 0;
+
+}
+
+#features .row:nth-child(n+3) p{
+
+	color:white;
+
+}
+#features img.any{
+
+	margin:100px 0 0px 0;
+
+}
+
+#features .aniSmart{
+
+	position: absolute;
+
+	width: 530px;
+	height: 125px;
+
+	top:350px;
+	left:183px;
+
+}
+
+#features .aniSmart img.ipApp{
+
+	position: absolute;
+
+	top:0px;
+	left:0px;
+
+}
+
+#features .aniSmart img.ipApp.animation{
+
+	-webkit-animation: aniIphone 3s linear forwards; /* Chrome, Safari, Opera */
+    animation: aniIphone 3s linear forwards;
+
+}
+
+@-webkit-keyframes aniIphone {
+    0%   {left:0px;}
+    50%  {left:385px;}
+    100% {left:231px;}
+}
+
+/* Standard syntax */
+@keyframes aniIphone {
+    0%   {left:0px;}
+    50%  {left:385px;}
+    100% {left:231px;}
+}
+
+#features h2.anydevice{
+
+	margin:55px 0 0px 0;
+
+}
+
+#features .content.tech p{
+
+	margin:30px 0 0px 0;
+
+}
+#features img.techimg{
+
+	margin:15px 0 0 0;
+}
+
+#features img.techimg.native{
+
+	margin:15px 0 10px 0;
+
+}
+#features img.techimg.ibrid{
+
+	margin:15px 20px 10px 0;
+}
+
+#features .elementService{
+
+	position: relative;
+
+	
+	margin: 30px 30px 0 40px;
+	display: inline-block;
+
+}
+
+#features .elementService i{
+
+	font-size:65px ;
+	color:#94012e;
+	
+}
+#features .elementService.down{
+
+	margin:50px 0 15px 50px;
+
+}
+
+#features .elementService p{
+
+	margin:0;
+}
+#features .elementService img.brand1{
+
+	margin:-5px 0 0 0;
+
+}
+#about .row.colored{
+
+	background:$orange;
+
+}
+
+#contact #map {
+
+	position: relative;
+
+	width: 100%;
+	height: 500px;
+	
+	border: 0;
+
+}
+
+#contact .square{
+
+	position: absolute;
+
+	width:400px;
+	height:425px;
+	
+	bottom:0;
+	left:750px;
+	
+	z-index: 100;
+	background: $blue;
+
+}
