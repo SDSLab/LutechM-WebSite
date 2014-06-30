@@ -272,6 +272,40 @@ nav .language img.en{
 
 }
 
+#contact{
+
+	position: relative;
+
+	width: 100%;
+	height: auto;
+
+	text-align: center;
+
+}
+
+#contact .listContact{
+	
+	position: relative;
+	
+	margin:40px auto 0  auto;
+	width: 70%;
+}
+
+#contact .listContact p{
+
+	font-size:20px;
+	color: white;
+
+}
+#contact .listContact i{
+	display: block;
+	margin:15px 0 0 0;	
+
+	font-size: 30px;
+	color: #00675c;
+
+}
+
 #contact #map {
 
 	position: relative;
@@ -291,7 +325,7 @@ nav .language img.en{
 	height:425px;
 	
 	bottom:0;
-	left:750px;
+	left:55%;
 	
 	z-index: 100;
 	background: $blue;

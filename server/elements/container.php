@@ -4,20 +4,10 @@
 			<h2><strong>Play</strong></h2>
 			<p>Select the device and enjoy the demo App Lutech Mobile.</p>
 			<img class="iphone" src="assets/img/iphone5sB.jpeg">
-			<div class="buttonHome"></div>
 			<div class="display">
-				<div class="splashScreen"><i class="icon-gameboy"></i><p>App Test</p></div>
+				<div class="splashScreen cup"><i class="icon-gameboy"></i><p>AppCup</p></div>
 				<div class="headerApp"></div>
-				<div class="navBar">
-					<ul>
-						<li class="active"><i class="icon-house-2"></i><a>HOME</a></li>
-						<li><i class="icon-file-image-2"></i><a>APPROACH</a></li>
-						<li><i class="icon-play-1"></i><a>PICTURE</a></li>
-					</ul>
-				</div>
-				<div class="appMobile">
-					<?php include 'server\elements\play.php'; ?>
-				</div>
+				<?php include 'server\elements\play.php'; ?>
 			</div>
 		</div>
 	</div>
@@ -36,7 +26,7 @@
 			<img src="assets/img/anydevice2.png">
 			<h2>for<strong> any device</strong></h2>
 			<p>Responsive Design, Native development.</p>
-			<img class="any hideme" src="assets/img/anyapp.png">
+			<img class="any" src="assets/img/anyapp.png">
 			<h2 class="anydevice">for<strong> any need</strong></h2>
 			<p>Information consulting, E-commerce and M-commerce, Engagement, Management.</p>
 		</div>
@@ -86,9 +76,15 @@
 
 <div class="section" id="contact">
 	<div id="map"></div>
-	
 	<div class="square">
-
+		<div class="listContact">
+			<i class="icon-marker-2"></i>
+			<p>Via Wolfgang Amadeus Mozart, 47 20093 Cologno Monzese (MI), IT</p>
+			<i class="icon-call-1"></i>
+			<p>+39 02/25427092</p>
+			<i class="icon-mail-1"></i>
+			<p>f.pengo@lutechmobile.com</p>
+		</div>
 	</div>
 </div>
 
