@@ -14,6 +14,7 @@
 	<!-- FONT -->
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
 	<link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
 	<!-- JS -->
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>

@@ -6,7 +6,6 @@
 				<div class="profile">
 					<div class="menuProfile">
 						<div class="imgProfile">
-
 						</div>
 						<div class="circle Event">
 							<i class="fa fa-calendar-o"></i>
@@ -18,16 +17,16 @@
 					<p><strong> Iron</strong> Man</p>
 				</div>
 			</div>
-			<div class="bodyHome">
-				<div class="recentAct">
-					<p>Attività recenti</p>
-					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
-				</div>
-			</div>
+			<img src="assets/img/appcup/home.png">
 		</div>
+		<div class="events">
+			<div class="navBar"> <i class="fa fa-bars"></i></div>
+			<div class="bodyEvents">
+				<img src="assets/img/appcup/eventsPren.png">
+			<div class="footerEvents">
+				<a>Prenotati</a>
+				<a>Effettuati</a>
+			</div>
+		</div>		
 	</div>
 </div>
