@@ -195,7 +195,7 @@ nav .language img.en {
 
 #features .aniSmart img.ipApp {
   position: absolute;
-  top: 0px;
+  top: -15px;
   left: 0px; }
 
 #features .aniSmart img.ipApp.animation {
@@ -348,7 +348,20 @@ nav .language img.en {
   width: 280px;
   height: 100%;
   overflow-y: scroll;
-  top: 16px; }
+  top: 16px;
+  left: 0; }
+
+#play .content .display .contentApp.menuOpen .page.center {
+  left: 200px; }
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -100; }
+
+#play .content .display .contentApp.menuOpen .page.center .overlay {
+  z-index: 300; }
 
 #play .content .display .splashScreen {
   position: absolute;
@@ -410,10 +423,26 @@ nav .language img.en {
   position: absolute;
   width: 100%;
   height: 100%;
-  opacity: 0; }
-
-#play .content .display .contentApp.cup .appCup {
-  opacity: 1; }
+  left: 0;
+  -webkit-transition: left 0.35s;
+  -moz-transition: left 0.35s;
+  -ms-transition: left 0.35s;
+  -o-transition: left 0.35s;
+  transition: left 0.35s;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
 
 #play .content .display .splashScreen.cup {
   background: #008cd7; }
@@ -422,7 +451,7 @@ nav .language img.en {
   position: fixed;
   width: 100%;
   height: 30px;
-  z-index: 100;
+  z-index: 200;
   text-align: left;
   background: #008cd7; }
 
@@ -432,11 +461,54 @@ nav .language img.en {
   display: inline-block;
   color: white; }
 
+.menuApp {
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  background: #606060; }
+
+.menuApp ul {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  text-align: left; }
+
+.menuApp ul li {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  padding: 3px;
+  border-bottom: 1px solid white;
+  font-size: 13px;
+  list-style: none;
+  color: white; }
+
 /* APP CUP HOME PAGE*/
 .appCup .home {
   position: absolute;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -ms-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
 
 .appCup .home img {
   position: absolute;
@@ -482,7 +554,7 @@ nav .language img.en {
   top: -30px;
   left: 20px;
   border-radius: 40px;
-  background: url("../img/ironman.png") white;
+  background: url("../img/businessman1.jpg") left top;
   background-size: cover;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -518,7 +590,26 @@ nav .language img.en {
 .appCup .events {
   position: absolute;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -ms-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
 
 .appCup .events .footerEvents {
   position: absolute;
@@ -534,3 +625,12 @@ nav .language img.en {
   display: inline-block;
   color: white;
   background: #008cd7; }
+
+.left {
+  left: -270px; }
+
+.right {
+  left: 270px; }
+
+.center {
+  left: 0; }

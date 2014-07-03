@@ -24,6 +24,7 @@ var LutechMobile = {
 
 		$(document).ready(function(){
 			LutechMobile.navLink();
+			LutechMobile.playApp();
 		});
 
 	},
@@ -80,6 +81,42 @@ var LutechMobile = {
 			}, 3000);
 			
 		}
+
+	},
+
+	playApp:function(){
+
+		//---APP CUP MENU
+
+		$('.navBar i.fa-bars').on('click',function(){
+
+			$('.contentApp').addClass("menuOpen");
+
+		});
+
+		$('.overlay').on('click',function(){
+
+			$('.contentApp').removeClass("menuOpen");
+
+		});
+
+		
+		$('.menuProfile .circle.Event').on('click',function(){
+
+			$('.page').removeClass("left right center");
+			$('.home').addClass("left");
+			$('.events').addClass("center");
+			$('.page').on('webkitTransitionEnd transitionend msTransitionEnd oTransitionEnd',function(){
+				$('.page:not(.center)').css("display","none");
+			});
+		});
+
+		$('.menuApp ul li a').on('click',function(){
+
+			$('.contentApp').removeClass("menuOpen");
+
+		});
+
 
 	},
 
