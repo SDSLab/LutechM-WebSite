@@ -45,7 +45,7 @@
 
 	position: absolute;
 
-	width: 80%;
+	width: 77%;
 	height: 100%;
 
 	background: #606060;
@@ -81,6 +81,13 @@
 	list-style: none;
 	color:white;
 
+	@include size;
+
+}
+
+#play .content .display .contentApp.menuOpen .menuApp.active{
+
+	z-index: 100;
 }
 
 /* APP CUP HOME PAGE*/

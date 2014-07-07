@@ -91,13 +91,21 @@ var LutechMobile = {
 		$('.navBar i.fa-bars').on('click',function(){
 
 			$('.contentApp').addClass("menuOpen");
+			
+				
+			setTimeout(function(){
+				$('.menuApp').addClass("active");
+			}, 360);
 
 		});
 
 		$('.overlay').on('click',function(){
 
 			$('.contentApp').removeClass("menuOpen");
-
+			setTimeout(function(){
+				$('.menuApp.active').removeClass("active");
+			}, 360);
+			
 		});
 
 		
@@ -107,14 +115,17 @@ var LutechMobile = {
 			$('.home').addClass("left");
 			$('.events').addClass("center");
 			$('.page').on('webkitTransitionEnd transitionend msTransitionEnd oTransitionEnd',function(){
-				$('.page:not(.center)').css("display","none");
+				$('.page:not(.center)').css("overflow","hidden");
 			});
 		});
 
-		$('.menuApp ul li a').on('click',function(){
+		$('.menuApp ul li').on('click',function(){
 
-			$('.contentApp').removeClass("menuOpen");
-
+			var select=$(this).attr('data-name');
+			$('.page').removeClass("left right center");
+			$('.page.'+select).addClass("center");
+			$('.page').addClass("right");
+			
 		});
 
 
