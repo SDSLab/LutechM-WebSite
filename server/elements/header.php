@@ -14,7 +14,6 @@
 			<img class="en" src="assets/img/it2.png">
 		</div>
 	</nav>
-
 	<div class="presentation">
 		<h1>We create <strong>experiences</strong> from a <strong>different</strong> point of view</h1>
 		<i class="icon-arrow-65"></i>

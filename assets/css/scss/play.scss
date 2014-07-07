@@ -54,25 +54,6 @@
 
 }
 
-#play .content .display .contentApp{
-
-	position: absolute;
-
-	width:280px;
-	height: 100%;
-	overflow-y: scroll;
-	top: 16px;
-	left:0;
-	
-
-}
-
-#play .content .display .contentApp.menuOpen .page.center{
-
-	left:200px;
-
-}
-
 .overlay{
 
 	position: absolute;
@@ -84,7 +65,7 @@
 
 }
 
-#play .content .display .contentApp.menuOpen .page.center .overlay{
+#play .content .display .appCup.menuOpen .page.center .overlay{
 
 	z-index: 300;
 

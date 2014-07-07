@@ -14,6 +14,7 @@ var LutechMobile = {
 			LutechMobile.mapContact();
 			LutechMobile.navScroll();
 			
+			
 			$(window).on('scroll',function(){
 
 				LutechMobile.navScroll();
@@ -86,49 +87,87 @@ var LutechMobile = {
 
 	playApp:function(){
 
+		$('.searchEvents #accordion').accordion();
 		//---APP CUP MENU
+		function setPosition(){
+			$('.page:not(.center)').each(function(){
+
+					$(this).css("display","none");
+			});
+
+			$('.page.center').css("display","block");
+		}	
+
+		function closeMenu(){
+
+			$('.appCup').removeClass("menuOpen");
+			$('.menuApp').removeClass("active");
+
+		}
+
+		$('.menuProfile .circle.Event').on('click',function(){
+
+			$('.page').removeClass("right left center");
+			$('.page.listEvents').addClass("center");
+			setPosition();
+		});
+
+		$('.menuProfile .circle.newEvent').on('click',function(){
+
+			$('.page').removeClass("right left center");
+			$('.page.newEvents').addClass("center");
+			setPosition();
+		});
 
 		$('.navBar i.fa-bars').on('click',function(){
 
-			$('.contentApp').addClass("menuOpen");
+			$('.appCup').addClass("menuOpen");
+			$('.menuApp').addClass("active");
 			
-				
-			setTimeout(function(){
-				$('.menuApp').addClass("active");
-			}, 360);
-
 		});
 
 		$('.overlay').on('click',function(){
 
-			$('.contentApp').removeClass("menuOpen");
-			setTimeout(function(){
-				$('.menuApp.active').removeClass("active");
-			}, 360);
-			
-		});
+			closeMenu();
 
-		
-		$('.menuProfile .circle.Event').on('click',function(){
-
-			$('.page').removeClass("left right center");
-			$('.home').addClass("left");
-			$('.events').addClass("center");
-			$('.page').on('webkitTransitionEnd transitionend msTransitionEnd oTransitionEnd',function(){
-				$('.page:not(.center)').css("overflow","hidden");
-			});
 		});
 
 		$('.menuApp ul li').on('click',function(){
-
-			var select=$(this).attr('data-name');
-			$('.page').removeClass("left right center");
-			$('.page.'+select).addClass("center");
-			$('.page').addClass("right");
 			
+			var goTo=$(this).attr("data-number");
+			
+			closeMenu();
+
+			$('.page').removeClass("right left center");
+			$('.page[data-number='+goTo+']').addClass("center");
+			setPosition();
 		});
 
 
+		setPosition();
+
+		$('.footerEvents a.pren').on('click',function(){
+
+			$('.listEvents img').attr('src','assets/img/appcup/eventsPren.png');
+
+		});
+		$('.footerEvents a.eff').on('click',function(){
+
+			$('.listEvents img').attr('src','assets/img/appcup/eventsEff.png');
+		});
+
+		$('.newEvents a').on('click',function(){
+
+			
+			
+			$('.page').removeClass("right left center");
+			$('.page.searchEvents').addClass("center");
+			setPosition();
+
+		});
+
+		
+		
 	},
 
 	animateSmartPhone:function(){

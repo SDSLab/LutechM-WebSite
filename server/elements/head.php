@@ -18,7 +18,7 @@
 
 	<!-- JS -->
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-	<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
 
 	<!--compatibilita' ie-->
