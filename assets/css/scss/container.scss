@@ -1,8 +1,10 @@
 header{
 
 	position: relative;
+
 	width: 100%;
 	height:100%;
+	
 	background: url('../img/bg3.jpg') no-repeat  center center fixed;
 	background-size: cover;
 
@@ -50,8 +52,6 @@ nav.fixed img.logo.white{
 
 	display: none;  
 }
-
-
 
 nav ul{
 
@@ -108,6 +108,7 @@ nav.fixed ul li a{
 nav .language{
 
 	position: absolute;
+
 	right: 0;
 	
 	margin:8px 30px  0 0;
@@ -115,7 +116,9 @@ nav .language{
 }
 
 nav .language img.en{
+
 	display:none;
+
 }
 
 .presentation{

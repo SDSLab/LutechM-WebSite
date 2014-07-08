@@ -7,7 +7,7 @@
 	width: 100%;
 	height: 100%;
 
-	
+	font-family: 'Titillium Web', sans-serif;
 	left:0;
 	top:16px;
 	@include transition(left);
@@ -18,33 +18,43 @@
 	background:#008cd7;
 
 }
-.appCup .navBar{
+
+.page .navBar{
 
 	position: fixed;
 
 	width: 100%;
 	height: 30px;
-
-	z-index: 200;
-
+	
+	top:0;
+	
 	text-align: left;
-
+	z-index: 100;
+	
 	background:#008cd7;
 
 }
 .navBar i{ 
 
-	font-size: 21px;
 	margin:6px 0 0 10px;
+
 	display:inline-block;
+	
+	font-size: 21px;
 	color: white;
+
+}
+.navBar i.fa-angle.left{ 
+
+	margin:5px 0 0 10px;
+
 }
 
 .navBar p{ 
 
-	font-size: 15px;
-	margin:-22px 0 0 70px;
-	
+	margin:-27px 0 0 50px;
+
+	font-size: 16px;
 	color: white;
 
 }
@@ -58,6 +68,7 @@
 
 	top:16px;
 	left:-200px;
+
 	background: #606060;
 
 	@include transition(left);
@@ -81,18 +92,38 @@
 	position: relative;
 
 	width: 100%;
-	height: 30px;
+	height: 40px;
 
-	padding:3px;
+	padding:8px 0 8px 10px;
 	
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid #6d6d6d;
 
 	font-size: 13px;
-	
-	list-style: none;
 	color:white;
 
 	@include size;
+
+}
+
+.menuApp ul li i{
+	
+	margin:5px;
+
+	color:#cccccc;
+	font-size: 15px;
+
+}
+.menuApp ul li i.active{
+
+	color:white;
+
+}
+.menuApp ul li img{
+
+	position: relative;
+
+	height: 130%;
+	margin: -7px 0 0 0;
 
 }
 
@@ -103,21 +134,24 @@
 }
 
 #play .content .display .menuApp.active{
+
 	left:0px;
 	z-index: 100;
 }
 
-/* APP CUP HOME PAGE*/
-
-.appCup .home{
+.appCup .page{
 
 	position: absolute;
 
 	width: 107%;
 	height: 100%;
+
 	overflow-y:scroll;
-	
+
+	background: #f0f0f0;
+
 }
+
 .appCup .home img{
 
 	position: absolute;
@@ -218,7 +252,8 @@
 .menuProfile .circle i{
 
 	display: inline-block;
-	margin:7px 0 0 0 ;
+	margin:8px 0 0 0 ;
+
 }
 
 .menuProfile .circle.Event{
@@ -233,17 +268,6 @@
 
 }
 
-.appCup .listEvents{
-
-	position: absolute;
-
-	width: 107%;
-	height: 100%;
-	overflow-y:scroll;
-
-}
-
-
 .appCup .listEvents .footerEvents{
 
 	position: absolute;
@@ -254,6 +278,7 @@
 	bottom:0;
 
 	background:#008cd7;
+
 }
 
 .appCup .listEvents .footerEvents a{
@@ -267,15 +292,6 @@
 
 	color: white;
 	background:#008cd7;
-}
-
-.appCup .newEvents{
-
-	position: absolute;
-
-	width: 107%;
-	height: 100%;
-	overflow-y:scroll;
 
 }
 
@@ -297,21 +313,118 @@
 	color:white;
 }
 
-.appCup .searchEvents{
+.detailEvents a{
 
 	position: absolute;
 
-	width: 107%;
-	height: 100%;
-	overflow-y:scroll;
+	width: 90%;
+	height: 30px;
+
+	top:72%;
+	left:12px;
+
+	padding: 5px 0 0 0;
+
+	border-radius: 5px;
+	
+	background:#008cd7;
+	color:white;
 
 }
+
+.checkinEvents a.checkin{
+
+	position: absolute;
+
+	width: 90%;
+	height: 25px;
+
+	top:61%;
+	left:12px;
+
+	border-radius: 5px;
+	
+	background:#00c042;
+	color:white;
+
+	font-size: 15px;
+
+}
+
 
 #accordion{
 
 	position: absolute;
 
+	width:100%;
+
 	top: 30px;
+
+}
+
+#accordion h3.title{
+
+	height: 30px;
+	width:100%;
+
+	padding: 5px 0 0 0;
+
+	border-top:2px solid white;
+	background: #008cd7;
+	font-size: 15px;
+	font-weight: 300;
+	color:white;
+
+}
+
+#accordion h3.active{
+
+	background: #00c042;
+
+}
+
+#accordion div{
+
+	position: relative;
+	
+	padding: 5px 0 10px 0;
+
+	background: #f0f0f0;
+	text-align: left;
+
+}
+
+#accordion div p{
+
+	width:42%;
+	
+	margin: 10px 0 0 15px;
+	
+	display: inline-block;
+	
+	font-size: 14px;
+
+}
+
+#accordion div p i{
+
+	margin:0 5px 0 5px;
+	
+	color:#008cd7;
+	font-size: 18px;
+	
+}
+
+#accordion div i.fa-angle-right{
+
+	position: absolute;
+
+	left: 89%;
+	top: 33%;
+
+	font-size: 26px;
+	color:#CCCCCC;
+
 }
 
 

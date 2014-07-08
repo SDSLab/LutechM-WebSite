@@ -1,8 +1,9 @@
 <div class="menuApp">
-	<ul class="fa-ul">
-		<li data-number="0"><i class="fa-li fa fa-check-square"></i>Bacheca</li>
-		<li data-number="1"><i class="fa-li fa fa-check-square"></i>Lista degli appuntamenti</li>
-		<li data-number="2"><i class="fa-li fa fa-check-square"></i>Nuovo appuntamento</li>
+	<ul>
+		<li data-number="0"><img src="assets/img/appcup/appCupLogo.png"></li>
+		<li data-number="0"><i class="fa fa-home fa-fw active"></i></i>Bacheca</li>
+		<li data-number="1"><i class="fa fa-calendar-o fa-fw"></i>Lista degli appuntamenti</li>
+		<li data-number="2"><i class="fa fa-plus fa-fw"></i>Nuovo appuntamento</li>
 	</ul>
 </div>
 <div class="appCup">
@@ -40,39 +41,57 @@
 	</div>
 	<div class="page newEvents" data-number="2">
 		<div class="overlay"></div>
-		<div class="navBar"> <i class="fa fa-bars"></i> <p><strong>Nuovo</strong> appuntamento</p></div>
+		<div class="navBar"> <i class="fa fa-bars"></i> <p><strong>Nuovo </strong>appuntamento</p></div>
 		<img src="assets/img/appcup/newEvent.png">
-		<a class="btn">Cerca</a>
+		<a>Cerca</a>
 	</div>
 	<div class="page searchEvents" data-number="3">
 		<div class="overlay"></div>
 		<div class="navBar"> 
-			<i class="fa fa-bars"></i> 
-			<p><strong>Nuovo</strong> appuntamento</p>
+			<i class="fa fa-angle-left"></i> 
+			<p>Scegli <strong>il giorno e ora</strong></p>
 		</div>
 		<div id="accordion">
-		  <h3>Section 1</h3>
-		  <div>
-		    <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+		  <h3 class="title active">VEN <strong>22 NOV</strong> 2014</h3>
+		  <div >
+		    <p><i class="fa fa-clock-o fa-fw"></i>ore 9:00</p>
+		    <p><i class="fa fa-eur fa-fw"></i>50,00</p>
+		    <p><i class="fa fa-user-md fa-fw"></i> Dott. A.Belli</p>
+		    <i class="fa fa-angle-right fa-fw"></i>
 		  </div>
-		  <h3>Section 2</h3>
+		  <h3 class="title">VEN <strong>22 NOV</strong> 2014</h3>
 		  <div>
-		    <p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+		    <p><i class="fa fa-clock-o fa-fw"></i>ore 9:00</p>
+		    <p> <i class="fa fa-eur fa-fw"></i>50,00</p>
+		    <p> <i class="fa fa-user-md fa-fw"></i> Dott. A.Belli</p>
+		    <i class="fa fa-angle-right fa-fw"></i>
 		  </div>
-		  <h3>Section 3</h3>
+		  <h3 class="title">VEN <strong>22 NOV</strong> 2014</h3>
 		  <div>
-		    <p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
-		    <ul>
-		      <li>List item one</li>
-		      <li>List item two</li>
-		      <li>List item three</li>
-		    </ul>
-		  </div>
-		  <h3>Section 4</h3>
-		  <div>
-		    <p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-		  </div>
+			<p><i class="fa fa-clock-o fa-fw"></i>ore 9:00</p>
+		    <p> <i class="fa fa-eur fa-fw"></i>50,00</p>
+		    <p> <i class="fa fa-user-md fa-fw"></i> Dott. A.Belli</p>
+		    <i class="fa fa-angle-right fa-fw"></i>
+		   </div>
 		</div>
 	</div>
+	<div class="page detailEvents" data-number="4">
+		<div class="overlay"></div>
+		<div class="navBar">
+			<i class="fa fa-angle-left"></i> 
+			<p><strong>Dettaglio </strong>appuntamento</p>
+		</div>
+		<img src="assets/img/appcup/eventDett.png">
+		<a>Prenota</a>
+	</div>
+	<div class="page checkinEvents" data-number="5">
+		<div class="overlay"></div>
+		<div class="navBar">
+			<i class="fa fa-angle-left"></i> 
+			<p><strong>Dettaglio </strong>appuntamento</p>
+		</div>
+		<img src="assets/img/appcup/eventDettaglio.png">
+		<a class="checkin">Fai il <strong>Check-in</strong></a>
+	</div>	
 </div>
 	

@@ -87,8 +87,8 @@ var LutechMobile = {
 
 	playApp:function(){
 
-		$('.searchEvents #accordion').accordion();
-		//---APP CUP MENU
+		$('.searchEvents #accordion').accordion({ heightStyle: "content"});
+
 		function setPosition(){
 			$('.page:not(.center)').each(function(){
 
@@ -96,6 +96,7 @@ var LutechMobile = {
 			});
 
 			$('.page.center').css("display","block");
+
 		}	
 
 		function closeMenu(){
@@ -104,6 +105,7 @@ var LutechMobile = {
 			$('.menuApp').removeClass("active");
 
 		}
+
 
 		$('.menuProfile .circle.Event').on('click',function(){
 
@@ -119,10 +121,33 @@ var LutechMobile = {
 			setPosition();
 		});
 
+		$('#accordion div').on('click',function(){
+
+			$('.page').removeClass("right left center");
+			$('.page.detailEvents').addClass("center");
+			setPosition();
+		});
+
 		$('.navBar i.fa-bars').on('click',function(){
 
 			$('.appCup').addClass("menuOpen");
 			$('.menuApp').addClass("active");
+
+			var currentPage = $('.page.center').attr("data-number");
+			$('.menuApp ul li i').removeClass("active");
+			$('.menuApp ul li[data-number='+currentPage+']').find("i").addClass("active");
+			
+		});
+
+		$('.navBar i.fa-angle-left').on('click',function(){
+
+			var currentPage = $('.page.center').attr("data-number");
+
+			$('.page').removeClass("right left center");
+			$('.page[data-number='+(currentPage-1)+']').addClass("center");
+			setPosition();
+			$('.menuApp ul li i').removeClass("active");
+			$('.menuApp ul li[data-number='+currentPage+']').find("i").addClass("active");
 			
 		});
 
@@ -136,15 +161,16 @@ var LutechMobile = {
 			
 			var goTo=$(this).attr("data-number");
 			
-			closeMenu();
-
 			$('.page').removeClass("right left center");
 			$('.page[data-number='+goTo+']').addClass("center");
 			setPosition();
+
+			$('.menuApp ul li i').removeClass("active");
+			$(this).find("i").addClass("active");
+
+			closeMenu();
+
 		});
-
-
-		setPosition();
 
 		$('.footerEvents a.pren').on('click',function(){
 
@@ -158,14 +184,28 @@ var LutechMobile = {
 
 		$('.newEvents a').on('click',function(){
 
-			
-			
 			$('.page').removeClass("right left center");
 			$('.page.searchEvents').addClass("center");
 			setPosition();
 
 		});
 
+		$('.detailEvents a').on('click',function(){
+
+			$('.page').removeClass("right left center");
+			$('.page.checkinEvents').addClass("center");
+			setPosition();
+
+		});
+
+		$('#accordion h3').on('click',function(){
+
+			$('#accordion h3').removeClass("active");
+			$(this).addClass("active");
+
+		});
+
+		setPosition();
 		
 		
 	},
