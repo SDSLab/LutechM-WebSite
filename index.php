@@ -1,1 +1,1 @@
-<?php include 'server\render.php'; ?>
+<?php include 'server/render.php'; ?>

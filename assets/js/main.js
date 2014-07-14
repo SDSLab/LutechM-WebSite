@@ -86,7 +86,9 @@ var LutechMobile = {
 	},
 
 	playApp:function(){
-
+		
+		var cut=0;
+		
 		$('.searchEvents #accordion').accordion({ heightStyle: "content"});
 
 		function setPosition(){
@@ -144,10 +146,17 @@ var LutechMobile = {
 			var currentPage = $('.page.center').attr("data-number");
 
 			$('.page').removeClass("right left center");
-			$('.page[data-number='+(currentPage-1)+']').addClass("center");
+			
+			if(cut==1){
+				$('.page[data-number=1]').addClass("center");
+				cut=0;
+			}else{
+				$('.page[data-number='+(currentPage-1)+']').addClass("center");
+			}
 			setPosition();
 			$('.menuApp ul li i').removeClass("active");
 			$('.menuApp ul li[data-number='+currentPage+']').find("i").addClass("active");
+			
 			
 		});
 
@@ -175,11 +184,14 @@ var LutechMobile = {
 		$('.footerEvents a.pren').on('click',function(){
 
 			$('.listEvents img').attr('src','assets/img/appcup/eventsPren.png');
-
+			$('.footerEvents a').removeClass("active");
+			$(this).addClass("active")
 		});
 		$('.footerEvents a.eff').on('click',function(){
 
 			$('.listEvents img').attr('src','assets/img/appcup/eventsEff.png');
+			$('.footerEvents a').removeClass("active");
+			$(this).addClass("active")
 		});
 
 		$('.newEvents a').on('click',function(){
@@ -204,7 +216,15 @@ var LutechMobile = {
 			$(this).addClass("active");
 
 		});
+		
+		$('.listEvents .redEvent').on('click',function(){
 
+			$('.page').removeClass("right left center");
+			$('.page.detailEvents').addClass("center");
+			cut=1;
+			setPosition();
+		});
+		
 		setPosition();
 		
 		

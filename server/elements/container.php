@@ -7,7 +7,7 @@
 			<div class="display">
 				<div class="splashScreen cup"><i class="icon-gameboy"></i><p>AppCup</p></div>
 				<div class="headerApp"></div>
-				<?php include 'server\elements\play.php'; ?>
+				<?php include 'server/elements/play.php'; ?>
 			</div>
 		</div>
 	</div>
@@ -15,7 +15,8 @@
 <div class="section" id="features">
 	<div class="row colored">
 		<div class="content">
-			<h2>We realize original projects to<br><strong>improve your business </strong> and <strong> satisfy users</strong><br>with beautiful and useful experiences. </h2>
+			<h2>We realize original projects to<br><strong>improve your business </strong> and <strong> satisfy users</strong><br>with beautiful and useful 				experiences. 
+			</h2>
 		</div>
 	</div>
 	<div class="row">

@@ -1,12 +1,12 @@
-<div class="menuApp">
-	<ul>
-		<li data-number="0"><img src="assets/img/appcup/appCupLogo.png"></li>
-		<li data-number="0"><i class="fa fa-home fa-fw active"></i></i>Bacheca</li>
-		<li data-number="1"><i class="fa fa-calendar-o fa-fw"></i>Lista degli appuntamenti</li>
-		<li data-number="2"><i class="fa fa-plus fa-fw"></i>Nuovo appuntamento</li>
-	</ul>
-</div>
 <div class="appCup">
+	<div class="menuApp">
+		<ul>
+			<li data-number="0"><img src="assets/img/appcup/appCupLogo.png"></li>
+			<li data-number="0"><i class="fa fa-home fa-fw active"></i></i>Bacheca</li>
+			<li data-number="1"><i class="fa fa-calendar-o fa-fw"></i>Lista degli appuntamenti</li>
+			<li data-number="2"><i class="fa fa-plus fa-fw"></i>Nuovo appuntamento</li>
+		</ul>
+	</div>
 	<div class="page home center" data-number="0">
 		<div class="overlay"></div>
 		<div class="navBar"> <i class="fa fa-bars"></i></div>
@@ -22,7 +22,7 @@
 						<i class="fa fa-plus"></i>
 					</div>
 				</div>
-				<p><strong>James</strong> Cotton</p>
+				<p><strong>Rodolfo</strong> Moratti</p>
 			</div>
 		</div>
 		<img src="assets/img/appcup/home.png">
@@ -31,17 +31,18 @@
 		<div class="overlay"></div>
 		<div class="navBar"> 
 			<i class="fa fa-bars"></i>
-			<p><strong>Appuntamenti</strong> </p>
+			<p class="eventsTitle"><strong>Lista</strong> Appuntamenti </p>
 		</div>
 		<img src="assets/img/appcup/eventsPren.png">
 		<div class="footerEvents">
-			<a class="pren">Prenotati</a>
+			<a class="pren active">Prenotati</a>
 			<a class="eff">Effettuati</a>
 		</div>
+		<div class="redEvent"></div>
 	</div>
 	<div class="page newEvents" data-number="2">
 		<div class="overlay"></div>
-		<div class="navBar"> <i class="fa fa-bars"></i> <p><strong>Nuovo </strong>appuntamento</p></div>
+		<div class="navBar"> <i class="fa fa-bars"></i> <p><strong> Nuovo </strong>appuntamento</p></div>
 		<img src="assets/img/appcup/newEvent.png">
 		<a>Cerca</a>
 	</div>

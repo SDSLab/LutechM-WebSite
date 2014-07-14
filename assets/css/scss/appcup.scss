@@ -10,9 +10,12 @@
 	font-family: 'Titillium Web', sans-serif;
 	left:0;
 	top:16px;
+	font-weight:300;
 	@include transition(left);
 }
-
+#play .content .display .appCup strong{
+	font-weight:600;
+}
 #play .content .display .splashScreen.cup{
 
 	background:#008cd7;
@@ -59,6 +62,15 @@
 
 }
 
+.navBar p.eventsTitle{ 
+
+	margin:-27px 0 0 65px;
+
+	font-size: 16px;
+	color: white;
+
+}
+
 .menuApp{
 
 	position: absolute;
@@ -66,7 +78,6 @@
 	width: 77%;
 	height: 100%;
 
-	top:16px;
 	left:-200px;
 
 	background: #606060;
@@ -127,7 +138,7 @@
 
 }
 
-#play .content .display .appCup.menuOpen{
+#play .content .display .appCup.menuOpen .page{
 
 	left:200px;
 
@@ -144,12 +155,18 @@
 	position: absolute;
 
 	width: 107%;
-	height: 100%;
+	height: 97%;
 
 	overflow-y:scroll;
 
 	background: #f0f0f0;
+	@include transition(left);
+	
+}
 
+.page img{
+	position:absolute;
+	left:0;
 }
 
 .appCup .home img{
@@ -256,6 +273,10 @@
 
 }
 
+.menuProfile .circle i:hover{
+	cursor:url("../img/touch.png"),auto;
+}
+
 .menuProfile .circle.Event{
 
 	left:92px;
@@ -272,7 +293,7 @@
 
 	position: absolute;
 
-	width: 100%;
+	width: 95%;
 	height: 33px;
 
 	bottom:0;
@@ -285,25 +306,54 @@
 
 	position: relative;
 
-	width: 125px;
-	
-	margin:5px 0 0 0;
+	width: 130px;
+	height:100%;
+	padding:3px 0 0 0;
 	display: inline-block;
 
 	color: white;
-	background:#008cd7;
+	background:#35A1DC;
+	font-weight:300;
+	
+	@include size;
 
+}
+.appCup .listEvents .footerEvents a:hover{
+	cursor:url("../img/touch.png"),auto;
+}
+.appCup .listEvents .footerEvents a.active{
+
+	color: white;
+	background:#008cd7;
+	font-weight:600;
+
+}
+
+.redEvent{
+	
+	position:absolute;
+	
+	width:200px;
+	height:70px;
+	
+	top:32px;
+	left:20px;
+	
+}
+
+.redEvent:hover{
+	cursor:url("../img/touch.png"),auto;
 }
 
 .newEvents a{
 
 	position: absolute;
 
-	width: 90%;
+	width: 85%;
 	height: 30px;
 
-	top:134%;
-	left:12px;
+	top:130%;
+	left:10px;
 
 	padding: 5px 0 0 0;
 
@@ -313,11 +363,15 @@
 	color:white;
 }
 
+.newEvents a:hover{
+	cursor:url("../img/touch.png"),auto;
+}
+
 .detailEvents a{
 
 	position: absolute;
 
-	width: 90%;
+	width: 85%;
 	height: 30px;
 
 	top:72%;
@@ -332,11 +386,15 @@
 
 }
 
+.detailEvents a:hover{
+	cursor:url("../img/touch.png"),auto;
+}
+
 .checkinEvents a.checkin{
 
 	position: absolute;
 
-	width: 90%;
+	width: 85%;
 	height: 25px;
 
 	top:61%;
@@ -391,6 +449,12 @@
 
 	background: #f0f0f0;
 	text-align: left;
+
+}
+
+#accordion div:hover{
+
+	cursor:url("../img/touch.png"),auto;
 
 }
 
