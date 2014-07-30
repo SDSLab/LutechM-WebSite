@@ -1,6 +1,6 @@
 /*e40045  E02920*/
 html, body {
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 100%;
   padding: 0px;
@@ -37,6 +37,15 @@ h3 {
 strong {
   font-weight: 700; }
 
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: #f9f9f9; }
+
 #main {
   position: relative;
   width: 100%;
@@ -65,12 +74,6 @@ strong {
   text-align: center;
   box-sizing: border-box; }
 
-.hideme {
-  display: none; }
-
-.any.hideme .aniSmart {
-  display: none; }
-
 header {
   position: relative;
   width: 100%;
@@ -87,6 +90,7 @@ nav {
   font-size: 16px;
   color: white;
   background: linear-gradient(black, transparent);
+  background: -webkit-linear-gradient(black, transparent);
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   -ms-transition: all 0.35s;
@@ -164,6 +168,7 @@ nav .language img.en {
   height: 200px;
   bottom: 0px;
   background: linear-gradient(transparent, black);
+  background: -webkit-linear-gradient(transparent, black);
   color: white;
   text-align: center; }
 
@@ -174,8 +179,12 @@ nav .language img.en {
   line-height: 1em; }
 
 .presentation i {
-  top: 85%;
-  position: absolute; }
+  position: relative;
+  top: 130px; }
+
+#play .content img {
+  height: 600px;
+  margin: 30px 0 0 0; }
 
 #features .content p {
   margin: 10px 0 0 0; }
@@ -292,491 +301,3 @@ nav .language img.en {
   left: 55%;
   z-index: 100;
   background: #07a090; }
-
-/* COMMONS IPHONE */
-#play .content img.iphone {
-  height: 600px;
-  margin: 30px 0 0 0; }
-
-#play .content {
-  padding: 30px 15px 40px 15px; }
-
-#play .content h3 {
-  font-size: 13px;
-  font-weight: 600;
-  color: #666666; }
-
-#play .content .display {
-  position: absolute;
-  width: 260px;
-  height: 420px;
-  top: 220px;
-  left: 319px;
-  font-size: 16px;
-  overflow: hidden;
-  border: 2px solid #CCCCCC;
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  -ms-transition: all 0.35s;
-  -o-transition: all 0.35s;
-  transition: all 0.35s;
-  -webkit-animation-timing-function: ease-in-out;
-  -moz-animation-timing-function: ease-in-out;
-  -ms-animation-timing-function: ease-in-out;
-  -o-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-perspective: 1000;
-  perspective: 1000;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-#play .content .display .headerApp {
-  position: fixed;
-  width: 260px;
-  height: 16px;
-  top: 0;
-  z-index: 300;
-  background: url("../img/status.png"); }
-
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -100; }
-
-#play .content .display .appCup.menuOpen .page.center .overlay {
-  z-index: 300; }
-
-#play .content .display .splashScreen {
-  position: absolute;
-  width: 260px;
-  height: 100%;
-  top: 0;
-  background: #008cd7;
-  z-index: 300;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  -ms-transition: all 0.35s;
-  -o-transition: all 0.35s;
-  transition: all 0.35s;
-  -webkit-animation-timing-function: ease-in-out;
-  -moz-animation-timing-function: ease-in-out;
-  -ms-animation-timing-function: ease-in-out;
-  -o-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-perspective: 1000;
-  perspective: 1000;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.splashScreen p {
-  position: absolute;
-  top: 60%;
-  left: 35%;
-  display: block;
-  font-size: 20px;
-  color: white; }
-
-.splashScreen i {
-  position: absolute;
-  top: 40%;
-  left: 35%;
-  display: block;
-  color: white;
-  font-size: 80px; }
-
-#play .content .display .splashScreen.exit {
-  -webkit-transform: scale(0);
-  -moz-transform: scale(0);
-  -ms-transform: scale(0);
-  -o-transform: scale(0);
-  transform: scale(0); }
-
-/* APPCUP CSS-STYLE */
-.display .appCup {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  font-family: 'Titillium Web', sans-serif;
-  left: 0;
-  top: 16px;
-  font-weight: 300;
-  -webkit-transition: left 0.35s;
-  -moz-transition: left 0.35s;
-  -ms-transition: left 0.35s;
-  -o-transition: left 0.35s;
-  transition: left 0.35s;
-  -webkit-animation-timing-function: ease-in-out;
-  -moz-animation-timing-function: ease-in-out;
-  -ms-animation-timing-function: ease-in-out;
-  -o-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-perspective: 1000;
-  perspective: 1000;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-#play .content .display .appCup strong {
-  font-weight: 600; }
-
-#play .content .display .splashScreen.cup {
-  background: #008cd7; }
-
-.page .navBar {
-  position: fixed;
-  width: 100%;
-  height: 30px;
-  top: 0;
-  text-align: left;
-  z-index: 100;
-  background: #008cd7; }
-
-.navBar i {
-  margin: 6px 0 0 10px;
-  display: inline-block;
-  font-size: 21px;
-  color: white; }
-
-.navBar i.fa-angle.left {
-  margin: 5px 0 0 10px; }
-
-.navBar p {
-  margin: -27px 0 0 50px;
-  font-size: 16px;
-  color: white; }
-
-.navBar p.eventsTitle {
-  margin: -27px 0 0 65px;
-  font-size: 16px;
-  color: white; }
-
-.menuApp {
-  position: absolute;
-  width: 77%;
-  height: 100%;
-  left: -200px;
-  background: #606060;
-  -webkit-transition: left 0.35s;
-  -moz-transition: left 0.35s;
-  -ms-transition: left 0.35s;
-  -o-transition: left 0.35s;
-  transition: left 0.35s;
-  -webkit-animation-timing-function: ease-in-out;
-  -moz-animation-timing-function: ease-in-out;
-  -ms-animation-timing-function: ease-in-out;
-  -o-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-perspective: 1000;
-  perspective: 1000;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.menuApp ul {
-  position: relative;
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  text-align: left; }
-
-.menuApp ul li {
-  position: relative;
-  width: 100%;
-  height: 40px;
-  padding: 8px 0 8px 10px;
-  border-bottom: 1px solid #6d6d6d;
-  font-size: 13px;
-  color: white;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.menuApp ul li i {
-  margin: 5px;
-  color: #cccccc;
-  font-size: 15px; }
-
-.menuApp ul li i.active {
-  color: white; }
-
-.menuApp ul li img {
-  position: relative;
-  height: 130%;
-  margin: -7px 0 0 0; }
-
-#play .content .display .appCup.menuOpen .page {
-  left: 200px; }
-
-#play .content .display .menuApp.active {
-  left: 0px;
-  z-index: 100; }
-
-.appCup .page {
-  position: absolute;
-  width: 107%;
-  height: 97%;
-  overflow-y: scroll;
-  background: #f0f0f0;
-  -webkit-transition: left 0.35s;
-  -moz-transition: left 0.35s;
-  -ms-transition: left 0.35s;
-  -o-transition: left 0.35s;
-  transition: left 0.35s;
-  -webkit-animation-timing-function: ease-in-out;
-  -moz-animation-timing-function: ease-in-out;
-  -ms-animation-timing-function: ease-in-out;
-  -o-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-perspective: 1000;
-  perspective: 1000;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-.page img {
-  position: absolute;
-  left: 0; }
-
-.appCup .home img {
-  position: absolute;
-  top: 140px;
-  left: 0; }
-
-.appCup .home .headerHome {
-  position: absolute;
-  width: 100%;
-  height: 35%;
-  background: #008cd7; }
-
-.appCup .home .headerHome .profile {
-  position: absolute;
-  width: 230px;
-  height: 75px;
-  top: 72px;
-  left: 20px;
-  border-left: 2px solid #e4e4e4;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.profile p {
-  position: absolute;
-  top: 40px;
-  left: 23px;
-  display: inline-block;
-  color: white; }
-
-.headerHome .profile .menuProfile {
-  position: absolute;
-  width: 70%;
-  height: 2px;
-  background: #e4e4e4; }
-
-.menuProfile .imgProfile {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  top: -30px;
-  left: 20px;
-  border-radius: 40px;
-  background: url("../img/businessman1.jpg") left top;
-  background-size: cover;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.menuProfile .circle {
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  top: -18px;
-  border-radius: 30px;
-  border: 2px solid #e4e4e4;
-  color: white;
-  background: #008cd7;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.menuProfile .circle i {
-  display: inline-block;
-  margin: 8px 0 0 0; }
-
-.menuProfile .circle i:hover {
-  cursor: url("../img/touch.png"), auto; }
-
-.menuProfile .circle.Event {
-  left: 92px; }
-
-.menuProfile .circle.newEvent {
-  left: 139px; }
-
-.appCup .listEvents .footerEvents {
-  position: absolute;
-  width: 95%;
-  height: 33px;
-  bottom: 0;
-  background: #008cd7; }
-
-.appCup .listEvents .footerEvents a {
-  position: relative;
-  width: 130px;
-  height: 100%;
-  padding: 3px 0 0 0;
-  display: inline-block;
-  color: white;
-  background: #35A1DC;
-  font-weight: 300;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.appCup .listEvents .footerEvents a:hover {
-  cursor: url("../img/touch.png"), auto; }
-
-.appCup .listEvents .footerEvents a.active {
-  color: white;
-  background: #008cd7;
-  font-weight: 600; }
-
-.redEvent {
-  position: absolute;
-  width: 200px;
-  height: 70px;
-  top: 32px;
-  left: 20px; }
-
-.redEvent:hover {
-  cursor: url("../img/touch.png"), auto; }
-
-.newEvents a {
-  position: absolute;
-  width: 85%;
-  height: 30px;
-  top: 130%;
-  left: 10px;
-  padding: 5px 0 0 0;
-  border-radius: 5px;
-  background: #008cd7;
-  color: white; }
-
-.newEvents a:hover {
-  cursor: url("../img/touch.png"), auto; }
-
-.detailEvents a {
-  position: absolute;
-  width: 85%;
-  height: 30px;
-  top: 72%;
-  left: 12px;
-  padding: 5px 0 0 0;
-  border-radius: 5px;
-  background: #008cd7;
-  color: white; }
-
-.detailEvents a:hover {
-  cursor: url("../img/touch.png"), auto; }
-
-.checkinEvents a.checkin {
-  position: absolute;
-  width: 85%;
-  height: 25px;
-  top: 61%;
-  left: 12px;
-  border-radius: 5px;
-  background: #00c042;
-  color: white;
-  font-size: 15px; }
-
-#accordion {
-  position: absolute;
-  width: 100%;
-  top: 30px; }
-
-#accordion h3.title {
-  height: 30px;
-  width: 100%;
-  padding: 5px 0 0 0;
-  border-top: 2px solid white;
-  background: #008cd7;
-  font-size: 15px;
-  font-weight: 300;
-  color: white; }
-
-#accordion h3.active {
-  background: #00c042; }
-
-#accordion div {
-  position: relative;
-  padding: 5px 0 10px 0;
-  background: #f0f0f0;
-  text-align: left; }
-
-#accordion div:hover {
-  cursor: url("../img/touch.png"), auto; }
-
-#accordion div p {
-  width: 42%;
-  margin: 10px 0 0 15px;
-  display: inline-block;
-  font-size: 14px; }
-
-#accordion div p i {
-  margin: 0 5px 0 5px;
-  color: #008cd7;
-  font-size: 18px; }
-
-#accordion div i.fa-angle-right {
-  position: absolute;
-  left: 89%;
-  top: 33%;
-  font-size: 26px;
-  color: #CCCCCC; }
-
-.left {
-  left: -270px; }
-
-.right {
-  left: 270px; }
-
-.center {
-  left: 0; }

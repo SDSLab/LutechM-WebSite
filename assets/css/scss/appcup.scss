@@ -24,8 +24,6 @@
 
 .page .navBar{
 
-	position: fixed;
-
 	width: 100%;
 	height: 30px;
 	
@@ -158,7 +156,7 @@
 	height: 97%;
 
 	overflow-y:scroll;
-
+	overflow-x:hidden;
 	background: #f0f0f0;
 	@include transition(left);
 	

@@ -4,11 +4,6 @@
 			<h2><strong>Play</strong></h2>
 			<p>Select the device and enjoy the demo App Lutech Mobile.</p>
 			<img class="iphone" src="assets/img/iphone5sB.jpeg">
-			<div class="display">
-				<div class="splashScreen cup"><i class="icon-gameboy"></i><p>AppCup</p></div>
-				<div class="headerApp"></div>
-				<?php include 'server/elements/play.php'; ?>
-			</div>
 		</div>
 	</div>
 </div>

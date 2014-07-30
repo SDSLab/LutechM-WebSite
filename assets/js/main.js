@@ -9,23 +9,20 @@ var LutechMobile = {
 	
 	events: function(){
 
-		$(window).load(function(){
-
-			LutechMobile.mapContact();
-			LutechMobile.navScroll();
-			
-			
-			$(window).on('scroll',function(){
-
-				LutechMobile.navScroll();
-				LutechMobile.animateSmartPhone();
-
-			});
-		});
-
 		$(document).ready(function(){
 			LutechMobile.navLink();
-			LutechMobile.playApp();
+			LutechMobile.mapContact();
+			LutechMobile.navScroll();
+		});
+
+		$(window).on('scroll',function(){
+
+			LutechMobile.navScroll();
+			LutechMobile.animateSmartPhone();
+		});
+
+		$(window).load(function(){
+			$(".loader").fadeOut("slow");
 		});
 
 	},
@@ -83,151 +80,6 @@ var LutechMobile = {
 			
 		}
 
-	},
-
-	playApp:function(){
-		
-		var cut=0;
-		
-		$('.searchEvents #accordion').accordion({ heightStyle: "content"});
-
-		function setPosition(){
-			$('.page:not(.center)').each(function(){
-
-					$(this).css("display","none");
-			});
-
-			$('.page.center').css("display","block");
-
-		}	
-
-		function closeMenu(){
-
-			$('.appCup').removeClass("menuOpen");
-			$('.menuApp').removeClass("active");
-
-		}
-
-
-		$('.menuProfile .circle.Event').on('click',function(){
-
-			$('.page').removeClass("right left center");
-			$('.page.listEvents').addClass("center");
-			setPosition();
-		});
-
-		$('.menuProfile .circle.newEvent').on('click',function(){
-
-			$('.page').removeClass("right left center");
-			$('.page.newEvents').addClass("center");
-			setPosition();
-		});
-
-		$('#accordion div').on('click',function(){
-
-			$('.page').removeClass("right left center");
-			$('.page.detailEvents').addClass("center");
-			setPosition();
-		});
-
-		$('.navBar i.fa-bars').on('click',function(){
-
-			$('.appCup').addClass("menuOpen");
-			$('.menuApp').addClass("active");
-
-			var currentPage = $('.page.center').attr("data-number");
-			$('.menuApp ul li i').removeClass("active");
-			$('.menuApp ul li[data-number='+currentPage+']').find("i").addClass("active");
-			
-		});
-
-		$('.navBar i.fa-angle-left').on('click',function(){
-
-			var currentPage = $('.page.center').attr("data-number");
-
-			$('.page').removeClass("right left center");
-			
-			if(cut==1){
-				$('.page[data-number=1]').addClass("center");
-				cut=0;
-			}else{
-				$('.page[data-number='+(currentPage-1)+']').addClass("center");
-			}
-			setPosition();
-			$('.menuApp ul li i').removeClass("active");
-			$('.menuApp ul li[data-number='+currentPage+']').find("i").addClass("active");
-			
-			
-		});
-
-		$('.overlay').on('click',function(){
-
-			closeMenu();
-
-		});
-
-		$('.menuApp ul li').on('click',function(){
-			
-			var goTo=$(this).attr("data-number");
-			
-			$('.page').removeClass("right left center");
-			$('.page[data-number='+goTo+']').addClass("center");
-			setPosition();
-
-			$('.menuApp ul li i').removeClass("active");
-			$(this).find("i").addClass("active");
-
-			closeMenu();
-
-		});
-
-		$('.footerEvents a.pren').on('click',function(){
-
-			$('.listEvents img').attr('src','assets/img/appcup/eventsPren.png');
-			$('.footerEvents a').removeClass("active");
-			$(this).addClass("active")
-		});
-		$('.footerEvents a.eff').on('click',function(){
-
-			$('.listEvents img').attr('src','assets/img/appcup/eventsEff.png');
-			$('.footerEvents a').removeClass("active");
-			$(this).addClass("active")
-		});
-
-		$('.newEvents a').on('click',function(){
-
-			$('.page').removeClass("right left center");
-			$('.page.searchEvents').addClass("center");
-			setPosition();
-
-		});
-
-		$('.detailEvents a').on('click',function(){
-
-			$('.page').removeClass("right left center");
-			$('.page.checkinEvents').addClass("center");
-			setPosition();
-
-		});
-
-		$('#accordion h3').on('click',function(){
-
-			$('#accordion h3').removeClass("active");
-			$(this).addClass("active");
-
-		});
-		
-		$('.listEvents .redEvent').on('click',function(){
-
-			$('.page').removeClass("right left center");
-			$('.page.detailEvents').addClass("center");
-			cut=1;
-			setPosition();
-		});
-		
-		setPosition();
-		
-		
 	},
 
 	animateSmartPhone:function(){

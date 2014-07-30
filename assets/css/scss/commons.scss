@@ -6,7 +6,7 @@ $blue:#07a090;
 
 html, body {
 
-	position: relative;
+	position: absolute;
 
 	width:100%;
 	height:100%;
@@ -27,6 +27,7 @@ html, body {
 	-webkit-font-smoothing: subpixel-antialiased;
 	
 }
+
 
 
 h1, h2, h3, p {
@@ -71,6 +72,15 @@ strong{
 
 }
 
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: rgb(249,249,249);
+}
 
 #main {
 	
@@ -97,9 +107,7 @@ strong{
 	width:100%;
 	height:auto;
 	
-
 }
-
 .row.colored{
 	
 	background: $red;
@@ -124,10 +132,3 @@ strong{
 
 }
 
-.hideme{
-	display:none;
-}
-
-.any.hideme .aniSmart{
-	display:none;
-}
