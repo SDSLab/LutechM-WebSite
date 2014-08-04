@@ -5,5 +5,27 @@
 			"about":"About",
 			"contact":"Contact",
 			"title":"We create <strong>experiences</strong> from a <strong>different</strong> point of view"
-			}
+			},
+
+
+	"play":{
+			"title":"<strong>Play</strong>",
+			"subtitle":"Select the device and enjoy the demo App Lutech Mobile"
+			},
+
+
+	"features":{
+			"title":"We realize original projects to<br><strong>improve your business </strong> and <strong> satisfy users</strong><br>with beautiful and useful experiences.",
+			"anyDevice":"for <strong>any device</strong>",
+			"anyDeviceSub":"Responsive Design, Native development",
+			"anyNeed":"for <strong>any need</strong>",
+			"anyNeedSub":"Information consulting, E-commerce and M-commerce, Engagement, Management.",
+			"tech":"<strong>Technologies</strong> we use",
+			"nativeDev":"<strong>Native</strong> development",
+			"ibrideDev":"<strong>Ibride</strong> development",
+			"meap":"Our <strong>MEAP certification</strong>",
+			"ourServices":"our <strong>Services</strong>",
+			"ourPartners":"our <strong>Partners</strong>",
+			"about":"The <strong>multidisciplinary</strong> approach is our <strong>strength</strong>"
+		}
 }

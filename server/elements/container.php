@@ -1,8 +1,8 @@
 <div class="section" id="play">
 	<div class="row">
 		<div class="content">
-			<h2><strong>Play</strong></h2>
-			<p>Select the device and enjoy the demo App Lutech Mobile.</p>
+			<h2 ng-bind-html="text.play.title"></h2>
+			<p>{{text.play.subtitle}}</p>
 			<img class="iphone" src="assets/img/iphone5sB.jpeg">
 		</div>
 	</div>
@@ -10,8 +10,7 @@
 <div class="section" id="features">
 	<div class="row colored">
 		<div class="content">
-			<h2>We realize original projects to<br><strong>improve your business </strong> and <strong> satisfy users</strong><br>with beautiful and useful 				experiences. 
-			</h2>
+			<h2 ng-bind-html="text.features.title"></h2>
 		</div>
 	</div>
 	<div class="row">
@@ -20,33 +19,33 @@
 				<img class="ipApp" src="assets/img/ipApp.png">
 			</div>
 			<img src="assets/img/anydevice2.png">
-			<h2>for<strong> any device</strong></h2>
-			<p>Responsive Design, Native development.</p>
+			<h2  ng-bind-html="text.features.anyDevice"></h2>
+			<p>{{text.features.anyDeviceSub}}</p>
 			<img class="any" src="assets/img/anyapp.png">
-			<h2 class="anydevice">for<strong> any need</strong></h2>
-			<p>Information consulting, E-commerce and M-commerce, Engagement, Management.</p>
+			<h2 class="anydevice" ng-bind-html="text.features.anyNeed"></h2>
+			<p>{{text.features.anyNeedSub}}</p>
 		</div>
 	</div>
 	<div class="row colored">
 		<div class="content tech">
-			<h2><strong>Technologies </strong>we use </h2>
-			<p><strong>Native </strong>development</p>
+			<h2 ng-bind-html="text.features.tech"></h2>
+			<p ng-bind-html="text.features.nativeDev"></p>
 			<img class="techimg native" src="assets/img/technative.png">
 			
-			<p><strong>Ibride </strong>development</p>
+			<p ng-bind-html="text.features.ibrideDev"></p>
 			<img class="techimg ibrid" src="assets/img/techibrid.png">
 			
 		</div>
 	</div>
 	<div class="row">
 		<div class="content">
-			<h2>Our<strong> MEAP certification</strong></h2>
+			<h2 ng-bind-html="text.features.meap"></h2>
 			<img class="techimg" src="assets/img/ourmeap.png">
 		</div>
 	</div>
 	<div class="row colored">
 		<div class="content">
-			<h2>Our<strong> Services</strong></h2>
+			<h2 ng-bind-html="text.features.ourServices"></h2>
 			<div class="elementService"><i class="icon-stationery-1"></i><p>Interaction <strong>design</strong></p></div>
 			<div class="elementService"><i class="icon-plugins-1"></i><p>Platform <strong>development</strong></p></div>
 			<div class="elementService"><i class="icon-bubble-conversation-1"></i><p>Technical <strong>consulting</strong></p></div>
@@ -56,7 +55,7 @@
 	</div>
 	<div class="row">
 		<div class="content">
-			<h2>Our<strong> Partners</strong></h2>
+			<h2 ng-bind-html="text.features.ourPartners"></h2>
 			<img class="techimg" src="assets/img/ourpartners.png">
 		</div>
 	</div>
@@ -64,7 +63,7 @@
 <div class="section" id="about">
 	<div class="row colored">
 		<div class="content">
-			<h2>The <strong>multidisciplinary</strong> approach<br> is our <strong>streght</strong></h2>
+			<h2 ng-bind-html="text.features.about"></h2>
 			<img class="techimg" src="assets/img/aboutobj.png">
 		</div>
 	</div>
