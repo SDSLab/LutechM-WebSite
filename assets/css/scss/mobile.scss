@@ -1,0 +1,269 @@
+/* #Media Queries
+================================================== */
+
+/* #### Smartphone Portrait or Landscape #### */
+@media screen and (max-device-width: 541px) and (-webkit-min-device-pixel-ratio: 1){
+
+	header{
+		background: url("../img/bg3.jpg") no-repeat 40% ;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+
+	}
+
+    h1{
+
+		font-size: 26px;
+
+	}
+
+	h2{
+		
+		font-size: 18px;
+
+	}
+
+	h3{
+		
+		font-size: 14px;
+
+	}
+
+
+	nav{
+		background: black;
+		height:60px;
+		font-size: 14px;
+	}
+	nav i.fa-bars{
+		display: block;
+	}
+	nav img.logo{
+		height: auto;
+		width: 160px;
+		margin: 0;
+	}
+	nav ul{
+
+		left:100%;
+		height:40px;
+		width:100%;
+		background: black;
+		margin:0;
+	
+	}
+	nav ul li{
+		margin:5px 25px 0 0;
+	}
+	nav.visible ul{
+		left:10px;
+	}
+
+	nav .language{
+		margin: 0px 20px 0 0;
+		left:20px;
+	}
+	nav.fixed{
+		height:60px;
+	}
+	nav.fixed ul{
+		background: white;
+	}
+	nav.fixed i.fa-bars{
+		color:black;
+	}
+	.presentation{
+		height:200px;
+	}
+	.presentation h1{
+		top:50%;
+		width:95%;
+	}
+
+	.presentation i{
+		top:100px;
+	}
+
+	.section#play{
+		display: none;
+	}
+
+	.content{
+		width: 320px;
+	}
+	#about img{
+		width:100%;
+	}
+
+	nav ul li:first-child{
+		display: none;
+	}
+
+	#features .aniSmart{
+		top:300px;
+		left:60px;
+	}
+	#features img{
+		width: 100%;
+	}
+	#features img.ipApp{
+		width:30px;
+		left:45%;
+	}
+	#features img.native{
+		width: 40%;
+	}
+	#features .elementService.down{
+		margin:50px 0 15px 0;
+	}
+}
+
+/* #### Tablets Portrait or Landscape #### */
+@media screen and (min-width: 600px) and (max-device-width: 1280px) {
+
+  	.section#play{
+		display: none;
+	}
+  	
+	nav ul li:first-child{
+		display: none;
+	}
+
+	h1{
+
+		font-size: 30px;
+
+	}
+
+	h2{
+		
+		font-size: 22px;
+
+	}
+
+	h3{
+		
+		font-size: 18px;
+
+	}
+
+  	.presentation{
+		height:200px;
+	}
+	.presentation h1{
+		top:50%;
+		width:70%;
+	}
+
+	.presentation i{
+		top:100px;
+	}
+
+	.section#play{
+		display: none;
+	}
+
+	.content{
+		width: 600px;
+	}
+	#features .aniSmart{
+		top:300px;
+		left:60px;
+	}
+	#features img{
+		width: 100%;
+	}
+	#features img.ipApp{
+		width:60px;
+		left:45%;
+	}
+	#features img.native{
+		width: 40%;
+	}
+	#about img{
+		width:100%;
+	}
+	#features img.techimg.ibrid{
+		width:100%;
+	}
+	#contact .square{
+		left:45%;
+	}
+}
+
+/* #### Desktop #### */
+@media screen and (min-width: 660px) and (max-width: 1000px) {
+  .section#play{
+		display: none;
+	}
+  	
+	nav ul li:first-child{
+		display: none;
+	}
+
+	h1{
+
+		font-size: 30px;
+
+	}
+
+	h2{
+		
+		font-size: 22px;
+
+	}
+
+	h3{
+		
+		font-size: 18px;
+
+	}
+	.content{
+		width: 900px;
+	}
+
+  	.presentation{
+		height:200px;
+	}
+	.presentation h1{
+		top:50%;
+		width:70%;
+	}
+
+	.presentation i{
+		top:100px;
+	}
+
+	.section#play{
+		display: none;
+	}
+
+	.content{
+		width: 650px;
+	}
+	#features .aniSmart{
+		top:300px;
+		left:60px;
+	}
+	#features img{
+		width: 100%;
+	}
+	#features img.ipApp{
+		width:60px;
+		left:45%;
+	}
+	#features img.native{
+		width: 40%;
+	}
+	#about img{
+		width:100%;
+	}
+	#features img.techimg.ibrid{
+		width:100%;
+	}
+	#contact .square{
+		left:45%;
+	}
+}

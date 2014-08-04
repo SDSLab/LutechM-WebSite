@@ -18,12 +18,14 @@ nav {
 	height: 85px;
 	
 	padding: 15px;
-	box-sizing:border-box;
-	
+
+	z-index:100;
+
 	font-size: 16px;
 	color: white;
 	background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
 	background: -webkit-linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
+	@include size;
 	@include transition(all);
 }
 
@@ -41,6 +43,16 @@ nav img.logo.black{
 
 	display:none;
 
+}
+
+nav i.fa-bars{
+	position: absolute;
+	left:89%;
+	font-size: 25px;
+	color:white;
+	display:none;
+	z-index: 200;
+	margin:3px 0 0 0;
 }
 
 nav.fixed img.logo.black{
@@ -63,7 +75,8 @@ nav ul{
 	padding: 0;
 
 	display: inline-block;
-
+	z-index: 100;
+	@include transition(left)
 }
 
 nav ul li{
@@ -85,7 +98,10 @@ nav ul li a{
 	text-decoration: none;
 	color: white;
 
+}
 
+nav.fixed ul li a.active{
+	font-weight: 700;
 }
 
 nav.fixed{
@@ -115,7 +131,7 @@ nav .language{
 	display: inline-block;
 }
 
-nav .language img.en{
+nav .language a.active{
 
 	display:none;
 
@@ -143,14 +159,14 @@ nav .language img.en{
 
 	margin: 0 auto 0 auto;
 	color: white;
-	line-height:1em;
+	line-height:1.3em;
 
 }
 
 .presentation i{
 
-position: relative;
-top:130px;
+	position: relative;
+	top:130px;
 
 }
 

@@ -24,8 +24,9 @@ html, body {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	-webkit-font-smoothing: subpixel-antialiased;
-	
+
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
 }
 
 

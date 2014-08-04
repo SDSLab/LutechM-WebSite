@@ -1,5 +1,5 @@
 <!DOCTYPE html>	
-<html>
+<html ng-app="myApp">
 <head>
 
 	<!-- META -->
@@ -21,6 +21,15 @@
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 	<script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
+	<script src="assets/js/lib/angular-scroll.min.js"></script>
+	<script src="assets/js/lib/angular-sanitize.min.js"></script>
+	<script src="assets/js/lib/angular-route.min.js"></script>
+	<script src="assets/js/lib/angular-resource.min.js"></script>
+	<script src="assets/js/app.js"></script>
+	<script src="assets/js/main.js"></script>
+
 
 	<!--compatibilita' ie-->
 	<!--[if IE]>

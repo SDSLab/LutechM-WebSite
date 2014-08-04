@@ -10,9 +10,9 @@ var LutechMobile = {
 	events: function(){
 
 		$(document).ready(function(){
-			LutechMobile.navLink();
 			LutechMobile.mapContact();
-			LutechMobile.navScroll();
+			LutechMobile.openMenu();
+			window.location.hash="it";
 		});
 
 		$(window).on('scroll',function(){
@@ -27,39 +27,11 @@ var LutechMobile = {
 
 	},
 	
-	navLink: function(){
-
-		var section;
-
-		$('nav ul li a').on('click',function(e){
-
-			section=$(this).attr('href');
-
-			$('html, body').animate({
-			    scrollTop: $(section).offset().top-70
-			 }, 1500,"easeOutSine");
-
-			$('html, body').clearQueue();
-			return false;
-
-		});
-
-		$('nav img.logo').on('click',function(){
-		
-			$('html, body').animate({
-			    scrollTop: $('header').offset().top
-			 }, 1500,"easeOutSine");
-
-			$('html, body').clearQueue();
-			return false;
-		});
-	},
-
 	navScroll:function(){
 
 		var windowScroll=$(window).scrollTop();
-		var header=$('#play').offset().top-80;
-
+		var header=$('header').offset().top+$('header').outerHeight()-80;
+		
 		if(windowScroll>header){
 
 			$('nav').addClass("fixed");
@@ -69,17 +41,18 @@ var LutechMobile = {
 			$('nav').removeClass("fixed");
 
 		}
+	},
 
-		if($('nav').hasClass("fixed")){
-
-			$(".contentApp").addClass("cup");
-
-			setTimeout(function(){
-				$(".display .splashScreen").addClass("exit");
-			}, 3000);
-			
+	openMenu:function(){
+		$('nav i.fa-bars').on("click",function(){
+			console.log("entrato")
+			if($('nav').hasClass("visible")){
+			$('nav').removeClass("visible");
+		}else{
+			$('nav').addClass("visible");
 		}
-
+		});
+		
 	},
 
 	animateSmartPhone:function(){
@@ -92,6 +65,10 @@ var LutechMobile = {
 			$('#features .content img.ipApp').addClass("animation");
 		}
 
+	},
+
+	langChange:function(lang){
+		window.location.hash=lang;
 	},
 	
 	mapContact:function(){

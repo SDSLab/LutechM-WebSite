@@ -1,0 +1,13 @@
+{
+	"header":{
+			"play":"Gioca",
+			"features":"Servizi",
+			"about":"About",
+			"contact":"Contatti",
+			"title":"Noi creiamo <strong>esperienze</strong> da un punto di vista <strong>differente</strong>"
+			},
+	"play":{
+			"title":"Gioca",
+			"subtitle":"asd"
+	}
+}

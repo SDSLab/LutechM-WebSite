@@ -1,21 +1,22 @@
 <header>
 	<nav>
-		<img class="logo white" src="assets/img/logoB.png">
-		<img class="logo black" src="assets/img/logoG.png">
+		<i class="fa fa-bars"></i>
+		<a href="#main"du-smooth-scroll><img class="logo white" src="assets/img/logoB.png"></a>
+		<a href="#main"du-smooth-scroll><img class="logo black" src="assets/img/logoG.png"></a>
 		<ul>
-			<li><a href="#play">Play</a>
-			</li><li><a href="#features">Features</a>
-			</li><li><a href="#about">About</a>
-			</li><li><a href="#contact">Contact</a>
+			<li><a href="#play" du-smooth-scroll du-scrollspy offset="70">{{text.header.play}}</a>
+			</li><li><a href="#features" du-smooth-scroll du-scrollspy offset="70">{{text.header.features}}</a>
+			</li><li><a href="#about" du-smooth-scroll du-scrollspy offset="70">{{text.header.about}}</a>
+			</li><li><a href="#contact" du-smooth-scroll du-scrollspy offset="70">{{text.header.contact}}</a>
 			</li>
 		</ul>
 		<div class="language">
-			<img class="it" src="assets/img/it2.png">
-			<img class="en" src="assets/img/it2.png">
+			<a onclick="LutechMobile.langChange('it')" class="it"><img src="assets/img/it.png"></a>
+			<a onclick="LutechMobile.langChange('en')" class="en"><img src="assets/img/en.png"></a>
 		</div>
 	</nav>
 	<div class="presentation">
-		<h1>We create <strong>experiences</strong> from a <strong>different</strong> point of view</h1>
+		<h1 ng-bind-html="text.header.title"></h1>
 		<i class="icon-arrow-65"></i>
 	</div>
 </header>
