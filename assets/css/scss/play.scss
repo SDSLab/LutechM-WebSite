@@ -1,0 +1,95 @@
+
+#play #game.display{
+
+	position:absolute;
+
+	width:260px;
+	height:420px;
+
+	top:230px;
+	left:320px;
+	overflow:hidden;
+
+}
+
+#game.display .contentPlay{
+	position:absolute;
+
+	width:100%;
+	height:100%;
+
+	top:0;
+	left:0;
+
+	overflow-x:hidden;
+	overflow-y:auto;
+
+	@include transition(left);
+
+}
+#game.display .contentPlay img{
+	top:35px;
+	left:0;
+}
+
+#game.display .contentPlay .headerBar{
+	position:fixed;
+
+	width:100%;
+	height:35px;
+
+	padding:8px 0 8px 10px;
+	top:0;
+	left:0;
+
+	background:blue;
+
+	@include size;
+
+}
+#game.display .contentPlay .overlay{
+	position:absolute;
+
+	width:100%;
+	height:100%;
+
+	top:0;
+	left:0;
+
+	z-index:-100;
+
+}
+
+body.open #game.display .contentPlay .overlay{
+	z-index:100;
+}
+
+body.open #game.display .contentPlay{
+	left:200px;
+	overflow:hidden;
+}
+
+#game.display .menu{
+	position:absolute;
+
+	width:200px;
+	height:100%;
+
+	top:0;
+	left:-200px;
+	background:green;
+	@include transition(left);
+}
+
+body.open #game.display .menu{
+	left:0;
+}
+
+#game.display .contentPlay .headerBar i{
+	position:absolute;
+
+	left:10px;
+
+	color:white;
+	font-size:21px;
+}

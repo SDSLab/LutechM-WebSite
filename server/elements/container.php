@@ -4,6 +4,7 @@
 			<h2 ng-bind-html="text.play.title"></h2>
 			<p>{{text.play.subtitle}}</p>
 			<img class="iphone" src="assets/img/iphone5sB.jpeg">
+			<?php include 'server/elements/play.html'; ?>
 		</div>
 	</div>
 </div>

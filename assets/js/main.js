@@ -12,7 +12,7 @@ var LutechMobile = {
 		$(document).ready(function(){
 			LutechMobile.mapContact();
 			LutechMobile.openMenu();
-			window.location.hash="it";
+			window.location.hash="en";
 		});
 
 		$(window).on('scroll',function(){
@@ -91,6 +91,11 @@ var LutechMobile = {
   		});
       google.maps.event.addDomListener(window, 'load');
   
+	},
+
+
+	openMenuApp:function(){
+		$('.display').addClass("open");
 	}
 
 };
