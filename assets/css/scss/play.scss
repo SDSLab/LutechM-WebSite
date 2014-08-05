@@ -27,7 +27,9 @@
 	@include transition(left);
 
 }
-#game.display .contentPlay img{
+.appcup img.background{
+	width:100%;
+	height:auto;
 	top:35px;
 	left:0;
 }
@@ -92,4 +94,40 @@ body.open #game.display .menu{
 
 	color:white;
 	font-size:21px;
+}
+
+.button:hover{
+	cursor:url('../img/touch.png'), auto;
+}
+
+.button.list.home{
+	position:absolute;
+	display:none;
+	z-index:100;
+	width: 30px;
+	height: 30px;
+	top: 55px;
+	left: 125px;
+}
+.button.new.home{
+	position:absolute;
+	display:none;
+	z-index:100;
+	width: 30px;
+	height: 30px;
+	top: 55px;
+	left: 180px;
+}
+.button.detail.home{
+	position:absolute;
+	display:none;
+	z-index:100;
+	width: 215px;
+	height: 115px;
+	top: 195px;
+	left: 30px;
+}
+
+.appcup.home .button.home{
+	display: block;
 }

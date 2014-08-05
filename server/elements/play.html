@@ -1,10 +1,13 @@
-<div id="game" class="display">
-	<div class="appcup">
+<div id="game" class="display" ng-init="imageName='home'">
+	<div class="appcup" ng-class="[imageName]">
 		<div class="menu"></div>
 		<div class="contentPlay">
 				<div class="overlay" onclick="Game.closeMenuApp()"></div>
-				<div class="headerBar"><i class="fa fa-bars" onclick="Game.openMenuApp()"></i></div>
-				<img src="assets/img/appcup/home.png">
+				<div class="headerBar"><i class="fa fa-bars" onclick="Game.openMenuApp()" ng-click="imageName='home'"></i></div>
+				<div class="button home detail" ng-click="imageName='detail'"></div>
+				<div class="button home new" ng-click="imageName='prenotati'"></div>
+				<div class="button home list" ng-click="imageName='pay'"></div>
+				<img class="background" ng-src="assets/img/appcup/{{imageName}}.png">
 		</div>
 	</div>
 </div>
