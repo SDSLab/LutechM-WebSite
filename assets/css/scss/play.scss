@@ -1,4 +1,3 @@
-
 #play #game.display{
 
 	position:absolute;
@@ -9,6 +8,9 @@
 	top:230px;
 	left:320px;
 	overflow:hidden;
+
+	background:rgb(240,240,240);
+
 
 }
 
@@ -114,9 +116,19 @@ body.open #game.display .menu{
 	display: block !important;
 
 }
+.appcup.checkin .contentPlay .headerBar i.fa-times{
+
+	display: block !important;
+
+}
 .appcup:not(.home) .contentPlay .headerBar i.fa-angle-left{
 
 	display: block !important;
+
+}
+.appcup.checkin .contentPlay .headerBar i.fa-angle-left{
+
+	display: none !important;
 
 }
 #game.display .contentPlay .headerBar i{
@@ -204,6 +216,24 @@ body.open #game.display .menu{
 	left: 10px;
 
 }
+.button.new.newapp{
+
+	width: 234px;
+	height: 31px;
+	
+	top: 578px;
+	left: 13px;
+
+}
+.button.new.check{
+
+	width: 234px;
+	height: 31px;
+	
+	top: 333px;
+	left: 13px;
+
+}
 
 .appcup.home .button.home{
 
@@ -222,3 +252,60 @@ body.open #game.display .menu{
 	display: block;
 
 }
+
+.appcup.new .button.new.newapp{
+	display: block;
+}
+
+.appcup.detail .button.new.check{
+	display: block;
+}
+.appcup.checkin .button.new.check{
+	display: block;
+}
+
+.accordion{
+	position: absolute;
+	width:100%;
+	height:300px;
+	top:38px;
+	display: none;
+}
+
+.accordion.visible{
+	display: block;
+}
+
+.accordion h3{
+	height:40px;
+	padding:6px;
+	color: white;
+	margin:0 0 3px 0;
+	background:#2C8ED4;
+	outline : none;
+	@include size;
+}
+.accordion h3.ui-accordion-header-active{
+	background: $green;
+}
+
+.accordion div{
+	position: relative;
+
+	width: 100%;
+	height:75px;
+	top:0px;
+	
+}
+.accordion div img{
+	position: relative;
+
+	width: 100%;
+
+}
+.accordion div a:hover{
+
+	cursor:url('../img/touch.png'), auto;
+	
+}
+

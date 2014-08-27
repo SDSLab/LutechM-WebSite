@@ -12,6 +12,7 @@ var LutechMobile = {
 		$(document).ready(function(){
 			LutechMobile.mapContact();
 			LutechMobile.openMenu();
+			LutechMobile.accordionMenu();
 			window.location.hash="en";
 		});
 
@@ -79,6 +80,11 @@ var LutechMobile = {
       google.maps.event.addDomListener(window, 'load');
 	},
 	
+
+	accordionMenu:function(){
+   			 $( ".accordion" ).accordion({ active: false,
+   			 								collapsible: true });
+	},
 	openMenuApp:function(){
 		$('.display').addClass("open");
 	}

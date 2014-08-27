@@ -346,7 +346,8 @@ nav .language a.active {
   height: 420px;
   top: 230px;
   left: 320px;
-  overflow: hidden; }
+  overflow: hidden;
+  background: #f0f0f0; }
 
 #game.display .contentPlay {
   position: absolute;
@@ -459,8 +460,14 @@ body.open #game.display .menu {
 .appcup.home .contentPlay .headerBar i.fa-bars {
   display: block !important; }
 
+.appcup.checkin .contentPlay .headerBar i.fa-times {
+  display: block !important; }
+
 .appcup:not(.home) .contentPlay .headerBar i.fa-angle-left {
   display: block !important; }
+
+.appcup.checkin .contentPlay .headerBar i.fa-angle-left {
+  display: none !important; }
 
 #game.display .contentPlay .headerBar i {
   position: absolute;
@@ -516,6 +523,18 @@ body.open #game.display .menu {
   top: 44px;
   left: 10px; }
 
+.button.new.newapp {
+  width: 234px;
+  height: 31px;
+  top: 578px;
+  left: 13px; }
+
+.button.new.check {
+  width: 234px;
+  height: 31px;
+  top: 333px;
+  left: 13px; }
+
 .appcup.home .button.home {
   display: block; }
 
@@ -524,6 +543,54 @@ body.open #game.display .menu {
 
 .appcup.effettuati .button.effe {
   display: block; }
+
+.appcup.new .button.new.newapp {
+  display: block; }
+
+.appcup.detail .button.new.check {
+  display: block; }
+
+.appcup.checkin .button.new.check {
+  display: block; }
+
+.accordion {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  top: 38px;
+  display: none; }
+
+.accordion.visible {
+  display: block; }
+
+.accordion h3 {
+  height: 40px;
+  padding: 6px;
+  color: white;
+  margin: 0 0 3px 0;
+  background: #2C8ED4;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.accordion h3.ui-accordion-header-active {
+  background: #39b54a; }
+
+.accordion div {
+  position: relative;
+  width: 100%;
+  height: 75px;
+  top: 0px; }
+
+.accordion div img {
+  position: relative;
+  width: 100%; }
+
+.accordion div a:hover {
+  cursor: url("../img/touch.png"), auto; }
 
 /* #### Smartphone Portrait #### */
 @media screen and (max-device-width: 550px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
@@ -813,7 +880,7 @@ body.open #game.display .menu {
     height: 350px;
     left: 0; } }
 /* #### Tablets Portrait or Landscape #### */
-@media screen and (min-device-width: 570px) and (max-device-width: 1280px) {
+@media screen and (min-device-width: 570px) and (max-device-width: 1270px) {
   header {
     background: url("../img/bg3.jpg") no-repeat 40%;
     -webkit-background-size: cover;
@@ -940,3 +1007,6 @@ body.open #game.display .menu {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   header {
     max-height: 70%; } }
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 1025px), only screen and (min--moz-device-pixel-ratio: 2) and (min-device-width: 1025px), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-device-width: 1025px), only screen and (min-device-pixel-ratio: 2) and (min-device-width: 1025px), only screen and (min-resolution: 192dpi) and (min-device-width: 1025px), only screen and (min-resolution: 1dppx) and (min-device-width: 1025px) {
+  #game.display .contentPlay {
+    width: 260px; } }

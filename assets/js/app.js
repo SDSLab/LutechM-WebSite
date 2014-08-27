@@ -38,8 +38,20 @@
 		       $scope.headerPage="";
 		    }
 		     if (imageName=="pay") {
-		       $scope.imageName="effettuati";
+		       $scope.imageName="prenotati";
 		       $scope.headerPage='Lista <b>Appuntamenti</b>';
+		    }
+		    if (imageName=="blank") {
+		       $scope.imageName="new";
+		       $scope.headerPage='<b>Nuovo</b> Appuntamento';
+		    }
+		    if (imageName=="detail") {
+		       $scope.imageName="blank";
+		       $scope.headerPage='Scegli <b>Giorno e Ora</b>';
+		    }
+		    if (imageName=="checkin") {
+		       $scope.imageName="home";
+		       $scope.headerPage='';
 		    }
 		}
 
