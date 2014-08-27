@@ -5,10 +5,11 @@
 	app.controller('LanguageController', function($scope,$http){
 
 		$http.get('server/models/eng.json').success(function(data) {
-			      $scope.text = data;
-			      console.log($scope.text);
-			      $scope.lang = "en";
-		    	});  
+			$scope.text = data;
+			console.log($scope.text);
+			$scope.lang = "en";
+		});  
+
     	$('.language a.en').addClass("active");
     	$('.language a.it').removeClass("active"); 
 
@@ -29,10 +30,8 @@
 		    	$('.language a.en').addClass("active");
 		    	$('.language a.it').removeClass("active");      
 	        }
-
 		}
-
-        });
+    });
 
 	app.controller('AppCupController', function($scope){
 
@@ -62,7 +61,6 @@
 		       $scope.imageName="home";
 		       $scope.headerPage='';
 		    }
-
 		}
 
 		$scope.addCheck=function(){

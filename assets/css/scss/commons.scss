@@ -46,9 +46,10 @@ h1, h2, h3, p {
 }
 
 p{
-	color:$grey;
-}
 
+	color:$grey;
+
+}
 
 h1{
 	
@@ -102,7 +103,6 @@ strong{
 
 }
 
-
 .row{
 
 	position: relative;
@@ -111,13 +111,17 @@ strong{
 	height:auto;
 	
 }
+
 .row.colored{
 	
 	background: $red;
+
 }
 
 .row.colored h2 {
+
 	color:white;
+
 }
 
 .content{
@@ -131,7 +135,6 @@ strong{
 
 	text-align: center;
 	box-sizing:border-box;
-
 
 }
 

@@ -22,6 +22,7 @@ nav {
 	z-index:100;
 
 	font-size: 16px;
+
 	color: white;
 	background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
 	background: -webkit-linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
@@ -32,10 +33,12 @@ nav {
 nav img.logo{
 
 	position: absolute;
-	margin:5px 0 0 10px;
-	display: inline-block;  
+
 	width:216px;
 	height:45px;
+
+	margin:5px 0 0 10px;
+	display: inline-block;  
 
 }
 
@@ -46,23 +49,30 @@ nav img.logo.black{
 }
 
 nav i.fa-bars{
+
 	position: absolute;
 	right:25px;
+
+	margin:3px 0 0 0;
+	display:none;
+
 	font-size: 25px;
 	color:white;
-	display:none;
+	
 	z-index: 200;
-	margin:3px 0 0 0;
+
 }
 
 nav.fixed img.logo.black{
 
-	display: inline-block;  
+	display: inline-block; 
+
 }
 
 nav.fixed img.logo.white{
 
-	display: none;  
+	display: none;
+
 }
 
 nav ul{
@@ -73,8 +83,8 @@ nav ul{
 
 	margin:10px 60px 0 0;
 	padding: 0;
-
 	display: inline-block;
+	
 	z-index: 100;
 	@include transition(left)
 }
@@ -84,7 +94,6 @@ nav ul li{
 	position: relative;
 
 	margin: 5px 30px 0 0;
-
 	display: inline-block;
 	
 	list-style: none;
@@ -101,7 +110,9 @@ nav ul li a{
 }
 
 nav.fixed ul li a.active{
+
 	font-weight: 700;
+
 }
 
 nav.fixed{
@@ -110,7 +121,6 @@ nav.fixed{
 
 	background: white;
 	
-
 	z-index:200;
 	
 }
@@ -129,6 +139,7 @@ nav .language{
 	
 	margin:8px 30px  0 0;
 	display: inline-block;
+
 }
 
 nav .language a.active{
@@ -158,6 +169,7 @@ nav .language a.active{
 	top:60%;
 
 	margin: 0 auto 0 auto;
+
 	color: white;
 	line-height:1.3em;
 
@@ -166,16 +178,21 @@ nav .language a.active{
 .presentation i{
 
 	position: relative;
+
 	top:130px;
 
 }
 
 #play .content img.iphone{
+
 	height:600px;
+
 	margin:50px 0 0 0;
+
 }
 
 #play .apps{
+
 	position:relative;
 
 	width:80%;
@@ -196,7 +213,9 @@ nav .language a.active{
 	padding: 0;
 
 	list-style: none;
+
 }
+
 #play .apps ul li{
 
 	position:relative;
@@ -218,6 +237,7 @@ nav .language a.active{
 	@include size;
 	
 }
+
 #play .apps ul li:first-child{
 
 	margin:0;
@@ -241,8 +261,11 @@ nav .language a.active{
 
 	top:90px;
 	font-weight: 400;
+
 }
+
 #play .apps ul li i{
+
 	position: absolute;
 
 	font-size: 57px;
@@ -282,7 +305,6 @@ nav .language a.active{
 #features .aniSmart img.ipApp{
 
 	position: absolute;
-
 	
 	left:0px;
 
@@ -318,6 +340,7 @@ nav .language a.active{
 	margin:30px 0 0px 0;
 
 }
+
 #features img.techimg{
 
 	margin:15px 0 0 0;
@@ -328,6 +351,7 @@ nav .language a.active{
 	margin:15px 0 10px 0;
 
 }
+
 #features img.techimg.ibrid{
 
 	margin:15px 20px 10px 0;
@@ -349,6 +373,7 @@ nav .language a.active{
 	color:#94012e;
 	
 }
+
 #features .elementService.down{
 
 	margin:50px 0 15px 50px;
@@ -359,12 +384,15 @@ nav .language a.active{
 
 	margin:0;
 }
+
 #features .elementService.down img.brand1{
 
 	position:relative;
+
 	top:6px;
 
 }
+
 #about .row.colored{
 
 	background:$orange;
@@ -386,8 +414,10 @@ nav .language a.active{
 	
 	position: relative;
 	
-	margin:40px auto 0  auto;
 	width: 70%;
+
+	margin:40px auto 0  auto;
+
 }
 
 #contact .listContact p{
@@ -397,6 +427,7 @@ nav .language a.active{
 
 }
 #contact .listContact i{
+	
 	display: block;
 	margin:15px 0 0 0;	
 

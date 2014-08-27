@@ -2,6 +2,7 @@
 @media screen and (max-device-width: 550px) and (-webkit-min-device-pixel-ratio: 1) and (orientation : portrait){
 
 	header{
+
 		background: url("../img/bg3.jpg") no-repeat 40% ;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
@@ -29,123 +30,192 @@
 	}
 
 	nav{
-		background: black;
+		
 		height:60px;
+
+		background: black;
+
 		font-size: 14px;
 	}
+
 	nav i.fa-bars{
+
 		display: block;
+
 	}
+
 	nav img.logo{
+
 		height: auto;
 		width: 160px;
+
 		margin: 0;
 	}
+
 	nav ul{
 
-		left:100%;
 		height:40px;
 		width:100%;
-		background: black;
+
+		left:100%;
+		
 		margin:0;
-	
+
+		background: black;
+		
 	}
+
 	nav ul li{
+
 		margin:5px 25px 0 0;
+
 	}
+
 	nav.visible ul{
+
 		left:55px;
+
 	}
+
 	nav.visible ul li:nth-child(2){
+
 		margin:5px 25px 0 15px;
+
 	}
+
 	nav .language{
+
 		margin: 0px 75px 0 0;
 		
 	}
+
 	nav.fixed{
+
 		height:60px;
+
 	}
+
 	nav.fixed ul{
+
 		background: white;
+
 	}
+
 	nav.fixed i.fa-bars{
+
 		color:black;
+
 	}
+
 	.presentation{
+
 		height:200px;
+
 	}
+
 	.presentation h1{
-		top:50%;
+
 		width:95%;
+
+		top:50%;
+		
 	}
 
 	.presentation i{
+
 		top:100px;
+	
 	}
 
 	.section#play{
+	
 		display: none;
+	
 	}
 
 	.content{
+	
 		width: 345px;
+	
 	}
+	
 	#about img{
+	
 		width:100%;
+	
 	}
 
 	nav ul li:first-child{
+	
 		display: none;
+	
 	}
 
-	#features .aniSmart{
-		top:270px;
-		left:60px;
-		width:auto;
-	}
 	#features img{
+	
 		width: 100%;
+	
 	}
+	
 	#features img.ipApp{
+	
 		width:30px;
+	
 		left:45%;
+	
 	}
+	
 	#features img.native{
+	
 		width: 40%;
+	
 	}
+	
 	#features .elementService.down{
+	
 		margin:50px 0 15px 0;
+	
 	}
 
 	#features .elementService.down img{
+	
 		width:60px;
+	
 	}
 
 	#features .elementService i {
+	
 		font-size: 45px;
 		
 	}
 
 	#contact .square{
+	
 		width: 100%;
 		height:350px;
+		
 		left:0;
+	
 	}
+
 }
 
 
 
 @media screen and (max-device-width: 330px) and (-webkit-min-device-pixel-ratio: 1){
 
-.content{
+	.content{
+
 		width: 280px;
+	
 	}
+
 }
 
 @media screen and (max-device-width: 480px) and (orientation : landscape){
 
-		header{
+	header{
+
 		background: url("../img/bg3.jpg") no-repeat 40% ;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
@@ -173,108 +243,173 @@
 	}
 
 	nav{
-		background: black;
-		height:60px;
-		font-size: 14px;
-	}
-	nav i.fa-bars{
-		display: block;
-	}
-	nav img.logo{
-		height: auto;
-		width: 160px;
-		margin: 0;
-	}
-	nav ul{
 
-		left:100%;
-		height:40px;
-		width:100%;
+		height:60px;
+
 		background: black;
-		margin:0;
+		
+		font-size: 14px;
+
+	}
+
+	nav i.fa-bars{
+	
+		display: block;
 	
 	}
+	
+	nav img.logo{
+	
+		height: auto;
+		width: 160px;
+	
+		margin: 0;
+	
+	}
+	
+	nav ul{
+
+		height:40px;
+		width:100%;
+		
+		left:100%;
+		
+		margin:0;
+	
+		background: black;
+		
+	}
+	
 	nav ul li{
+	
 		margin:5px 25px 0 0;
+	
 	}
+	
 	nav.visible ul{
+	
 		left:55px;
+	
 	}
+	
 	nav.visible ul li:nth-child(2){
+	
 		margin:5px 25px 0 15px;
+	
 	}
+	
 	nav .language{
+	
 		margin: 0px 75px 0 0;
 		
 	}
+	
 	nav.fixed{
+	
 		height:60px;
+	
 	}
+	
 	nav.fixed ul{
+	
 		background: white;
+	
 	}
+	
 	nav.fixed i.fa-bars{
+	
 		color:black;
+	
 	}
+	
 	.presentation{
+	
 		height:200px;
+	
 	}
+	
 	.presentation h1{
+	
 		top:50%;
 		width:95%;
+	
 	}
 
 	.presentation i{
+	
 		top:100px;
+	
 	}
 
 	.section#play{
+	
 		display: none;
+	
 	}
 
 	.content{
+	
 		width: 345px;
+	
 	}
+	
 	#about img{
+	
 		width:100%;
+	
 	}
 
 	nav ul li:first-child{
+	
 		display: none;
+	
 	}
 
-	#features .aniSmart{
-		top:270px;
-		left:60px;
-		width:auto;
-	}
 	#features img{
+	
 		width: 100%;
+	
 	}
+	
 	#features img.ipApp{
+		
 		width:30px;
+		
 		left:45%;
+	
 	}
+	
 	#features img.native{
+	
 		width: 40%;
+	
 	}
+	
 	#features .elementService.down{
+	
 		margin:50px 0 15px 0;
+	
 	}
 
 	#features .elementService.down img{
+	
 		width:60px;
+	
 	}
 
 	#features .elementService i {
+	
 		font-size: 45px;
 		
 	}
 
 	#contact .square{
+	
 		width: 100%;
+	
 		height:350px;
 		left:0;
+	
 	}
 
 }
@@ -307,65 +442,96 @@
 		font-size: 14px;
 
 	}
+
 	.presentation{
+	
 		height:200px;
+	
 	}
+	
 	.presentation h1{
-		top:50%;
+	
 		width:95%;
+		
+		top:50%;
+	
 	}
 
 	.presentation i{
+	
 		top:100px;
+	
 	}
 
 	.section#play{
+	
 		display: none;
+	
 	}
 
 	.content{
+	
 		width: 345px;
+	
 	}
+	
 	#about img{
+	
 		width:100%;
+	
 	}
 
 	nav ul li:first-child{
+	
 		display: none;
+	
 	}
 
-	#features .aniSmart{
-		top:270px;
-		left:60px;
-		width:auto;
-	}
 	#features img{
+
 		width: 100%;
+	
 	}
+	
 	#features img.ipApp{
+	
 		width:30px;
+	
 		left:45%;
+	
 	}
+	
 	#features img.native{
+	
 		width: 40%;
+	
 	}
+	
 	#features .elementService.down{
+	
 		margin:50px 0 15px 0;
+	
 	}
 
 	#features .elementService.down img{
+	
 		width:60px;
+	
 	}
 
 	#features .elementService i {
+	
 		font-size: 45px;
 		
 	}
 
 	#contact .square{
+	
 		width: 100%;
 		height:350px;
+	
 		left:0;
+	
 	}
 
 }
@@ -373,19 +539,25 @@
 @media screen and (min-device-width: 570px) and (max-device-width: 1270px) {
 
 	header{
+
 		background: url("../img/bg3.jpg") no-repeat 40% ;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
+
 	}
 
   	.section#play{
+		
 		display: none;
+	
 	}
   	
 	nav ul li:first-child{
+	
 		display: none;
+	
 	}
 
 	h1{
@@ -407,64 +579,100 @@
 	}
 
   	.presentation{
+	
 		height:200px;
+	
 	}
+	
 	.presentation h1{
-		top:50%;
+
 		width:70%;
+		
+		top:50%;
+		
 	}
 
 	.presentation i{
+	
 		top:100px;
+	
 	}
 
 	.section#play{
+
 		display: none;
+
 	}
 
 	.content{
+
 		width: 600px;
+
 	}
-	#features .aniSmart{
-		top:300px;
-		left:60px;
-	}
+	
 	#features img{
+
 		width: 80%;
+	
 	}
+	
 	#features img.ipApp{
+	
 		width:60px;
+	
 		left:45%;
+	
 	}
+	
 	#features img.native{
+	
 		width: 40%;
+	
 	}
+	
 	#about img{
+	
 		width:100%;
+	
 	}
+	
 	#features img.techimg.ibrid{
+	
 		width:100%;
+	
 	}
+	
 	#contact .square{
-		left:40%;
+		
 		width: 300px;
 		height:350px;
+
+		left:40%;
+	
 	}
 
 
 	#features .elementService.down img{
+	
 		width:60px;
+	
 	}
+
 }
 
 /* #### Desktop #### */
 @media screen and (min-width: 660px) and (max-width: 1000px) {
-  .section#play{
+
+	.section#play{
+		
 		display: none;
+	
 	}
   	
 	nav ul li:first-child{
+	
 		display: none;
+	
 	}
 
 	h1{
@@ -485,51 +693,81 @@
 
 	}
 	.content{
+	
 		width: 900px;
+	
 	}
 
   	.presentation{
+	
 		height:200px;
+	
 	}
+	
 	.presentation h1{
-		top:50%;
+
 		width:50%;
+
+		top:50%;
+		
 	}
 
 	.presentation i{
+		
 		top:100px;
+	
 	}
 
 	.section#play{
+	
 		display: none;
+	
 	}
 
 	.content{
+	
 		width: 650px;
+	
 	}
-	#features .aniSmart{
-		top:300px;
-		left:60px;
-	}
+	
 	#features img{
+	
 		width: 100%;
+	
 	}
+	
 	#features img.ipApp{
+	
 		width:60px;
+	
 		left:45%;
+	
 	}
+	
 	#features img.native{
+	
 		width: 40%;
+	
 	}
+	
 	#about img{
+	
 		width:100%;
+	
 	}
+	
 	#features img.techimg.ibrid{
+	
 		width:100%;
+	
 	}
+	
 	#contact .square{
+	
 		left:45%;
+	
 	}
+	
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2){ 
