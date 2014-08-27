@@ -10,9 +10,9 @@
 			</li><li><a href="#contact" du-smooth-scroll du-scrollspy offset="70">{{text.header.contact}}</a>
 			</li>
 		</ul>
-		<div class="language">
-			<a onclick="LutechMobile.langChange('it')" class="it"><img src="assets/img/it.png"></a>
-			<a onclick="LutechMobile.langChange('en')" class="en"><img src="assets/img/en.png"></a>
+		<div class="language" ng-init="lang='en'">
+			<a ng-click="lang='it'; langChange(lang);" class="it"><img src="assets/img/it.png"></a>
+			<a ng-click="lang='en'; langChange(lang);" class="en"><img src="assets/img/en.png"></a>
 		</div>
 	</nav>
 	<div class="presentation">

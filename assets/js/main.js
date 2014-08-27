@@ -13,7 +13,6 @@ var LutechMobile = {
 			LutechMobile.mapContact();
 			LutechMobile.openMenu();
 			LutechMobile.accordionMenu();
-			window.location.hash="en";
 		});
 
 		$(window).on('scroll',function(){
