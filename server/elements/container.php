@@ -3,6 +3,26 @@
 		<div class="content">
 			<h2 ng-bind-html="text.play.title"></h2>
 			<p>{{text.play.subtitle}}</p>
+			<div class="apps">
+				<ul>
+					<li>
+						<i class="fa fa-h-square"></i><p>APPCUP</p>
+					</li>
+
+					<li>
+						<i class="icon-parking-meter"></i><p>PARKING</p>
+					</li>
+					<li>
+						<i></i><p>CATALOG</p>
+					</li>
+					<li>
+						<i></i><p>CROSSLAND</p>
+					</li>
+					<li>
+						<i class="icon-credit-card"></i><p>MY CARDS</p>
+					</li>
+				</ul>
+			</div>
 			<img class="iphone" src="assets/img/iphone5sB.jpeg">
 			<?php include 'server/elements/play.html'; ?>
 		</div>

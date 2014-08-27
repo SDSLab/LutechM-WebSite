@@ -172,9 +172,83 @@ nav .language a.active{
 
 #play .content img.iphone{
 	height:600px;
-	margin:30px 0 0 0;
+	margin:50px 0 0 0;
 }
 
+#play .apps{
+	position:relative;
+
+	width:80%;
+	height: 80px;
+
+	margin: 30px auto 20px auto;
+
+}
+
+#play .apps ul{
+
+	position:relative;
+
+	width:100%;
+	height: 100%;
+
+	margin:0;	
+	padding: 0;
+
+	list-style: none;
+}
+#play .apps ul li{
+
+	position:relative;
+
+	width:80px;
+	height: 80px;
+
+	display: inline-block;
+
+	margin: 0 0 0 40px;
+	padding:10px 0 0 0px;
+
+	-webkit-border-radius: 100%; 
+	-moz-border-radius: 100%; 
+	border-radius: 100%; 
+
+	background:#CCCCCC;
+
+	@include size;
+	
+}
+#play .apps ul li:first-child{
+
+	margin:0;
+	background:$bluecup;
+	
+}
+
+#play .apps ul li:first-child i{
+
+	left:15px;
+	
+}
+
+#play .apps ul li:nth-child(n+2) i{
+
+	left:11px;
+	
+}
+
+#play .apps ul li p{
+
+	top:90px;
+	font-weight: 400;
+}
+#play .apps ul li i{
+	position: absolute;
+
+	font-size: 57px;
+	color: white;
+
+}
 
 #features .content p{
 

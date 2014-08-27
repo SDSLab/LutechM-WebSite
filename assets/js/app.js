@@ -32,8 +32,8 @@
 
 	app.controller('AppCupController', function($scope){
 
-		$scope.check = function(imageName) {
-		    if (imageName=="effettuati" || imageName=="prenotati" || imageName=="new") {
+		$scope.back = function(imageName) {
+		    if (imageName=="effettuati" || imageName=="prenotati" || imageName=="new" || imageName=="newpren") {
 		       $scope.imageName="home";
 		       $scope.headerPage="";
 		    }
@@ -53,6 +53,28 @@
 		       $scope.imageName="home";
 		       $scope.headerPage='';
 		    }
+
+		    if (imageName=="home") {
+		       $scope.imageName="home";
+		       $scope.headerPage='';
+		    }
+
+		}
+
+		$scope.addCheck=function(){
+
+		    $(".appcup").addClass("check");
+		}
+
+		$scope.check = function(imageName){
+
+			if ($(".appcup").hasClass("check")){
+				$scope.imageName="newpren";
+				$scope.headerPage='Lista <b>Appuntamenti</b>';
+			}else{
+				$scope.imageName="prenotati";
+				$scope.headerPage='Lista <b>Appuntamenti</b>';
+			}
 		}
 
 	});
