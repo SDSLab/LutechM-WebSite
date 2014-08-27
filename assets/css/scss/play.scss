@@ -15,7 +15,7 @@
 #game.display .contentPlay{
 	position:absolute;
 
-	width:100%;
+	width:275px;
 	height:100%;
 
 	top:0;
@@ -35,6 +35,7 @@
 }
 
 #game.display .contentPlay .headerBar{
+
 	position:fixed;
 
 	width:100%;
@@ -44,12 +45,26 @@
 	top:0;
 	left:0;
 
-	background:blue;
+	background:#2C8ED4;
 
 	@include size;
 
 }
+#game.display .contentPlay .headerBar h3{
+
+	position: relative;
+
+	width:80%;
+
+	margin:-2px auto 0 auto;
+
+	font-weight: 400;
+	color: white;
+	@include size;
+
+}
 #game.display .contentPlay .overlay{
+
 	position:absolute;
 
 	width:100%;
@@ -66,12 +81,17 @@ body.open #game.display .contentPlay .overlay{
 	z-index:100;
 }
 
+body.open .appcup img.background{
+	margin:0 0 0 -15px;
+}
+
 body.open #game.display .contentPlay{
 	left:200px;
 	overflow:hidden;
 }
 
 #game.display .menu{
+
 	position:absolute;
 
 	width:200px;
@@ -81,53 +101,124 @@ body.open #game.display .contentPlay{
 	left:-200px;
 	background:green;
 	@include transition(left);
+
 }
 
 body.open #game.display .menu{
-	left:0;
-}
 
+	left:0;
+
+}
+.appcup.home .contentPlay .headerBar i.fa-bars{
+
+	display: block !important;
+
+}
+.appcup:not(.home) .contentPlay .headerBar i.fa-angle-left{
+
+	display: block !important;
+
+}
 #game.display .contentPlay .headerBar i{
+
 	position:absolute;
 
 	left:10px;
 
 	color:white;
 	font-size:21px;
+	display: none;
+
+}
+
+#game.display .contentPlay .headerBar i:hover{
+
+	cursor:url('../img/touch.png'), auto;
+
+}
+
+.button{
+
+	position:absolute;
+	display:none;
+	z-index:100;
 }
 
 .button:hover{
+
 	cursor:url('../img/touch.png'), auto;
 }
 
 .button.list.home{
-	position:absolute;
-	display:none;
-	z-index:100;
+
 	width: 30px;
 	height: 30px;
+
 	top: 55px;
 	left: 125px;
+
 }
 .button.new.home{
-	position:absolute;
-	display:none;
-	z-index:100;
+
 	width: 30px;
 	height: 30px;
+
 	top: 55px;
 	left: 180px;
+
 }
 .button.detail.home{
-	position:absolute;
-	display:none;
-	z-index:100;
+
 	width: 215px;
 	height: 115px;
+
 	top: 195px;
 	left: 30px;
+
+}
+
+.button.effe.ef{
+
+	width: 128px;
+	height: 33px;
+
+	top: 384px;
+	left: 129px;
+
+}
+.button.effe.pren{
+
+	width: 128px;
+	height: 33px;
+
+	top: 384px;
+	left: 0px;
+
+}
+.button.effe.pay{
+
+	width: 218px;
+	height: 66px;
+
+	top: 44px;
+	left: 10px;
+
 }
 
 .appcup.home .button.home{
+
 	display: block;
+
+}
+
+.appcup.prenotati .button.effe{
+
+	display: block;
+
+}
+
+.appcup.effettuati .button.effe{
+
+	display: block;
+
 }

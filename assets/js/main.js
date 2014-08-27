@@ -18,7 +18,6 @@ var LutechMobile = {
 		$(window).on('scroll',function(){
 
 			LutechMobile.navScroll();
-			LutechMobile.animateSmartPhone();
 		});
 
 		$(window).load(function(){
@@ -55,18 +54,6 @@ var LutechMobile = {
 		
 	},
 
-	animateSmartPhone:function(){
-
-		var bottomObj=$('#features .content .aniSmart').offset().top+$('#features .content .aniSmart').outerHeight();
-		var bottomWind=$(window).scrollTop()+ $(window).height()-50;
-
-		if(bottomWind>bottomObj){
-
-			$('#features .content img.ipApp').addClass("animation");
-		}
-
-	},
-
 	langChange:function(lang){
 		window.location.hash=lang;
 	},
@@ -90,10 +77,8 @@ var LutechMobile = {
 	     	 title: 'Lutech Mobile'
   		});
       google.maps.event.addDomListener(window, 'load');
-  
 	},
-
-
+	
 	openMenuApp:function(){
 		$('.display').addClass("open");
 	}

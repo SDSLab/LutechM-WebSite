@@ -129,7 +129,7 @@ nav img.logo.black {
 
 nav i.fa-bars {
   position: absolute;
-  left: 89%;
+  right: 25px;
   font-size: 25px;
   color: white;
   display: none;
@@ -350,7 +350,7 @@ nav .language a.active {
 
 #game.display .contentPlay {
   position: absolute;
-  width: 100%;
+  width: 275px;
   height: 100%;
   top: 0;
   left: 0;
@@ -389,7 +389,19 @@ nav .language a.active {
   padding: 8px 0 8px 10px;
   top: 0;
   left: 0;
-  background: blue;
+  background: #2C8ED4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+#game.display .contentPlay .headerBar h3 {
+  position: relative;
+  width: 80%;
+  margin: -2px auto 0 auto;
+  font-weight: 400;
+  color: white;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -406,6 +418,9 @@ nav .language a.active {
 
 body.open #game.display .contentPlay .overlay {
   z-index: 100; }
+
+body.open .appcup img.background {
+  margin: 0 0 0 -15px; }
 
 body.open #game.display .contentPlay {
   left: 200px;
@@ -441,49 +456,77 @@ body.open #game.display .contentPlay {
 body.open #game.display .menu {
   left: 0; }
 
+.appcup.home .contentPlay .headerBar i.fa-bars {
+  display: block !important; }
+
+.appcup:not(.home) .contentPlay .headerBar i.fa-angle-left {
+  display: block !important; }
+
 #game.display .contentPlay .headerBar i {
   position: absolute;
   left: 10px;
   color: white;
-  font-size: 21px; }
+  font-size: 21px;
+  display: none; }
+
+#game.display .contentPlay .headerBar i:hover {
+  cursor: url("../img/touch.png"), auto; }
+
+.button {
+  position: absolute;
+  display: none;
+  z-index: 100; }
 
 .button:hover {
   cursor: url("../img/touch.png"), auto; }
 
 .button.list.home {
-  position: absolute;
-  display: none;
-  z-index: 100;
   width: 30px;
   height: 30px;
   top: 55px;
   left: 125px; }
 
 .button.new.home {
-  position: absolute;
-  display: none;
-  z-index: 100;
   width: 30px;
   height: 30px;
   top: 55px;
   left: 180px; }
 
 .button.detail.home {
-  position: absolute;
-  display: none;
-  z-index: 100;
   width: 215px;
   height: 115px;
   top: 195px;
   left: 30px; }
 
+.button.effe.ef {
+  width: 128px;
+  height: 33px;
+  top: 384px;
+  left: 129px; }
+
+.button.effe.pren {
+  width: 128px;
+  height: 33px;
+  top: 384px;
+  left: 0px; }
+
+.button.effe.pay {
+  width: 218px;
+  height: 66px;
+  top: 44px;
+  left: 10px; }
+
 .appcup.home .button.home {
   display: block; }
 
-/* #Media Queries
-================================================== */
-/* #### Smartphone Portrait or Landscape #### */
-@media screen and (max-device-width: 541px) and (-webkit-min-device-pixel-ratio: 1) {
+.appcup.prenotati .button.effe {
+  display: block; }
+
+.appcup.effettuati .button.effe {
+  display: block; }
+
+/* #### Smartphone Portrait #### */
+@media screen and (max-device-width: 550px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
   header {
     background: url("../img/bg3.jpg") no-repeat 40%;
     -webkit-background-size: cover;
@@ -524,14 +567,13 @@ body.open #game.display .menu {
     margin: 5px 25px 0 0; }
 
   nav.visible ul {
-    left: 60px; }
+    left: 55px; }
 
   nav.visible ul li:nth-child(2) {
     margin: 5px 25px 0 15px; }
 
   nav .language {
-    margin: 0px 20px 0 0;
-    left: 70%; }
+    margin: 0px 75px 0 0; }
 
   nav.fixed {
     height: 60px; }
@@ -585,6 +627,9 @@ body.open #game.display .menu {
   #features .elementService.down img {
     width: 60px; }
 
+  #features .elementService i {
+    font-size: 45px; }
+
   #contact .square {
     width: 100%;
     height: 350px;
@@ -592,8 +637,183 @@ body.open #game.display .menu {
 @media screen and (max-device-width: 330px) and (-webkit-min-device-pixel-ratio: 1) {
   .content {
     width: 280px; } }
+@media screen and (max-device-width: 480px) and (orientation: landscape) {
+  header {
+    background: url("../img/bg3.jpg") no-repeat 40%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+
+  h1 {
+    font-size: 26px; }
+
+  h2 {
+    font-size: 18px; }
+
+  h3 {
+    font-size: 14px; }
+
+  nav {
+    background: black;
+    height: 60px;
+    font-size: 14px; }
+
+  nav i.fa-bars {
+    display: block; }
+
+  nav img.logo {
+    height: auto;
+    width: 160px;
+    margin: 0; }
+
+  nav ul {
+    left: 100%;
+    height: 40px;
+    width: 100%;
+    background: black;
+    margin: 0; }
+
+  nav ul li {
+    margin: 5px 25px 0 0; }
+
+  nav.visible ul {
+    left: 55px; }
+
+  nav.visible ul li:nth-child(2) {
+    margin: 5px 25px 0 15px; }
+
+  nav .language {
+    margin: 0px 75px 0 0; }
+
+  nav.fixed {
+    height: 60px; }
+
+  nav.fixed ul {
+    background: white; }
+
+  nav.fixed i.fa-bars {
+    color: black; }
+
+  .presentation {
+    height: 200px; }
+
+  .presentation h1 {
+    top: 50%;
+    width: 95%; }
+
+  .presentation i {
+    top: 100px; }
+
+  .section#play {
+    display: none; }
+
+  .content {
+    width: 345px; }
+
+  #about img {
+    width: 100%; }
+
+  nav ul li:first-child {
+    display: none; }
+
+  #features .aniSmart {
+    top: 270px;
+    left: 60px;
+    width: auto; }
+
+  #features img {
+    width: 100%; }
+
+  #features img.ipApp {
+    width: 30px;
+    left: 45%; }
+
+  #features img.native {
+    width: 40%; }
+
+  #features .elementService.down {
+    margin: 50px 0 15px 0; }
+
+  #features .elementService.down img {
+    width: 60px; }
+
+  #features .elementService i {
+    font-size: 45px; }
+
+  #contact .square {
+    width: 100%;
+    height: 350px;
+    left: 0; } }
+@media screen and (max-device-width: 570px) and (orientation: landscape) {
+  header {
+    background: url("../img/bg3.jpg") no-repeat 40%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+
+  h1 {
+    font-size: 26px; }
+
+  h2 {
+    font-size: 18px; }
+
+  h3 {
+    font-size: 14px; }
+
+  .presentation {
+    height: 200px; }
+
+  .presentation h1 {
+    top: 50%;
+    width: 95%; }
+
+  .presentation i {
+    top: 100px; }
+
+  .section#play {
+    display: none; }
+
+  .content {
+    width: 345px; }
+
+  #about img {
+    width: 100%; }
+
+  nav ul li:first-child {
+    display: none; }
+
+  #features .aniSmart {
+    top: 270px;
+    left: 60px;
+    width: auto; }
+
+  #features img {
+    width: 100%; }
+
+  #features img.ipApp {
+    width: 30px;
+    left: 45%; }
+
+  #features img.native {
+    width: 40%; }
+
+  #features .elementService.down {
+    margin: 50px 0 15px 0; }
+
+  #features .elementService.down img {
+    width: 60px; }
+
+  #features .elementService i {
+    font-size: 45px; }
+
+  #contact .square {
+    width: 100%;
+    height: 350px;
+    left: 0; } }
 /* #### Tablets Portrait or Landscape #### */
-@media screen and (min-width: 600px) and (max-device-width: 1280px) {
+@media screen and (min-device-width: 570px) and (max-device-width: 1280px) {
   header {
     background: url("../img/bg3.jpg") no-repeat 40%;
     -webkit-background-size: cover;
@@ -637,7 +857,7 @@ body.open #game.display .menu {
     left: 60px; }
 
   #features img {
-    width: 100%; }
+    width: 80%; }
 
   #features img.ipApp {
     width: 60px;
@@ -684,7 +904,7 @@ body.open #game.display .menu {
 
   .presentation h1 {
     top: 50%;
-    width: 70%; }
+    width: 50%; }
 
   .presentation i {
     top: 100px; }

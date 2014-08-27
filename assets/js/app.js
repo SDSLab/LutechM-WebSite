@@ -30,4 +30,19 @@
         });
 	});
 
+	app.controller('AppCupController', function($scope){
+
+		$scope.check = function(imageName) {
+		    if (imageName=="effettuati" || imageName=="prenotati" || imageName=="new") {
+		       $scope.imageName="home";
+		       $scope.headerPage="";
+		    }
+		     if (imageName=="pay") {
+		       $scope.imageName="effettuati";
+		       $scope.headerPage='Lista <b>Appuntamenti</b>';
+		    }
+		}
+
+	});
+
 })();

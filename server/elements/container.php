@@ -16,9 +16,6 @@
 	</div>
 	<div class="row">
 		<div class="content">
-			<div class="aniSmart">
-				<img class="ipApp" src="assets/img/ipApp.png">
-			</div>
 			<img src="assets/img/anydevice2.png">
 			<h2  ng-bind-html="text.features.anyDevice"></h2>
 			<p>{{text.features.anyDeviceSub}}</p>

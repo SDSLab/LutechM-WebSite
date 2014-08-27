@@ -1,12 +1,20 @@
-<div id="game" class="display" ng-init="imageName='home'">
+<div id="game" class="display" ng-controller="AppCupController as AppCupCtrl" ng-init="imageName='home'; headerPage='';" >
 	<div class="appcup" ng-class="[imageName]">
 		<div class="menu"></div>
 		<div class="contentPlay">
 				<div class="overlay" onclick="Game.closeMenuApp()"></div>
-				<div class="headerBar"><i class="fa fa-bars" onclick="Game.openMenuApp()" ng-click="imageName='home'"></i></div>
-				<div class="button home detail" ng-click="imageName='detail'"></div>
-				<div class="button home new" ng-click="imageName='prenotati'"></div>
-				<div class="button home list" ng-click="imageName='pay'"></div>
+				<div class="headerBar">
+					<i class="fa fa-bars" onclick="Game.openMenuApp()" ng-click="imageName='home'"></i>
+					<i class="fa fa-angle-left" ng-click="check(imageName)"></i>
+					<h3  ng-bind-html="headerPage"></h3>
+				</div>
+				<div class="button home detail" ng-click="imageName='prenotati'; headerPage='Lista <b>Appuntamenti</b>';"></div>
+				<div class="button home new" ng-click="imageName='new'; headerPage='<b>Nuovo</b> Appuntamento';"></div>
+				<div class="button home list" ng-click="imageName='prenotati'; headerPage='Lista <b>Appuntamenti</b>';"></div>
+				<div class="button effe ef" ng-click="imageName='effettuati'; headerPage='Lista <b>Appuntamenti</b>';"></div>
+				<div class="button effe pren" ng-click="imageName='prenotati'; headerPage='Lista <b>Appuntamenti</b>';"></div>
+				<div class="button effe pay" ng-click="imageName='pay'; headerPage='<b>Dettaglio</b> Appuntamenti';"></div>
+				<div class="button new" ng-click="imageName='new'; headerPage='Dettagli Pagamento';"></div>
 				<img class="background" ng-src="assets/img/appcup/{{imageName}}.png">
 		</div>
 	</div>
