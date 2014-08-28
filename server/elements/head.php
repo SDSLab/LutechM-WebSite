@@ -4,12 +4,17 @@
 
 	<!-- META -->
 	<meta charset="UTF-8">
-	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
+	<meta name="viewport" id="view" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 	<meta name="apple-mobile-web-app-capable" content="yes">
+
+	<script>
+		window.addEventListener("orientationchange", function() {
+			document.getElementById("view").setAttribute("content", "width=device-width");
+		}, false);
+	</script>
 
 	<!-- CSS -->
 	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
-
 
 	<!-- FONT -->
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
@@ -21,7 +26,6 @@
 	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 	<script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
-	
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
 	<script src="assets/js/lib/angular-scroll.min.js"></script>
 	<script src="assets/js/lib/angular-sanitize.min.js"></script>

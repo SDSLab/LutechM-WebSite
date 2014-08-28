@@ -92,9 +92,15 @@ body.open #game.display .contentPlay .overlay{
 
 }
 
+body.open #game.display .contentPlay .headerBar{
+
+	left:10px;
+
+}
+
 body.open #game.display .contentPlay{
 
-	left:200px;
+	left:190px;
 	overflow:hidden;
 
 }

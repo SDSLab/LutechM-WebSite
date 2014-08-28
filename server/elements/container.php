@@ -64,11 +64,31 @@
 	<div class="row colored">
 		<div class="content">
 			<h2 ng-bind-html="text.features.ourServices"></h2>
-			<div class="elementService"><i class="icon-stationery-1"></i><p>Interaction <strong>design</strong></p></div>
-			<div class="elementService"><i class="icon-plugins-1"></i><p>Platform <strong>development</strong></p></div>
-			<div class="elementService"><i class="icon-bubble-conversation-1"></i><p>Technical <strong>consulting</strong></p></div>
-			<div class="elementService down"><i class="icon-hierarchy-2"></i><p>Mobile device <strong>management</strong> ( <img src="assets/img/brand2.png"> )</p></div>
-			<div class="elementService down"><i class="icon-message"></i><p>Mobile <strong>engagement</strong>	(<img class="brand1" src="assets/img/brand1.png">)</p></div>
+			<div class="elementService">
+				<i class="icon-stationery-1"></i>
+				<h3>Interaction <strong>design</strong></h3>
+				<p>{{text.features.mobileApp}}</p>
+			</div>
+			<div class="elementService">
+				<i class="icon-plugins-1"></i>
+				<h3>Platform <strong>development</strong></h3>
+				<p>{{text.features.interDes}}</p>
+			</div>
+			<div class="elementService">
+				<i class="icon-bubble-conversation-1"></i>
+				<h3>Technical <strong>consulting</strong></h3>
+				<p>{{text.features.platDev}}</p>
+			</div>
+			<div class="elementService">
+				<i class="icon-hierarchy-2"></i>
+				<h3>Mobile device <strong>management</strong> ( <img src="assets/img/brand2.png"> )</h3>
+				<p>{{text.features.techCons}}</p>
+			</div>
+			<div class="elementService">
+				<i class="icon-message"></i>
+				<h3>Mobile <strong> engagement </strong>	( <img class="brand1" src="assets/img/brand1.png">)</h3>
+				<p>{{text.features.mobEng}}</p>
+			</div>
 		</div>
 	</div>
 	<div class="row">

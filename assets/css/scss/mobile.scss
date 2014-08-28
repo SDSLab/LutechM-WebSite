@@ -19,14 +19,19 @@
 
 	h2{
 		
-		font-size: 18px;
+		font-size: 22px;
 
 	}
 
 	h3{
 		
-		font-size: 14px;
+		font-size: 20px;
 
+	}
+
+	p{
+
+		font-size: 14px;
 	}
 
 	nav{
@@ -171,13 +176,7 @@
 	
 	}
 	
-	#features .elementService.down{
-	
-		margin:50px 0 15px 0;
-	
-	}
-
-	#features .elementService.down img{
+	#features .elementService img{
 	
 		width:60px;
 	
@@ -212,7 +211,7 @@
 
 }
 
-@media screen and (max-device-width: 480px) and (orientation : landscape){
+@media screen and (max-device-width: 600px) and (orientation : landscape){
 
 	header{
 
@@ -385,13 +384,7 @@
 	
 	}
 	
-	#features .elementService.down{
-	
-		margin:50px 0 15px 0;
-	
-	}
-
-	#features .elementService.down img{
+	#features .elementService img{
 	
 		width:60px;
 	
@@ -548,6 +541,40 @@
 
 	}
 
+	nav{
+
+		padding:0;
+		font-size: 15px;
+
+	}
+
+	nav.fixed{
+
+		height:60px;
+
+	}
+
+	nav ul{
+
+		margin: 13px 40px 0 0;
+
+	}
+
+	nav .language{
+
+		margin: 12px 15px 0 0;
+
+	}
+
+	nav img.logo{
+
+		width: 191px;
+		height: 39px;
+
+		margin: 14px 0 0 10px;
+
+	}
+
   	.section#play{
 		
 		display: none;
@@ -612,8 +639,12 @@
 	
 	#features img{
 
-		width: 80%;
+		width: 70%;
 	
+	}
+
+	#features img.any{
+		width: 60%;
 	}
 	
 	#features img.ipApp{
@@ -626,7 +657,7 @@
 	
 	#features img.native{
 	
-		width: 40%;
+		width: 30%;
 	
 	}
 	
@@ -638,7 +669,7 @@
 	
 	#features img.techimg.ibrid{
 	
-		width:100%;
+		width:80%;
 	
 	}
 	
@@ -651,11 +682,15 @@
 	
 	}
 
-
-	#features .elementService.down img{
+	#features .elementService img{
 	
 		width:60px;
 	
+	}
+
+	#features .elementService i{
+
+		font-size: 50px;
 	}
 
 }
@@ -732,7 +767,7 @@
 	
 	#features img{
 	
-		width: 100%;
+		width: 50%;
 	
 	}
 	
@@ -746,7 +781,7 @@
 	
 	#features img.native{
 	
-		width: 40%;
+		width: 30%;
 	
 	}
 	
@@ -762,6 +797,18 @@
 	
 	}
 	
+	#features .elementService i{
+
+		font-size:50px;
+
+	}
+
+	#features .elementService img{
+
+		width:25%;
+
+	}
+
 	#contact .square{
 	
 		left:45%;
@@ -784,7 +831,7 @@ only screen and (   min--moz-device-pixel-ratio: 2) and (min-device-width: 1025p
 only screen and (   -o-min-device-pixel-ratio: 2/1) and (min-device-width: 1025px),
 only screen and (        min-device-pixel-ratio: 2) and (min-device-width: 1025px),
 only screen and (           min-resolution: 192dpi) and (min-device-width: 1025px),
-only screen and (            min-resolution: 1dppx) and (min-device-width: 1025px) {
+only screen and (            min-resolution: 2dppx) and (min-device-width: 1025px) {
 
      #game.display .contentPlay{
     	width:260px;

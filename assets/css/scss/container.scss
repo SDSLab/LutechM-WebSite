@@ -361,10 +361,15 @@ nav .language a.active{
 
 	position: relative;
 
+	margin: 20px 30px 0 20px;
 	
-	margin: 30px 30px 0 40px;
-	display: inline-block;
+}
 
+#features .elementService h3{
+
+	color:white;
+	margin: 0 0 20px 0;
+	
 }
 
 #features .elementService i{
@@ -374,15 +379,10 @@ nav .language a.active{
 	
 }
 
-#features .elementService.down{
-
-	margin:50px 0 15px 50px;
-
-}
-
 #features .elementService p{
 
-	margin:0;
+	margin:0 0 20px 0;
+
 }
 
 #features .elementService.down img.brand1{

@@ -11,7 +11,6 @@
 			"subtitle":"Seleziona l'app"
 			},
 
-
 	"features":{
 			"title":"We realize original projects to<br><strong>improve your business </strong> and <strong> satisfy users</strong><br>with beautiful and useful experiences.",
 			"anyDevice":"for <strong>any device</strong>",
@@ -23,6 +22,12 @@
 			"ibrideDev":"<strong>Ibride</strong> development",
 			"meap":"Our <strong>MEAP certification</strong>",
 			"ourServices":"our <strong>Services</strong>",
+			"mobileApp":"La comunicazione più efficace è veloce, chiara, pensata per l’utente all’avanguardia. In una parola: App. Lutech Mobile è la divisione di Lutech, specializzata nello sviluppo di Applicazioni Mobile Enterprise e Consumer. ",
+			"interDes":"Progettiamo e realizziamo interfacce mobile pensate per l'utente (consumer o business) coniugando creatività e competenze tecniche di programmazione e usabilità con l'obiettivo di offrire la migliore esperienza d'uso (uX UI).",
+			"platDev":"Sviluppo nativo standalone o piattaforma MEAP (Mobile Enterprise Application Platform)? Discutiamone e scegliamo insieme. Grazie alle esperienze fatte e alle certificazioni conseguite siamo in grado di accompagnarvi nella scelta.",
+			"techCons":"Offriamo servizi di Technical Consulting nell’ambito mobile con particolare attenzione alle seguenti aree tematiche: Enterprise e Consumer mobile Apps, mobile app legacy integration, MDM (Mobile Device Management) implementation, MAM (Mobile Application Management) implementation, Mobile Project e Program Management.",
+			"mobDev":"Il BYOD (Bring Your Own Device) si sta sempre più diffondendo. Questo richiede un maggior sforzo per l’azienda in ambito sicurezza. Consideriamo la gestione dei dispositivi e delle applicazioni come parte integrante della vostra “Strategia Mobile”.",	
+			"mobEng":"Customer Engagement è la parola d’ordine per le aziende di oggi. Il dispositivo mobile è al centro della Customer Experience. Grazie alle nostre soluzioni di Mobile Engagement potrai aumentare la soddisfazione e la fidelizzazione dei tuoi clienti.",
 			"ourPartners":"our <strong>Partners</strong>",
 			"about":"The <strong>multidisciplinary</strong> approach is our <strong>strength</strong>"
 		}
