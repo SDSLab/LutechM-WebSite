@@ -226,7 +226,7 @@ nav .language a.active{
 	display: inline-block;
 
 	margin: 0 0 0 40px;
-	padding:10px 0 0 0px;
+	padding:17px 0 0 0px;
 
 	-webkit-border-radius: 100%; 
 	-moz-border-radius: 100%; 
@@ -234,8 +234,27 @@ nav .language a.active{
 
 	background:#CCCCCC;
 
+	@include transition(background);
 	@include size;
 	
+}
+
+#play .apps ul li:hover{
+
+	background:#666666;
+
+}
+
+#play .apps ul li:hover i{
+
+	opacity:0;
+
+}
+
+#play .apps ul li:hover p.state{
+
+	display: inline-block;
+
 }
 
 #play .apps ul li:first-child{
@@ -245,60 +264,80 @@ nav .language a.active{
 	
 }
 
+#play .apps ul li:first-child p.state{
+
+	left:18px;
+	
+}
+
 #play .apps ul li:first-child i{
 
-	left:15px;
+	left:21px;
 	
 }
 
 #play .apps ul li:nth-child(n+2) i{
 
-	left:11px;
+	left:16px;
 	
 }
 
 #play .apps ul li p{
 
-	top:90px;
+	top:80px;
 	font-weight: 400;
 
+}
+
+#play .apps ul li p.state{
+
+	position: absolute;
+
+	top:20px;
+	left:0;
+
+	display: none;
+
+	font-weight: bold;
+	color:white;
+	font-size: 15px;
+	
 }
 
 #play .apps ul li i{
 
 	position: absolute;
 
-	font-size: 57px;
+	font-size: 46px;
 	color: white;
 
-}
-
-#features .content p{
-
-	margin: 10px 0 0 0;
+	opacity: 1;
+	@include transition(opacity)
 
 }
+#play .contentSim{
 
-#features .row:nth-child(n+3) p{
+	position: relative;
 
-	color:white;
+	width: 90%;
 
+	margin:40px auto 0 auto;
+
+	text-align: left;
 }
-#features img.any{
 
-	margin:100px 0 0px 0;
-
-}
-
-#features .aniSmart{
-
+#play .contentSim .descriptionApp{
+	
 	position: absolute;
 
-	width: 530px;
-	height: 125px;
+	width: 55%;
 
-	top:350px;
-	left:183px;
+	top: 134px;
+	margin: 0 0 0 100px;
+	
+	display: inline-block;
+
+	text-align: justify;
 
 }
 
@@ -385,17 +424,24 @@ nav .language a.active{
 
 }
 
-#features .elementService.down img.brand1{
+#features .elementService img.brand1{
 
 	position:relative;
 
-	top:6px;
+	top:8px;
 
 }
 
 #about .row.colored{
 
 	background:$orange;
+
+}
+
+#about .row.colored p{
+
+	margin:20px 0 40px 0;
+	color: white;
 
 }
 

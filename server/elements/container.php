@@ -1,30 +1,45 @@
-<div class="section" id="play">
+<div class="section" id="play" ng-init="appChoose=''">
 	<div class="row">
 		<div class="content">
 			<h2 ng-bind-html="text.play.title"></h2>
 			<p>{{text.play.subtitle}}</p>
 			<div class="apps">
 				<ul>
-					<li>
-						<i class="fa fa-h-square"></i><p>APPCUP</p>
+					<li ng-click="appChoose='cup'">
+						<i class="fa fa-h-square"></i>
+						<p>APPCUP</p>
+						<p class="state">ACTIVE</p>
 					</li>
 
 					<li>
-						<i class="icon-parking-meter"></i><p>PARKING</p>
+						<i class="icon-parking-meter"></i>
+						<p>PARKING</p>
+						<p class="state">COMING SOON</p>
 					</li>
 					<li>
-						<i></i><p>CATALOG</p>
+						<i></i>
+						<p>CATALOG</p>
+						<p class="state">COMING SOON</p>
 					</li>
 					<li>
-						<i></i><p>CROSSLAND</p>
+						<i></i>
+						<p>CROSSLAND</p>
+						<p class="state">COMING SOON</p>
 					</li>
 					<li>
-						<i class="icon-credit-card"></i><p>MY CARDS</p>
+						<i class="icon-credit-card"></i>
+						<p>MY CARDS</p>
+						<p class="state">COMING SOON</p>
 					</li>
 				</ul>
 			</div>
-			<img class="iphone" src="assets/img/iphone5sB.jpeg">
-			<?php include 'server/elements/play.html'; ?>
+			<div class="contentSim" ng-class="[appChoose]">
+				<img class="iphone" src="assets/img/iphone5sB.jpeg">
+				<?php include 'server/elements/play.html'; ?>
+				<div class="descriptionApp">
+					<p>{{text.features.interDes}}</p>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -67,22 +82,22 @@
 			<div class="elementService">
 				<i class="icon-stationery-1"></i>
 				<h3>Interaction <strong>design</strong></h3>
-				<p>{{text.features.mobileApp}}</p>
+				<p>{{text.features.interDes}}</p>
 			</div>
 			<div class="elementService">
 				<i class="icon-plugins-1"></i>
 				<h3>Platform <strong>development</strong></h3>
-				<p>{{text.features.interDes}}</p>
+				<p>{{text.features.platDev}}</p>
 			</div>
 			<div class="elementService">
 				<i class="icon-bubble-conversation-1"></i>
 				<h3>Technical <strong>consulting</strong></h3>
-				<p>{{text.features.platDev}}</p>
+				<p>{{text.features.techCons}}</p>
 			</div>
 			<div class="elementService">
 				<i class="icon-hierarchy-2"></i>
 				<h3>Mobile device <strong>management</strong> ( <img src="assets/img/brand2.png"> )</h3>
-				<p>{{text.features.techCons}}</p>
+				<p>{{text.features.mobDev}}</p>
 			</div>
 			<div class="elementService">
 				<i class="icon-message"></i>
@@ -102,6 +117,7 @@
 	<div class="row colored">
 		<div class="content">
 			<h2 ng-bind-html="text.features.about"></h2>
+			<p>{{text.features.mobileApp}}</p>
 			<img class="techimg" src="assets/img/aboutobj.png">
 		</div>
 	</div>

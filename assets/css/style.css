@@ -244,51 +244,109 @@ nav .language a.active {
   height: 80px;
   display: inline-block;
   margin: 0 0 0 40px;
-  padding: 10px 0 0 0px;
+  padding: 17px 0 0 0px;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
   background: #CCCCCC;
+  -webkit-transition: background 0.35s;
+  -moz-transition: background 0.35s;
+  -ms-transition: background 0.35s;
+  -o-transition: background 0.35s;
+  transition: background 0.35s;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box; }
 
+#play .apps ul li:hover {
+  background: #666666; }
+
+#play .apps ul li:hover i {
+  opacity: 0; }
+
+#play .apps ul li:hover p.state {
+  display: inline-block; }
+
 #play .apps ul li:first-child {
   margin: 0;
   background: #2c8ed4; }
 
+#play .apps ul li:first-child p.state {
+  left: 18px; }
+
 #play .apps ul li:first-child i {
-  left: 15px; }
+  left: 21px; }
 
 #play .apps ul li:nth-child(n+2) i {
-  left: 11px; }
+  left: 16px; }
 
 #play .apps ul li p {
-  top: 90px;
+  top: 80px;
   font-weight: 400; }
+
+#play .apps ul li p.state {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  display: none;
+  font-weight: bold;
+  color: white;
+  font-size: 15px; }
 
 #play .apps ul li i {
   position: absolute;
-  font-size: 57px;
-  color: white; }
+  font-size: 46px;
+  color: white;
+  opacity: 1;
+  -webkit-transition: opacity 0.35s;
+  -moz-transition: opacity 0.35s;
+  -ms-transition: opacity 0.35s;
+  -o-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-perspective: 1000;
+  perspective: 1000;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
 
-#features .content p {
-  margin: 10px 0 0 0; }
+#play .contentSim {
+  position: relative;
+  width: 90%;
+  margin: 40px auto 0 auto;
+  text-align: left; }
 
-#features .row:nth-child(n+3) p {
-  color: white; }
-
-#features img.any {
-  margin: 100px 0 0px 0; }
-
-#features .aniSmart {
+#play .contentSim .descriptionApp {
   position: absolute;
-  width: 530px;
-  height: 125px;
-  top: 350px;
-  left: 183px; }
+  width: 55%;
+  top: 134px;
+  margin: 0 0 0 100px;
+  display: inline-block;
+  text-align: justify; }
 
 #features .aniSmart img.ipApp {
   position: absolute;
@@ -347,12 +405,16 @@ nav .language a.active {
 #features .elementService p {
   margin: 0 0 20px 0; }
 
-#features .elementService.down img.brand1 {
+#features .elementService img.brand1 {
   position: relative;
-  top: 6px; }
+  top: 8px; }
 
 #about .row.colored {
   background: #ff6c00; }
+
+#about .row.colored p {
+  margin: 20px 0 40px 0;
+  color: white; }
 
 #contact {
   position: relative;
@@ -394,8 +456,8 @@ nav .language a.active {
   position: absolute;
   width: 260px;
   height: 420px;
-  top: 380px;
-  left: 321px;
+  top: 138px;
+  left: 16px;
   overflow: hidden;
   background: #f0f0f0; }
 
@@ -426,6 +488,12 @@ nav .language a.active {
   perspective: 1000;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
+
+.contentSim.cup .appcup {
+  display: block; }
+
+.appcup {
+  display: none; }
 
 .appcup img.background {
   width: 100%;
@@ -468,7 +536,7 @@ nav .language a.active {
   z-index: -100; }
 
 body.open #game.display .contentPlay .overlay {
-  z-index: 100; }
+  z-index: 200; }
 
 body.open #game.display .contentPlay .headerBar {
   left: 10px; }
@@ -483,7 +551,6 @@ body.open #game.display .contentPlay {
   height: 100%;
   top: 0;
   left: -200px;
-  background: green;
   -webkit-transition: left 0.35s;
   -moz-transition: left 0.35s;
   -ms-transition: left 0.35s;
@@ -513,6 +580,15 @@ body.open #game.display .menu {
 .appcup.home .contentPlay .headerBar i.fa-bars {
   display: block !important; }
 
+.appcup.newpren .contentPlay .headerBar i.fa-bars {
+  display: block !important; }
+
+.appcup.prenotati .contentPlay .headerBar i.fa-bars {
+  display: block !important; }
+
+.appcup.effettuati .contentPlay .headerBar i.fa-bars {
+  display: block !important; }
+
 .appcup.checkin .contentPlay .headerBar i.fa-times {
   display: block !important; }
 
@@ -520,6 +596,15 @@ body.open #game.display .menu {
   display: block !important; }
 
 .appcup.checkin .contentPlay .headerBar i.fa-angle-left {
+  display: none !important; }
+
+.appcup.newpren .contentPlay .headerBar i.fa-angle-left {
+  display: none !important; }
+
+.appcup.prenotati .contentPlay .headerBar i.fa-angle-left {
+  display: none !important; }
+
+.appcup.effettuati .contentPlay .headerBar i.fa-angle-left {
   display: none !important; }
 
 #game.display .contentPlay .headerBar i {
@@ -539,6 +624,27 @@ body.open #game.display .menu {
 
 .button:hover {
   cursor: url("../img/touch.png"), auto; }
+
+.button.menubt.home {
+  width: 157px;
+  height: 30px;
+  top: 37px;
+  left: 22px;
+  display: block; }
+
+.button.menubt.new {
+  width: 157px;
+  height: 30px;
+  top: 68px;
+  left: 20px;
+  display: block; }
+
+.button.menubt.list {
+  width: 157px;
+  height: 30px;
+  top: 107px;
+  left: 20px;
+  display: block; }
 
 .button.list.home {
   width: 30px;
@@ -1066,7 +1172,7 @@ body.open #game.display .menu {
     font-size: 50px; }
 
   #features .elementService img {
-    width: 25%; }
+    width: 10%; }
 
   #contact .square {
     left: 45%; } }

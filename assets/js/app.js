@@ -53,8 +53,8 @@
 		       $scope.headerPage='Scegli <b>Giorno e Ora</b>';
 		    }
 		    if (imageName=="checkin") {
-		       $scope.imageName="home";
-		       $scope.headerPage='';
+		       $scope.imageName="newpren";
+		       $scope.headerPage='Lista <b>Appuntamenti</b>';
 		    }
 
 		    if (imageName=="home") {

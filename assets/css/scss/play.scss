@@ -5,8 +5,8 @@
 	width:260px;
 	height:420px;
 
-	top:380px;
-	left:321px;
+	top: 138px;
+	left: 16px;
 
 	overflow:hidden;
 
@@ -31,6 +31,17 @@
 
 }
 
+.contentSim.cup .appcup{
+
+	display: block;
+	
+}
+
+.appcup{
+
+	display: none;
+	
+}
 .appcup img.background{
 
 	width:100%;
@@ -88,7 +99,7 @@
 
 body.open #game.display .contentPlay .overlay{
 
-	z-index:100;
+	z-index:200;
 
 }
 
@@ -115,7 +126,6 @@ body.open #game.display .contentPlay{
 	top:0;
 	left:-200px;
 
-	background:green;
 	@include transition(left);
 
 }
@@ -138,6 +148,24 @@ body.open #game.display .menu{
 
 }
 
+.appcup.newpren .contentPlay .headerBar i.fa-bars{
+
+	display: block !important;
+
+}
+
+.appcup.prenotati .contentPlay .headerBar i.fa-bars{
+
+	display: block !important;
+
+}
+
+.appcup.effettuati .contentPlay .headerBar i.fa-bars{
+
+	display: block !important;
+
+}
+
 .appcup.checkin .contentPlay .headerBar i.fa-times{
 
 	display: block !important;
@@ -151,6 +179,24 @@ body.open #game.display .menu{
 }
 
 .appcup.checkin .contentPlay .headerBar i.fa-angle-left{
+
+	display: none !important;
+
+}
+
+.appcup.newpren .contentPlay .headerBar i.fa-angle-left{
+
+	display: none !important;
+
+}
+
+.appcup.prenotati .contentPlay .headerBar i.fa-angle-left{
+
+	display: none !important;
+
+}
+
+.appcup.effettuati .contentPlay .headerBar i.fa-angle-left{
 
 	display: none !important;
 
@@ -188,6 +234,42 @@ body.open #game.display .menu{
 .button:hover{
 
 	cursor:url('../img/touch.png'), auto;
+}
+
+.button.menubt.home{
+
+	width: 157px;
+	height: 30px;
+
+	top: 37px;
+	left: 22px;
+
+	display: block;
+
+}
+
+.button.menubt.new{
+
+	width: 157px;
+	height: 30px;
+
+	top: 68px;
+	left: 20px;
+
+	display: block;
+
+}
+
+.button.menubt.list{
+
+	width: 157px;
+	height: 30px;
+
+	top: 107px;
+	left: 20px;
+
+	display: block;
+
 }
 
 .button.list.home{
