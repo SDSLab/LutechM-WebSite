@@ -6,11 +6,13 @@
 	height:420px;
 
 	top: 138px;
-	left: 16px;
+	left: 14px;
 
 	overflow:hidden;
 
 	background:rgb(240,240,240);
+
+	border: 1px solid #cccccc;
 
 }
 
@@ -31,18 +33,41 @@
 
 }
 
-.contentSim.cup .appcup{
+.contentSim.cup #game .appcup{
 
+	opacity: 1;
 	display: block;
-	
+
 }
 
-.appcup{
+.contentSim.park #game .parking{
 
+	opacity: 1;
+	display: block;
+}
+
+.contentSim.cross #game .crossland{
+
+	opacity: 1;
+	display: block;
+}
+
+.contentSim.cards #game .mycards{
+
+	opacity: 1;
+	display: block;
+}
+
+#game .appcup, .parking, .crossland, .mycards{
+
+	opacity:0;
 	display: none;
-	
+	-webkit-transition:opacity 0.5s;
+	transition:opacity 0.5s;
+
 }
-.appcup img.background{
+
+#game img.background{
 
 	width:100%;
 	height:auto;
@@ -77,8 +102,11 @@
 
 	margin:-2px auto 0 auto;
 
+	font-size:18px;
 	font-weight: 400;
 	color: white;
+	
+	text-align: center;
 	@include size;
 
 }
@@ -111,7 +139,7 @@ body.open #game.display .contentPlay .headerBar{
 
 body.open #game.display .contentPlay{
 
-	left:190px;
+	left:200px;
 	overflow:hidden;
 
 }
@@ -229,6 +257,8 @@ body.open #game.display .menu{
 
 	z-index:100;
 
+	color:#CCCCCC;
+	font-size: 12px;
 }
 
 .button:hover{
@@ -239,10 +269,10 @@ body.open #game.display .menu{
 .button.menubt.home{
 
 	width: 157px;
-	height: 30px;
+	height: 20px;
 
-	top: 37px;
-	left: 22px;
+	top: 43px;
+	left: 10px;
 
 	display: block;
 
@@ -251,10 +281,10 @@ body.open #game.display .menu{
 .button.menubt.new{
 
 	width: 157px;
-	height: 30px;
+	height: 20px;
 
-	top: 68px;
-	left: 20px;
+	top: 112px;
+	left: 11px;
 
 	display: block;
 
@@ -263,10 +293,10 @@ body.open #game.display .menu{
 .button.menubt.list{
 
 	width: 157px;
-	height: 30px;
+	height: 20px;
 
-	top: 107px;
-	left: 20px;
+	top: 77px;
+	left: 10px;
 
 	display: block;
 
@@ -414,6 +444,7 @@ body.open #game.display .menu{
 
 	color: white;
 
+	text-align: center;
 	outline : none;
 	@include size;
 

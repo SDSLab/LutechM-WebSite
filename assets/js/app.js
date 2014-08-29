@@ -4,6 +4,7 @@
 	
 	app.controller('LanguageController', function($scope,$http){
 
+		
 		$http.get('server/models/eng.json').success(function(data) {
 			$scope.text = data;
 			console.log($scope.text);
@@ -43,6 +44,10 @@
 		     if (imageName=="pay") {
 		       $scope.imageName="prenotati";
 		       $scope.headerPage='Lista <b>Appuntamenti</b>';
+		       if ($(".appcup").hasClass("check")){
+					$scope.imageName="newpren";
+					$scope.headerPage='Lista <b>Appuntamenti</b>';
+				}
 		    }
 		    if (imageName=="blank") {
 		       $scope.imageName="new";

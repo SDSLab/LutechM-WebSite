@@ -183,12 +183,35 @@ nav .language a.active{
 
 }
 
-#play .content img.iphone{
+img.iphone{
 
 	height:600px;
-
 	margin:50px 0 0 0;
 
+}
+
+img.ipad{
+
+	width: 783px;
+	display: none;
+	margin:50px 0 0 0;
+
+}
+
+.contentSim.cat #game{
+
+	display: none;
+	
+}
+
+.contentSim.cat img.ipad{
+
+	display: initial;
+	
+}
+
+.contentSim.cat img.iphone{
+	display: none;
 }
 
 #play .apps{
@@ -315,6 +338,7 @@ nav .language a.active{
 	@include transition(opacity)
 
 }
+
 #play .contentSim{
 
 	position: relative;
@@ -324,6 +348,7 @@ nav .language a.active{
 	margin:40px auto 0 auto;
 
 	text-align: left;
+
 }
 
 #play .contentSim .descriptionApp{
@@ -338,6 +363,15 @@ nav .language a.active{
 	display: inline-block;
 
 	text-align: justify;
+
+}
+
+#play .contentSim.cat .descriptionApp{
+	
+	position: relative;
+
+	top:0;
+	margin: 40px 0 0 100px;
 
 }
 
@@ -370,13 +404,19 @@ nav .language a.active{
 
 #features h2.anydevice{
 
-	margin:55px 0 0px 0;
+	margin: 12px 0 0px 0;
 
+}
+
+#features img.any{
+
+	margin:65px 0 0px 0;
 }
 
 #features .content.tech p{
 
 	margin:30px 0 0px 0;
+	color:white;
 
 }
 
@@ -421,6 +461,7 @@ nav .language a.active{
 #features .elementService p{
 
 	margin:0 0 20px 0;
+	color:white;
 
 }
 
@@ -442,6 +483,18 @@ nav .language a.active{
 
 	margin:20px 0 40px 0;
 	color: white;
+
+}
+
+#about .desk{
+
+	position: relative;
+
+	height:500px;
+	background-image:url("../img/aboutobj.png");
+	
+	background-repeat: no-repeat;
+	background-size: contain;
 
 }
 

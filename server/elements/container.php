@@ -1,43 +1,39 @@
-<div class="section" id="play" ng-init="appChoose=''">
+<div class="section" id="play" ng-init="appChoose='';">
 	<div class="row">
 		<div class="content">
 			<h2 ng-bind-html="text.play.title"></h2>
 			<p>{{text.play.subtitle}}</p>
 			<div class="apps">
 				<ul>
-					<li ng-click="appChoose='cup'">
+					<li ng-click="appChoose='cup'; descrText=text.play.cup;">
 						<i class="fa fa-h-square"></i>
 						<p>APPCUP</p>
 						<p class="state">ACTIVE</p>
 					</li>
 
-					<li>
+					<li ng-click="appChoose='park'; descrText=text.play.park;">
 						<i class="icon-parking-meter"></i>
 						<p>PARKING</p>
 						<p class="state">COMING SOON</p>
 					</li>
-					<li>
+					<li ng-click="appChoose='cat'; descrText=text.play.cata;">
 						<i></i>
 						<p>CATALOG</p>
 						<p class="state">COMING SOON</p>
 					</li>
-					<li>
-						<i></i>
-						<p>CROSSLAND</p>
-						<p class="state">COMING SOON</p>
-					</li>
-					<li>
+					<li ng-click="appChoose='cards'; descrText=text.play.cards;">
 						<i class="icon-credit-card"></i>
-						<p>MY CARDS</p>
+						<p>CROSSLAND</p>
 						<p class="state">COMING SOON</p>
 					</li>
 				</ul>
 			</div>
 			<div class="contentSim" ng-class="[appChoose]">
-				<img class="iphone" src="assets/img/iphone5sB.jpeg">
+				<img class="iphone" src="assets/img/iphone.jpeg">
+				<img class="ipad" src="assets/img/catalog.png">
 				<?php include 'server/elements/play.html'; ?>
 				<div class="descriptionApp">
-					<p>{{text.features.interDes}}</p>
+					<p>{{descrText}}</p>
 				</div>
 			</div>
 		</div>
@@ -51,7 +47,7 @@
 	</div>
 	<div class="row">
 		<div class="content">
-			<img src="assets/img/anydevice2.png">
+			<img class="anydev" src="assets/img/anydevice2.png">
 			<h2  ng-bind-html="text.features.anyDevice"></h2>
 			<p>{{text.features.anyDeviceSub}}</p>
 			<img class="any" src="assets/img/anyapp.png">
@@ -79,7 +75,7 @@
 	<div class="row colored">
 		<div class="content">
 			<h2 ng-bind-html="text.features.ourServices"></h2>
-			<div class="elementService">
+			<div class="elementService first">
 				<i class="icon-stationery-1"></i>
 				<h3>Interaction <strong>design</strong></h3>
 				<p>{{text.features.interDes}}</p>
@@ -117,14 +113,15 @@
 	<div class="row colored">
 		<div class="content">
 			<h2 ng-bind-html="text.features.about"></h2>
-			<p>{{text.features.mobileApp}}</p>
-			<img class="techimg" src="assets/img/aboutobj.png">
+			<p ng-bind-html="text.features.mobileApp"></p>
+			<div class="desk"></div>
 		</div>
 	</div>
 </div>
 
 <div class="section" id="contact">
 	<div id="map"></div>
+	<div class="mapMobile"><img src="assets/img/mapMob.png"></div>
 	<div class="square">
 		<div class="listContact">
 			<i class="icon-marker-2"></i>

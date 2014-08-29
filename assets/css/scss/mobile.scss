@@ -19,7 +19,7 @@
 
 	h2{
 		
-		font-size: 22px;
+		font-size: 19px;
 
 	}
 
@@ -31,7 +31,7 @@
 
 	p{
 
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	nav{
@@ -139,7 +139,8 @@
 	}
 
 	.content{
-	
+		
+		padding: 35px 5px 35px 5px;
 		width: 345px;
 	
 	}
@@ -161,6 +162,17 @@
 		width: 100%;
 	
 	}
+
+	#features img.techimg.ibrid {
+		margin: 15px 10px 10px 0;
+	}
+
+	#features img.anydev{
+	
+		width: 315px;
+		height: 65px;
+	
+	}
 	
 	#features img.ipApp{
 	
@@ -175,6 +187,16 @@
 		width: 40%;
 	
 	}
+
+	#features .elementService {
+
+		margin: 35px 10px 30px 10px;
+	}
+
+	#features .elementService.first{
+
+		margin: 35px 10px 30px 10px;
+	}
 	
 	#features .elementService img{
 	
@@ -186,6 +208,36 @@
 	
 		font-size: 45px;
 		
+	}
+	#about .content {
+
+		padding: 50px 0 30px 0;
+		width: 100%;
+
+	}
+
+	#about .row.colored p {
+		margin: 20px 10px 30px 10px;
+	
+	}
+
+	#about .row.colored h2 {
+		margin: 0px 20px 40px 20px;
+	
+	}
+
+
+	#about .desk{
+
+		position: relative;
+
+		width:100%;
+		height: 670px;
+		background-image:url("../img/deskiphone.png");
+		background-size: contain;
+		background-position: 100% ;
+		
+
 	}
 
 	#contact .square{
@@ -693,6 +745,12 @@
 		font-size: 50px;
 	}
 
+	#about .desk{
+
+		height: 330px;
+
+	}
+
 }
 
 /* #### Desktop #### */
@@ -806,6 +864,12 @@
 	#features .elementService img{
 
 		width:10%;
+
+	}
+
+#about .desk{
+
+		height: 330px;
 
 	}
 

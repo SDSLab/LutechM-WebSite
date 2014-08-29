@@ -220,9 +220,23 @@ nav .language a.active {
   position: relative;
   top: 130px; }
 
-#play .content img.iphone {
+img.iphone {
   height: 600px;
   margin: 50px 0 0 0; }
+
+img.ipad {
+  width: 783px;
+  display: none;
+  margin: 50px 0 0 0; }
+
+.contentSim.cat #game {
+  display: none; }
+
+.contentSim.cat img.ipad {
+  display: initial; }
+
+.contentSim.cat img.iphone {
+  display: none; }
 
 #play .apps {
   position: relative;
@@ -348,6 +362,11 @@ nav .language a.active {
   display: inline-block;
   text-align: justify; }
 
+#play .contentSim.cat .descriptionApp {
+  position: relative;
+  top: 0;
+  margin: 40px 0 0 100px; }
+
 #features .aniSmart img.ipApp {
   position: absolute;
   left: 0px; }
@@ -376,10 +395,14 @@ nav .language a.active {
   100% {
     left: 231px; } }
 #features h2.anydevice {
-  margin: 55px 0 0px 0; }
+  margin: 12px 0 0px 0; }
+
+#features img.any {
+  margin: 65px 0 0px 0; }
 
 #features .content.tech p {
-  margin: 30px 0 0px 0; }
+  margin: 30px 0 0px 0;
+  color: white; }
 
 #features img.techimg {
   margin: 15px 0 0 0; }
@@ -403,7 +426,8 @@ nav .language a.active {
   color: #94012e; }
 
 #features .elementService p {
-  margin: 0 0 20px 0; }
+  margin: 0 0 20px 0;
+  color: white; }
 
 #features .elementService img.brand1 {
   position: relative;
@@ -415,6 +439,13 @@ nav .language a.active {
 #about .row.colored p {
   margin: 20px 0 40px 0;
   color: white; }
+
+#about .desk {
+  position: relative;
+  height: 500px;
+  background-image: url("../img/aboutobj.png");
+  background-repeat: no-repeat;
+  background-size: contain; }
 
 #contact {
   position: relative;
@@ -457,9 +488,10 @@ nav .language a.active {
   width: 260px;
   height: 420px;
   top: 138px;
-  left: 16px;
+  left: 14px;
   overflow: hidden;
-  background: #f0f0f0; }
+  background: #f0f0f0;
+  border: 1px solid #cccccc; }
 
 #game.display .contentPlay {
   position: absolute;
@@ -489,13 +521,29 @@ nav .language a.active {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
 
-.contentSim.cup .appcup {
+.contentSim.cup #game .appcup {
+  opacity: 1;
   display: block; }
 
-.appcup {
-  display: none; }
+.contentSim.park #game .parking {
+  opacity: 1;
+  display: block; }
 
-.appcup img.background {
+.contentSim.cross #game .crossland {
+  opacity: 1;
+  display: block; }
+
+.contentSim.cards #game .mycards {
+  opacity: 1;
+  display: block; }
+
+#game .appcup, .parking, .crossland, .mycards {
+  opacity: 0;
+  display: none;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s; }
+
+#game img.background {
   width: 100%;
   height: auto;
   top: 35px;
@@ -519,8 +567,10 @@ nav .language a.active {
   position: relative;
   width: 80%;
   margin: -2px auto 0 auto;
+  font-size: 18px;
   font-weight: 400;
   color: white;
+  text-align: center;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -542,7 +592,7 @@ body.open #game.display .contentPlay .headerBar {
   left: 10px; }
 
 body.open #game.display .contentPlay {
-  left: 190px;
+  left: 200px;
   overflow: hidden; }
 
 #game.display .menu {
@@ -620,30 +670,32 @@ body.open #game.display .menu {
 .button {
   position: absolute;
   display: none;
-  z-index: 100; }
+  z-index: 100;
+  color: #CCCCCC;
+  font-size: 12px; }
 
 .button:hover {
   cursor: url("../img/touch.png"), auto; }
 
 .button.menubt.home {
   width: 157px;
-  height: 30px;
-  top: 37px;
-  left: 22px;
+  height: 20px;
+  top: 43px;
+  left: 10px;
   display: block; }
 
 .button.menubt.new {
   width: 157px;
-  height: 30px;
-  top: 68px;
-  left: 20px;
+  height: 20px;
+  top: 112px;
+  left: 11px;
   display: block; }
 
 .button.menubt.list {
   width: 157px;
-  height: 30px;
-  top: 107px;
-  left: 20px;
+  height: 20px;
+  top: 77px;
+  left: 10px;
   display: block; }
 
 .button.list.home {
@@ -737,6 +789,7 @@ body.open #game.display .menu {
   padding: 6px;
   background: #2C8ED4;
   color: white;
+  text-align: center;
   outline: none;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -773,13 +826,13 @@ body.open #game.display .menu {
     font-size: 26px; }
 
   h2 {
-    font-size: 22px; }
+    font-size: 19px; }
 
   h3 {
     font-size: 20px; }
 
   p {
-    font-size: 14px; }
+    font-size: 16px; }
 
   nav {
     height: 60px;
@@ -836,6 +889,7 @@ body.open #game.display .menu {
     display: none; }
 
   .content {
+    padding: 35px 5px 35px 5px;
     width: 345px; }
 
   #about img {
@@ -847,6 +901,13 @@ body.open #game.display .menu {
   #features img {
     width: 100%; }
 
+  #features img.techimg.ibrid {
+    margin: 15px 10px 10px 0; }
+
+  #features img.anydev {
+    width: 315px;
+    height: 65px; }
+
   #features img.ipApp {
     width: 30px;
     left: 45%; }
@@ -854,11 +915,35 @@ body.open #game.display .menu {
   #features img.native {
     width: 40%; }
 
+  #features .elementService {
+    margin: 35px 10px 30px 10px; }
+
+  #features .elementService.first {
+    margin: 35px 10px 30px 10px; }
+
   #features .elementService img {
     width: 60px; }
 
   #features .elementService i {
     font-size: 45px; }
+
+  #about .content {
+    padding: 50px 0 30px 0;
+    width: 100%; }
+
+  #about .row.colored p {
+    margin: 20px 10px 30px 10px; }
+
+  #about .row.colored h2 {
+    margin: 0px 20px 40px 20px; }
+
+  #about .desk {
+    position: relative;
+    width: 100%;
+    height: 670px;
+    background-image: url("../img/deskiphone.png");
+    background-size: contain;
+    background-position: 100%; }
 
   #contact .square {
     width: 100%;
@@ -1115,7 +1200,10 @@ body.open #game.display .menu {
     width: 60px; }
 
   #features .elementService i {
-    font-size: 50px; } }
+    font-size: 50px; }
+
+  #about .desk {
+    height: 330px; } }
 /* #### Desktop #### */
 @media screen and (min-width: 660px) and (max-width: 1000px) {
   .section#play {
@@ -1173,6 +1261,9 @@ body.open #game.display .menu {
 
   #features .elementService img {
     width: 10%; }
+
+  #about .desk {
+    height: 330px; }
 
   #contact .square {
     left: 45%; } }

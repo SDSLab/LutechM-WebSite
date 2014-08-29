@@ -2,9 +2,10 @@
 	<div class="appcup" ng-class="[imageName]">
 		<div class="menu">
 			<img class="background" ng-src="assets/img/appcup/menu.png">
-			<div class="button menubt home" ng-click="imageName='home'; headerPage='';" onclick="Game.closeMenuApp()"></div>
-			<div class="button menubt new" ng-click="imageName='new'; headerPage='<b>Nuovo</b> Appuntamento';" onclick="Game.closeMenuApp()"></div>
-			<div class="button menubt list" ng-click="check(imageName); headerPage='Lista <b>Appuntamenti</b>';" onclick="Game.closeMenuApp()"></div>
+			<div class="button menubt home" ng-click="imageName='home'; headerPage='';" onclick="Game.closeMenuApp()">
+			<i class="fa fa-home"></i></div>
+			<div class="button menubt new" ng-click="imageName='new'; headerPage='<b>Nuovo</b> Appuntamento';" onclick="Game.closeMenuApp()"><i class="fa fa-plus"></i></div>
+			<div class="button menubt list" ng-click="check(imageName); headerPage='Lista <b>Appuntamenti</b>';" onclick="Game.closeMenuApp()"><i class="fa fa-calendar-o"></i></div>
 		</div>
 		<div class="contentPlay">
 			<div class="overlay" onclick="Game.closeMenuApp()"></div>
@@ -47,5 +48,21 @@
 			</div>
 		</div>
 	</div>
+
+	<div class="parking">
+		<img class="background" src="assets/img/parking.png">
+	</div>
+
+
+	<div class="crossland">
+
+	</div>
+	
+	<div class="mycards">
+		<img class="background" src="assets/img/cards.png">
+	</div>
+	
 </div>
+
+
 	
