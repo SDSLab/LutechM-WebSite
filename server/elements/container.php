@@ -1,4 +1,4 @@
-<div class="section" id="play" ng-init="appChoose='';">
+<div class="section" id="play" ng-init="appChoose='cup';">
 	<div class="row">
 		<div class="content">
 			<h2 ng-bind-html="text.play.title"></h2>
@@ -23,7 +23,7 @@
 					</li>
 					<li  class="cards" ng-click="appChoose='cards'; descrText=text.play.cross;" ng-class="{active: appChoose=='cards'}">
 						<i class="icon-credit-card"></i>
-						<p>CROSSLAND</p>
+						<p>FIDELITY</p>
 						<p class="state">COMING SOON</p>
 					</li>
 				</ul>
@@ -33,7 +33,8 @@
 				<img class="ipad" src="assets/img/catalog.png">
 				<?php include 'server/elements/play.html'; ?>
 				<div class="descriptionApp">
-					<p>{{descrText}}</p>
+					<h3>{{text.play.description}}</h3><br>
+					<p ng-bind-html="descrText"></p>
 				</div>
 			</div>
 		</div>

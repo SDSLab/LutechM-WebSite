@@ -311,6 +311,9 @@ img.ipad {
   -o-box-sizing: border-box;
   box-sizing: border-box; }
 
+#play .apps ul li.active p {
+  font-weight: 700; }
+
 #play .apps ul li.cup.active {
   background: #2c8ed4; }
 
@@ -384,22 +387,26 @@ img.ipad {
 
 #play .contentSim {
   position: relative;
-  width: 90%;
+  width: 74%;
   margin: 40px auto 0 auto;
   text-align: left; }
 
 #play .contentSim .descriptionApp {
   position: absolute;
-  width: 55%;
+  width: 286px;
   top: 134px;
-  margin: 0 0 0 100px;
+  margin: 0 0 0 70px;
   display: inline-block;
   text-align: justify; }
 
+#play .contentSim .descriptionApp h3 {
+  color: #666666; }
+
 #play .contentSim.cat .descriptionApp {
   position: relative;
+  width: 100%;
   top: 0;
-  margin: 40px 0 0 100px; }
+  margin: 40px 0 0 73px; }
 
 #features .aniSmart img.ipApp {
   position: absolute;
@@ -452,7 +459,13 @@ img.ipad {
 
 #features .elementService {
   position: relative;
-  margin: 20px 30px 0 20px; }
+  margin: 50px 10px 30px 10px; }
+
+#features .elementService.last {
+  margin: 50px 10px 0px 10px; }
+
+#features .elementService.last p {
+  margin: 0; }
 
 #features .elementService h3 {
   color: white;
@@ -515,7 +528,7 @@ img.ipad {
   position: absolute;
   width: 400px;
   height: 425px;
-  bottom: 0;
+  top: 0;
   left: 55%;
   z-index: 100;
   background: #07a090; }
@@ -697,6 +710,9 @@ body.open #game.display .menu {
 .appcup.detail .contentPlay .headerBar i.fa-angle-left {
   display: block !important; }
 
+.appcup.pay .contentPlay .headerBar i.fa-angle-left {
+  display: block !important; }
+
 .appcup.checkin .contentPlay .headerBar i.fa-angle-left {
   display: none !important; }
 
@@ -858,6 +874,9 @@ body.open #game.display .menu {
   -o-box-sizing: border-box;
   box-sizing: border-box; }
 
+.accordion h3:hover {
+  cursor: url("../img/touch.png"), auto; }
+
 .accordion h3.ui-accordion-header-active {
   background: #39b54a; }
 
@@ -869,7 +888,7 @@ body.open #game.display .menu {
 
 .accordion div img {
   position: relative;
-  width: 100%; }
+  width: 95%; }
 
 .accordion div a:hover {
   cursor: url("../img/touch.png"), auto; }
@@ -1302,7 +1321,7 @@ body.open #game.display .menu {
     height: 200px; }
 
   .presentation h1 {
-    width: 70%;
+    width: 85%;
     top: 50%; }
 
   .presentation i {
@@ -1438,7 +1457,7 @@ body.open #game.display .menu {
     left: 45%; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   header {
-    max-height: 70%; } }
+    max-height: 100%; } }
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 1025px), only screen and (min--moz-device-pixel-ratio: 2) and (min-device-width: 1025px), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-device-width: 1025px), only screen and (min-device-pixel-ratio: 2) and (min-device-width: 1025px), only screen and (min-resolution: 192dpi) and (min-device-width: 1025px), only screen and (min-resolution: 2dppx) and (min-device-width: 1025px) {
   #game.display .contentPlay {
     width: 260px; } }

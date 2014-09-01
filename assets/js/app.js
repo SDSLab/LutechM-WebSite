@@ -4,10 +4,12 @@
 	
 	app.controller('LanguageController', function($scope,$http){
 
+
 		$http.get('server/models/eng.json').success(function(data) {
 			$scope.text = data;
 			console.log($scope.text);
 			$scope.lang = "en";
+			$scope.descrText=$scope.text.play.cup;
 		});  
 
     	$('.language a.en').addClass("active");

@@ -262,10 +262,13 @@ img.ipad{
 	
 }
 
+#play .apps ul li.active p{
+	font-weight: 700;
+}
+
 #play .apps ul li.cup.active{
 	background:$bluecup;
 }
-
 
 #play .apps ul li.park.active{
 	background:#0071BC;
@@ -361,7 +364,7 @@ img.ipad{
 
 	position: relative;
 
-	width: 90%;
+	width: 74%;
 
 	margin:40px auto 0 auto;
 
@@ -373,10 +376,10 @@ img.ipad{
 	
 	position: absolute;
 
-	width: 55%;
+	width: 286px;
 
 	top: 134px;
-	margin: 0 0 0 100px;
+	margin: 0 0 0 70px;
 	
 	display: inline-block;
 
@@ -384,12 +387,17 @@ img.ipad{
 
 }
 
+#play .contentSim .descriptionApp h3{
+	color: $grey;
+}
+
 #play .contentSim.cat .descriptionApp{
 	
 	position: relative;
 
+	width: 100%;
 	top:0;
-	margin: 40px 0 0 100px;
+	margin: 40px 0 0 73px;
 
 }
 
@@ -459,11 +467,24 @@ img.ipad{
 	margin:15px 20px 10px 0;
 }
 
+
 #features .elementService{
 
 	position: relative;
 
-	margin: 20px 30px 0 20px;
+	margin: 50px 10px 30px 10px;
+	
+}
+
+#features .elementService.last {
+
+	margin:50px 10px 0px 10px;
+	
+}
+
+#features .elementService.last p{
+
+	margin:0;
 	
 }
 
@@ -576,7 +597,7 @@ img.ipad{
 	width:400px;
 	height:425px;
 	
-	bottom:0;
+	top: 0;
 	left:55%;
 	
 	z-index: 100;

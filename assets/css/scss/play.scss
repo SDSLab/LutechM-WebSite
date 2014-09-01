@@ -229,6 +229,11 @@ body.open #game.display .menu{
 	display: block !important;
 
 }
+.appcup.pay .contentPlay .headerBar i.fa-angle-left{
+
+	display: block !important;
+
+}
 
 .appcup.checkin .contentPlay .headerBar i.fa-angle-left{
 
@@ -487,6 +492,12 @@ body.open #game.display .menu{
 
 }
 
+.accordion h3:hover{
+	
+	cursor:url('../img/touch.png'), auto;
+
+}
+
 .accordion h3.ui-accordion-header-active{
 
 	background: $green;
@@ -508,7 +519,7 @@ body.open #game.display .menu{
 
 	position: relative;
 
-	width: 100%;
+	width: 95%;
 
 }
 
