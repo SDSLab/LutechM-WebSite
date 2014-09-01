@@ -262,6 +262,25 @@ img.ipad{
 	
 }
 
+#play .apps ul li.cup.active{
+	background:$bluecup;
+}
+
+
+#play .apps ul li.park.active{
+	background:#0071BC;
+}
+
+
+#play .apps ul li.cat.active{
+	background:#2B7AB3;
+}
+
+
+#play .apps ul li.cards.active{
+	background:#F7931E;
+}
+
 #play .apps ul li:hover{
 
 	background:#666666;
@@ -283,7 +302,6 @@ img.ipad{
 #play .apps ul li:first-child{
 
 	margin:0;
-	background:$bluecup;
 	
 }
 
@@ -413,7 +431,12 @@ img.ipad{
 	margin:65px 0 0px 0;
 }
 
-#features .content.tech p{
+#features img.anydev{
+
+	width: 184px;
+}
+
+#features .content.tech h3{
 
 	margin:30px 0 0px 0;
 	color:white;
@@ -559,4 +582,8 @@ img.ipad{
 	z-index: 100;
 	background: $blue;
 
+}
+
+.mapMobile{
+	display: none;
 }

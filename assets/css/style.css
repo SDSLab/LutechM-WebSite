@@ -47,6 +47,29 @@ strong {
   z-index: 9999;
   background: #f9f9f9; }
 
+.loader i.fa-spin {
+  position: relative;
+  font-size: 40px;
+  margin: 0 0 20px 0;
+  display: block;
+  top: 87px;
+  color: #e40045; }
+
+.loader .load {
+  position: relative;
+  width: 90%;
+  text-align: center;
+  display: block;
+  font-size: 19px;
+  margin: 0 auto 0 auto;
+  top: 0%;
+  display: none; }
+
+.loader i.fa-desktop {
+  position: relative;
+  font-size: 150px;
+  color: #666666; }
+
 #main {
   position: relative;
   width: 100%;
@@ -288,6 +311,18 @@ img.ipad {
   -o-box-sizing: border-box;
   box-sizing: border-box; }
 
+#play .apps ul li.cup.active {
+  background: #2c8ed4; }
+
+#play .apps ul li.park.active {
+  background: #0071BC; }
+
+#play .apps ul li.cat.active {
+  background: #2B7AB3; }
+
+#play .apps ul li.cards.active {
+  background: #F7931E; }
+
 #play .apps ul li:hover {
   background: #666666; }
 
@@ -298,8 +333,7 @@ img.ipad {
   display: inline-block; }
 
 #play .apps ul li:first-child {
-  margin: 0;
-  background: #2c8ed4; }
+  margin: 0; }
 
 #play .apps ul li:first-child p.state {
   left: 18px; }
@@ -400,7 +434,10 @@ img.ipad {
 #features img.any {
   margin: 65px 0 0px 0; }
 
-#features .content.tech p {
+#features img.anydev {
+  width: 184px; }
+
+#features .content.tech h3 {
   margin: 30px 0 0px 0;
   color: white; }
 
@@ -482,6 +519,9 @@ img.ipad {
   left: 55%;
   z-index: 100;
   background: #07a090; }
+
+.mapMobile {
+  display: none; }
 
 #play #game.display {
   position: absolute;
@@ -630,6 +670,12 @@ body.open #game.display .menu {
 .appcup.home .contentPlay .headerBar i.fa-bars {
   display: block !important; }
 
+.appcup.newhome .contentPlay .headerBar i.fa-bars {
+  display: block !important; }
+
+.appcup.newhome .contentPlay .headerBar i.fa-angle-left {
+  display: none !important; }
+
 .appcup.newpren .contentPlay .headerBar i.fa-bars {
   display: block !important; }
 
@@ -642,7 +688,13 @@ body.open #game.display .menu {
 .appcup.checkin .contentPlay .headerBar i.fa-times {
   display: block !important; }
 
-.appcup:not(.home) .contentPlay .headerBar i.fa-angle-left {
+.appcup.new .contentPlay .headerBar i.fa-angle-left {
+  display: block !important; }
+
+.appcup.blank .contentPlay .headerBar i.fa-angle-left {
+  display: block !important; }
+
+.appcup.detail .contentPlay .headerBar i.fa-angle-left {
   display: block !important; }
 
 .appcup.checkin .contentPlay .headerBar i.fa-angle-left {
@@ -716,6 +768,12 @@ body.open #game.display .menu {
   top: 195px;
   left: 30px; }
 
+.appcup.newhome .button.detail.home {
+  width: 215px;
+  height: 115px;
+  top: 285px;
+  left: 30px; }
+
 .button.effe.ef {
   width: 128px;
   height: 33px;
@@ -753,6 +811,9 @@ body.open #game.display .menu {
   left: 13px; }
 
 .appcup.home .button.home {
+  display: block; }
+
+.appcup.newhome .button.home {
   display: block; }
 
 .appcup.prenotati .button.effe {
@@ -826,10 +887,10 @@ body.open #game.display .menu {
     font-size: 26px; }
 
   h2 {
-    font-size: 19px; }
+    font-size: 20px; }
 
   h3 {
-    font-size: 20px; }
+    font-size: 18px; }
 
   p {
     font-size: 16px; }
@@ -889,7 +950,7 @@ body.open #game.display .menu {
     display: none; }
 
   .content {
-    padding: 35px 5px 35px 5px;
+    padding: 35px 0px 35px 0px;
     width: 345px; }
 
   #about img {
@@ -902,11 +963,10 @@ body.open #game.display .menu {
     width: 100%; }
 
   #features img.techimg.ibrid {
-    margin: 15px 10px 10px 0; }
+    margin: 15px 10px 0px 0; }
 
   #features img.anydev {
-    width: 315px;
-    height: 65px; }
+    width: 98px; }
 
   #features img.ipApp {
     width: 30px;
@@ -927,28 +987,66 @@ body.open #game.display .menu {
   #features .elementService i {
     font-size: 45px; }
 
+  #features .elementService.last {
+    margin: 35px 10px 0 10px; }
+
+  #features .elementService.last p {
+    margin: 0; }
+
+  #features img.any {
+    margin: 40px 0 0px 0; }
+
   #about .content {
-    padding: 50px 0 30px 0;
+    padding: 35px 0 25px 0;
     width: 100%; }
 
   #about .row.colored p {
-    margin: 20px 10px 30px 10px; }
+    margin: 20px 10px 25px 10px; }
 
   #about .row.colored h2 {
-    margin: 0px 20px 40px 20px; }
+    margin: 0px 20px 35px 20px; }
 
   #about .desk {
     position: relative;
     width: 100%;
-    height: 670px;
+    height: 635px;
     background-image: url("../img/deskiphone.png");
     background-size: contain;
     background-position: 100%; }
 
   #contact .square {
+    position: relative;
+    padding: 35px 0 0 0;
     width: 100%;
     height: 350px;
-    left: 0; } }
+    left: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  #contact .listContact {
+    width: 87%;
+    margin: 0 auto 0 auto; }
+
+  #contact #map {
+    display: none; }
+
+  .mapMobile {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 144px;
+    left: 0; }
+
+  .mapMobile img {
+    width: 100%;
+    height: 144px;
+    left: 0; }
+
+  .loader .load {
+    display: block; } }
 @media screen and (max-device-width: 330px) and (-webkit-min-device-pixel-ratio: 1) {
   .content {
     width: 280px; } }
@@ -964,15 +1062,18 @@ body.open #game.display .menu {
     font-size: 26px; }
 
   h2 {
-    font-size: 18px; }
+    font-size: 20px; }
 
   h3 {
-    font-size: 14px; }
+    font-size: 18px; }
 
   nav {
     height: 60px;
     background: black;
     font-size: 14px; }
+
+  p {
+    font-size: 16px; }
 
   nav i.fa-bars {
     display: block; }
@@ -1024,7 +1125,8 @@ body.open #game.display .menu {
     display: none; }
 
   .content {
-    width: 345px; }
+    width: 345px;
+    padding: 35px 15px 35px 15px; }
 
   #about img {
     width: 100%; }
@@ -1039,6 +1141,9 @@ body.open #game.display .menu {
     width: 30px;
     left: 45%; }
 
+  #features img.anydev {
+    width: 98px; }
+
   #features img.native {
     width: 40%; }
 
@@ -1051,7 +1156,14 @@ body.open #game.display .menu {
   #contact .square {
     width: 100%;
     height: 350px;
-    left: 0; } }
+    left: 0; }
+
+  #contact .listContact {
+    width: 87%;
+    margin: 0 auto 0 auto; }
+
+  .loader .load {
+    display: block; } }
 @media screen and (max-device-width: 570px) and (orientation: landscape) {
   header {
     background: url("../img/bg3.jpg") no-repeat 40%;
@@ -1064,10 +1176,13 @@ body.open #game.display .menu {
     font-size: 26px; }
 
   h2 {
-    font-size: 18px; }
+    font-size: 20px; }
 
   h3 {
-    font-size: 14px; }
+    font-size: 18px; }
+
+  p {
+    font-size: 16px; }
 
   .presentation {
     height: 200px; }
@@ -1111,11 +1226,38 @@ body.open #game.display .menu {
     font-size: 45px; }
 
   #contact .square {
+    position: relative;
+    padding: 10px 0 0 0;
     width: 100%;
     height: 350px;
-    left: 0; } }
+    left: 0; }
+
+  #contact .listContact {
+    width: 87%;
+    margin: 10px auto 0 auto; }
+
+  #contact #map {
+    display: none; }
+
+  .mapMobile {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 144px;
+    left: 0; }
+
+  .mapMobile img {
+    width: 100%;
+    height: 180px;
+    left: 0; }
+
+  #about .desk {
+    height: 200px; }
+
+  .loader .load {
+    display: block; } }
 /* #### Tablets Portrait or Landscape #### */
-@media screen and (min-device-width: 570px) and (max-device-width: 1270px) {
+@media screen and (min-device-width: 570px) and (max-device-width: 1290px) {
   header {
     background: url("../img/bg3.jpg") no-repeat 40%;
     -webkit-background-size: cover;
@@ -1154,7 +1296,7 @@ body.open #game.display .menu {
     font-size: 22px; }
 
   h3 {
-    font-size: 18px; }
+    font-size: 20px; }
 
   .presentation {
     height: 200px; }
@@ -1170,13 +1312,26 @@ body.open #game.display .menu {
     display: none; }
 
   .content {
-    width: 600px; }
+    width: 600px;
+    padding: 35px 0px 35px 0px; }
 
   #features img {
     width: 70%; }
 
+  #features .elementService {
+    margin: 35px 10px 30px 10px; }
+
+  #features .elementService.first {
+    margin: 35px 10px 30px 10px; }
+
   #features img.any {
     width: 60%; }
+
+  #features .elementService.last {
+    margin: 35px 10px 0 10px; }
+
+  #features .elementService.last p {
+    margin: 0; }
 
   #features img.ipApp {
     width: 60px;
@@ -1191,10 +1346,14 @@ body.open #game.display .menu {
   #features img.techimg.ibrid {
     width: 80%; }
 
+  #contact #map {
+    height: 350px; }
+
   #contact .square {
-    width: 300px;
+    width: 45%;
     height: 350px;
-    left: 40%; }
+    right: 0%;
+    left: initial; }
 
   #features .elementService img {
     width: 60px; }
@@ -1203,7 +1362,17 @@ body.open #game.display .menu {
     font-size: 50px; }
 
   #about .desk {
-    height: 330px; } }
+    height: 330px; }
+
+  #about .row.colored p {
+    margin: 20px 10px 40px 10px; }
+
+  #contact .listContact {
+    width: 87%;
+    margin: 10px auto 0 auto; }
+
+  .loader .load {
+    display: block; } }
 /* #### Desktop #### */
 @media screen and (min-width: 660px) and (max-width: 1000px) {
   .section#play {
@@ -1219,7 +1388,7 @@ body.open #game.display .menu {
     font-size: 22px; }
 
   h3 {
-    font-size: 18px; }
+    font-size: 20px; }
 
   .content {
     width: 900px; }

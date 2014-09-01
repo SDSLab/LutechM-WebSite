@@ -176,6 +176,18 @@ body.open #game.display .menu{
 
 }
 
+.appcup.newhome .contentPlay .headerBar i.fa-bars{
+
+	display: block !important;
+
+}
+
+.appcup.newhome .contentPlay .headerBar i.fa-angle-left{
+
+	display: none !important;
+
+}
+
 .appcup.newpren .contentPlay .headerBar i.fa-bars{
 
 	display: block !important;
@@ -200,7 +212,19 @@ body.open #game.display .menu{
 
 }
 
-.appcup:not(.home) .contentPlay .headerBar i.fa-angle-left{
+.appcup.new .contentPlay .headerBar i.fa-angle-left{
+
+	display: block !important;
+
+}
+
+.appcup.blank .contentPlay .headerBar i.fa-angle-left{
+
+	display: block !important;
+
+}
+
+.appcup.detail .contentPlay .headerBar i.fa-angle-left{
 
 	display: block !important;
 
@@ -330,6 +354,16 @@ body.open #game.display .menu{
 
 }
 
+.appcup.newhome .button.detail.home{
+
+	width: 215px;
+	height: 115px;
+
+	top: 285px;
+	left: 30px;
+
+}
+
 .button.effe.ef{
 
 	width: 128px;
@@ -386,6 +420,9 @@ body.open #game.display .menu{
 }
 
 .appcup.home .button.home{
+	display: block;
+}
+.appcup.newhome .button.home{
 	display: block;
 }
 

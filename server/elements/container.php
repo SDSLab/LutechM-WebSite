@@ -5,23 +5,23 @@
 			<p>{{text.play.subtitle}}</p>
 			<div class="apps">
 				<ul>
-					<li ng-click="appChoose='cup'; descrText=text.play.cup;">
+					<li class="cup" ng-click="appChoose='cup'; descrText=text.play.cup;" ng-class="{active: appChoose=='cup'}">
 						<i class="fa fa-h-square"></i>
 						<p>APPCUP</p>
 						<p class="state">ACTIVE</p>
 					</li>
 
-					<li ng-click="appChoose='park'; descrText=text.play.park;">
+					<li class="park" ng-click="appChoose='park'; descrText=text.play.park;" ng-class="{active: appChoose=='park'}">
 						<i class="icon-parking-meter"></i>
 						<p>PARKING</p>
 						<p class="state">COMING SOON</p>
 					</li>
-					<li ng-click="appChoose='cat'; descrText=text.play.cata;">
-						<i></i>
+					<li class="cat" ng-click="appChoose='cat'; descrText=text.play.cata;" ng-class="{active: appChoose=='cat'}">
+						<i class="fa fa-shopping-cart"></i>
 						<p>CATALOG</p>
 						<p class="state">COMING SOON</p>
 					</li>
-					<li ng-click="appChoose='cards'; descrText=text.play.cards;">
+					<li  class="cards" ng-click="appChoose='cards'; descrText=text.play.cross;" ng-class="{active: appChoose=='cards'}">
 						<i class="icon-credit-card"></i>
 						<p>CROSSLAND</p>
 						<p class="state">COMING SOON</p>
@@ -58,10 +58,10 @@
 	<div class="row colored">
 		<div class="content tech">
 			<h2 ng-bind-html="text.features.tech"></h2>
-			<p ng-bind-html="text.features.nativeDev"></p>
+			<h3 ng-bind-html="text.features.nativeDev"></h3>
 			<img class="techimg native" src="assets/img/technative.png">
 			
-			<p ng-bind-html="text.features.ibrideDev"></p>
+			<h3 ng-bind-html="text.features.ibrideDev"></h3>
 			<img class="techimg ibrid" src="assets/img/techibrid.png">
 			
 		</div>
@@ -77,27 +77,27 @@
 			<h2 ng-bind-html="text.features.ourServices"></h2>
 			<div class="elementService first">
 				<i class="icon-stationery-1"></i>
-				<h3>Interaction <strong>design</strong></h3>
+				<h3>Interaction <strong>Design</strong></h3>
 				<p>{{text.features.interDes}}</p>
 			</div>
 			<div class="elementService">
 				<i class="icon-plugins-1"></i>
-				<h3>Platform <strong>development</strong></h3>
+				<h3>Platform <strong>Development</strong></h3>
 				<p>{{text.features.platDev}}</p>
 			</div>
 			<div class="elementService">
 				<i class="icon-bubble-conversation-1"></i>
-				<h3>Technical <strong>consulting</strong></h3>
+				<h3>Technical <strong>Consulting</strong></h3>
 				<p>{{text.features.techCons}}</p>
 			</div>
 			<div class="elementService">
 				<i class="icon-hierarchy-2"></i>
-				<h3>Mobile device <strong>management</strong> ( <img src="assets/img/brand2.png"> )</h3>
+				<h3>Mobile device <strong>Management</strong> ( <img src="assets/img/brand2.png"> )</h3>
 				<p>{{text.features.mobDev}}</p>
 			</div>
-			<div class="elementService">
+			<div class="elementService last">
 				<i class="icon-message"></i>
-				<h3>Mobile <strong> engagement </strong>	( <img class="brand1" src="assets/img/brand1.png">)</h3>
+				<h3>Mobile <strong> Engagement </strong>	( <img class="brand1" src="assets/img/brand1.png">)</h3>
 				<p>{{text.features.mobEng}}</p>
 			</div>
 		</div>
@@ -129,7 +129,7 @@
 			<i class="icon-call-1"></i>
 			<p>+39 02/25427092</p>
 			<i class="icon-mail-1"></i>
-			<p>f.pengo@lutechmobile.com</p>
+			<p>sales@lutechmobile.com</p>
 		</div>
 	</div>
 </div>

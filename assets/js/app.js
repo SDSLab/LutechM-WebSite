@@ -4,7 +4,6 @@
 	
 	app.controller('LanguageController', function($scope,$http){
 
-		
 		$http.get('server/models/eng.json').success(function(data) {
 			$scope.text = data;
 			console.log($scope.text);
@@ -38,9 +37,15 @@
 
 		$scope.back = function(imageName) {
 		    if (imageName=="effettuati" || imageName=="prenotati" || imageName=="new" || imageName=="newpren") {
-		       $scope.imageName="home";
-		       $scope.headerPage="";
+		    	if ($(".appcup").hasClass("check")){
+			       $scope.imageName="newhome";
+			       $scope.headerPage="";
+		    	}else{
+			       $scope.imageName="home";
+			       $scope.headerPage="";
+			   }
 		    }
+
 		     if (imageName=="pay") {
 		       $scope.imageName="prenotati";
 		       $scope.headerPage='Lista <b>Appuntamenti</b>';
@@ -81,6 +86,17 @@
 			}else{
 				$scope.imageName="prenotati";
 				$scope.headerPage='Lista <b>Appuntamenti</b>';
+			}
+		}
+
+		$scope.checkHome = function(imageName){
+
+			if ($(".appcup").hasClass("check")){
+				$scope.imageName="newhome";
+				$scope.headerPage='';
+			}else{
+				$scope.imageName="home";
+				$scope.headerPage='';
 			}
 		}
 

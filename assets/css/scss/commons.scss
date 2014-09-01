@@ -79,13 +79,53 @@ strong{
 }
 
 .loader {
+
 	position: fixed;
+
 	left: 0px;
 	top: 0px;
+
 	width: 100%;
 	height: 100%;
+
 	z-index: 9999;
 	background: rgb(249,249,249);
+}
+
+.loader i.fa-spin {
+	
+
+	position: relative;
+	font-size: 40px;
+	margin:0 0 20px 0;
+	display: block;
+	top:87px;
+	color: $red;
+
+}
+
+.loader .load {
+	
+	position: relative;
+
+	width: 90%;
+	text-align: center;
+	display: block;
+	font-size: 19px;
+	margin: 0 auto 0 auto;
+	top:0%;
+
+	display: none;
+	
+
+}
+
+.loader i.fa-desktop{
+
+	position: relative;
+	font-size: 150px;
+	color:#666666;
+
 }
 
 #main {
