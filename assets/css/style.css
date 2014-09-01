@@ -874,7 +874,7 @@ body.open #game.display .menu {
   -o-box-sizing: border-box;
   box-sizing: border-box; }
 
-.accordion h3:hover {
+.accordion h3:hover:first-child {
   cursor: url("../img/touch.png"), auto; }
 
 .accordion h3.ui-accordion-header-active {
