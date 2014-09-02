@@ -16,7 +16,7 @@
 						<p>PARKING</p>
 						<p class="state">COMING SOON</p>
 					</li>
-					<li class="cat" ng-click="appChoose='cat'; descrText=text.play.cata;" ng-class="{active: appChoose=='cat'}">
+					<li class="cat" ng-click="appChoose='cat'; descrText=text.play.cat;" ng-class="{active: appChoose=='cat'}">
 						<i class="fa fa-shopping-cart"></i>
 						<p>CATALOG</p>
 						<p class="state">COMING SOON</p>

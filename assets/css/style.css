@@ -102,7 +102,7 @@ header {
   position: relative;
   width: 100%;
   height: 100%;
-  background: url("../img/bg3.jpg") no-repeat center center fixed;
+  background: url("../img/bg.jpg") no-repeat 50% 50% fixed;
   background-size: cover; }
 
 nav {
@@ -506,7 +506,7 @@ img.ipad {
 #contact .listContact {
   position: relative;
   width: 70%;
-  margin: 40px auto 0  auto; }
+  margin: 50px auto 0  auto; }
 
 #contact .listContact p {
   font-size: 20px;
@@ -526,10 +526,10 @@ img.ipad {
 
 #contact .square {
   position: absolute;
-  width: 400px;
-  height: 425px;
+  width: 450px;
+  height: 350px;
   top: 0;
-  left: 55%;
+  left: 50%;
   z-index: 100;
   background: #07a090; }
 
@@ -896,7 +896,7 @@ body.open #game.display .menu {
 /* #### Smartphone Portrait #### */
 @media screen and (max-device-width: 550px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
   header {
-    background: url("../img/bg3.jpg") no-repeat 40%;
+    background: url("../img/bg.jpg") no-repeat 50%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -982,7 +982,7 @@ body.open #game.display .menu {
     width: 100%; }
 
   #features img.techimg.ibrid {
-    margin: 15px 10px 0px 0; }
+    margin: 15px 7px 0px 0; }
 
   #features img.anydev {
     width: 98px; }
@@ -1071,7 +1071,7 @@ body.open #game.display .menu {
     width: 280px; } }
 @media screen and (max-device-width: 600px) and (orientation: landscape) {
   header {
-    background: url("../img/bg3.jpg") no-repeat 40%;
+    background: url("../img/bg.jpg") no-repeat 50%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1185,7 +1185,7 @@ body.open #game.display .menu {
     display: block; } }
 @media screen and (max-device-width: 570px) and (orientation: landscape) {
   header {
-    background: url("../img/bg3.jpg") no-repeat 40%;
+    background: url("../img/bg.jpg") no-repeat 50%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1278,7 +1278,7 @@ body.open #game.display .menu {
 /* #### Tablets Portrait or Landscape #### */
 @media screen and (min-device-width: 570px) and (max-device-width: 1270px) {
   header {
-    background: url("../img/bg3.jpg") no-repeat 40%;
+    background: url("../img/bg.jpg") no-repeat 50%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
