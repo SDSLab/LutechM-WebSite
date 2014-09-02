@@ -250,7 +250,7 @@ img.iphone {
 img.ipad {
   width: 783px;
   display: none;
-  margin: 50px 0 0 0; }
+  margin: 50px 0 0 -58px; }
 
 .contentSim.cat #game {
   display: none; }
@@ -395,7 +395,7 @@ img.ipad {
   position: absolute;
   width: 286px;
   top: 134px;
-  margin: 0 0 0 70px;
+  margin: 0 0 0 67px;
   display: inline-block;
   text-align: justify; }
 
@@ -406,7 +406,7 @@ img.ipad {
   position: relative;
   width: 100%;
   top: 0;
-  margin: 40px 0 0 73px; }
+  margin: 40px 0 0 20px; }
 
 #features .aniSmart img.ipApp {
   position: absolute;
@@ -1276,7 +1276,7 @@ body.open #game.display .menu {
   .loader .load {
     display: block; } }
 /* #### Tablets Portrait or Landscape #### */
-@media screen and (min-device-width: 570px) and (max-device-width: 1280px) {
+@media screen and (min-device-width: 570px) and (max-device-width: 1270px) {
   header {
     background: url("../img/bg3.jpg") no-repeat 40%;
     -webkit-background-size: cover;
@@ -1458,6 +1458,6 @@ body.open #game.display .menu {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   header {
     max-height: 100%; } }
-@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 1025px), only screen and (min--moz-device-pixel-ratio: 2) and (min-device-width: 1025px), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (min-device-width: 1025px), only screen and (min-device-pixel-ratio: 2) and (min-device-width: 1025px), only screen and (min-resolution: 192dpi) and (min-device-width: 1025px), only screen and (min-resolution: 2dppx) and (min-device-width: 1025px) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-device-width: 1280px) {
   #game.display .contentPlay {
     width: 260px; } }

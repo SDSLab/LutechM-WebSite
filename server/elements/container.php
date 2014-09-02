@@ -21,7 +21,7 @@
 						<p>CATALOG</p>
 						<p class="state">COMING SOON</p>
 					</li>
-					<li  class="cards" ng-click="appChoose='cards'; descrText=text.play.cross;" ng-class="{active: appChoose=='cards'}">
+					<li  class="cards" ng-click="appChoose='cards'; descrText=text.play.cards;" ng-class="{active: appChoose=='cards'}">
 						<i class="icon-credit-card"></i>
 						<p>FIDELITY</p>
 						<p class="state">COMING SOON</p>

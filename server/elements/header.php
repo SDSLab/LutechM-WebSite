@@ -11,8 +11,8 @@
 			</li>
 		</ul>
 		<div class="language" ng-init="lang='en'">
-			<a ng-click="lang='it'; langChange(lang);" class="it"><img src="assets/img/it.png"></a>
-			<a ng-click="lang='en'; langChange(lang);" class="en"><img src="assets/img/en.png"></a>
+			<a ng-click="lang='it'; langChange(lang,appChoose);" class="it"><img src="assets/img/it.png"></a>
+			<a ng-click="lang='en'; langChange(lang,appChoose);" class="en"><img src="assets/img/en.png"></a>
 		</div>
 	</nav>
 	<div class="presentation">

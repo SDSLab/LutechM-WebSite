@@ -15,11 +15,14 @@
     	$('.language a.en').addClass("active");
     	$('.language a.it').removeClass("active"); 
 
-		$scope.langChange = function(lang){
+		$scope.langChange = function(lang,appChoose){
 			if(lang=="it"){
 				$http.get('server/models/ita.json').success(function(data) {
 			      $scope.text = data;
 			      console.log($scope.text);
+
+			      $scope.descrText=$scope.text.play[appChoose];
+
 		    	});
 		    	$('.language a.it').addClass("active");
 		    	$('.language a.en').removeClass("active");
@@ -28,6 +31,8 @@
 	            $http.get('server/models/eng.json').success(function(data) {
 			      $scope.text = data;
 			      console.log($scope.text);
+
+			      $scope.descrText=$scope.text.play[appChoose];
 		    	});  
 		    	$('.language a.en').addClass("active");
 		    	$('.language a.it').removeClass("active");      

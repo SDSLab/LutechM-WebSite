@@ -715,7 +715,7 @@
 
 }
 /* #### Tablets Portrait or Landscape #### */
-@media screen and (min-device-width: 570px) and (max-device-width: 1280px) {
+@media screen and (min-device-width: 570px) and (max-device-width: 1270px) {
 
 	header{
 
@@ -1066,15 +1066,13 @@
 
 }
 
-@media 
-only screen and (-webkit-min-device-pixel-ratio: 2) and (min-device-width: 1025px),
-only screen and (   min--moz-device-pixel-ratio: 2) and (min-device-width: 1025px),
-only screen and (   -o-min-device-pixel-ratio: 2/1) and (min-device-width: 1025px),
-only screen and (        min-device-pixel-ratio: 2) and (min-device-width: 1025px),
-only screen and (           min-resolution: 192dpi) and (min-device-width: 1025px),
-only screen and (            min-resolution: 2dppx) and (min-device-width: 1025px) {
 
-     #game.display .contentPlay{
+@media
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi),
+(min-device-width : 1280px){ 
+    #game.display .contentPlay{
     	width:260px;
     }
 }
+
