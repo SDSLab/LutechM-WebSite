@@ -122,7 +122,11 @@
 
 <div class="section" id="contact">
 	<div id="map"></div>
-	<div class="mapMobile"><img src="assets/img/mapMob.png"></div>
+	<div class="mapMobile">
+		<a href="https://www.google.it/maps/place/Lutech+S.p.A./@45.540097,9.287106,17z/data=!3m1!4b1!4m2!3m1!1s0x4786b8112a019509:0x2555106c4c0b79c6">
+			<img src="assets/img/mapMob.png">
+		</a>
+	</div>
 	<div class="square">
 		<div class="listContact">
 			<i class="icon-marker-2"></i>
