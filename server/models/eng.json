@@ -11,11 +11,11 @@
 	"play":{
 			"title":"<strong>Explore</strong>",
 			"subtitle":"Select the icon and enjoy our demo Apps",
-			"cup":"App CUP è un'applicazione pensata per semplificare e velocizzare la prenotazione e la gestione delle proprie visite mediche. È possibile registrare diversi profili per gestire gli appuntamenti di tutta la famiglia.",
-			"park":"It works fine!",
-			"cata":"It works fine!",
-			"cross":"It works fine!",
-			"cards":"It works fine!"
+			"description":"Description",
+			"cup":"<strong>App CUP</strong> is an application designed to facilitate and speed up the <strong>booking</strong> and <strong>managing</strong> of <strong>medical examinations</strong>. You can register different profiles to manage appointments for the whole family. Search filters allow you to easily know the availability of the nearest hospitals at the desired time. Payments made through the app confirm your reservations. At the hospital, you can check in, obtaining your reservation code, and go to the room where your exam will be done.<br><br><br> <i class='fa fa-angle-left'></i>&nbsp&nbsp <strong>Try</strong> the demo App!",
+			"park":"Parking is an application for those who travel by car or motorbike and need to quickly find a parking space. Parking will show a list of the nearest parking lots based on availability of space, providing information on rates and types of parking available. You can register several vehicles and activate multiple parkings at the same time. Credit is uploaded directly in the app, so you can make the payment and check out directly from your smartphone",
+			"cata":"Catalog Application is originally a business product, the ideal substitute of paper catalogs used in a commercial environment. It allows you to show all the products in your range, complete with the relevant technical information, product images and multimedia content, and to manage easily and user-friendly your customers' purchase orders.",
+			"cross":"Fidelity is a fictional chain of stores specialized in the sale of sportswear, created for demonstration purposes. The application allows you to register your loyalty cards and manage collection points and discount coupons; browse the product catalog, active promotions and the list of sales points; take part in Play & Win competitions using the QR code printed on the receipt; use the Augmented Reality section to explore the multimedia content associated with products in the store"
 			},
 
 

@@ -128,7 +128,7 @@
 			<i class="icon-marker-2"></i>
 			<p>Via Wolfgang Amadeus Mozart, 47 20093 Cologno Monzese (MI), IT</p>
 			<i class="icon-call-1"></i>
-			<p>+39 02/25427092</p>
+			<p>+39 02/25427011</p>
 			<i class="icon-mail-1"></i>
 			<p>sales@lutechmobile.com</p>
 		</div>

@@ -4,7 +4,7 @@
 
 	<!-- META -->
 	<meta charset="UTF-8">
-	<meta name="viewport" id="view" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+	<meta name="viewport" id="view" content="user-scalable=0, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 
 	<script>
