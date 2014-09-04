@@ -145,7 +145,8 @@ nav img.logo {
   width: 216px;
   height: 45px;
   margin: 5px 0 0 10px;
-  display: inline-block; }
+  display: inline-block;
+  border: 0; }
 
 nav img.logo.black {
   display: none; }
@@ -603,7 +604,7 @@ img.ipad {
   left: 0; }
 
 #game.display .contentPlay .headerBar {
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 35px;
   padding: 8px 0 8px 10px;
@@ -894,7 +895,7 @@ body.open #game.display .menu {
   cursor: url("../img/touch.png"), auto; }
 
 /* #### Smartphone Portrait #### */
-@media screen and (max-device-width: 550px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
+@media screen and (max-device-width: 721px) and (orientation: portrait) {
   header {
     background: url("../img/bg.jpg") no-repeat 50%;
     -webkit-background-size: cover;
@@ -1276,7 +1277,7 @@ body.open #game.display .menu {
   .loader .load {
     display: block; } }
 /* #### Tablets Portrait or Landscape #### */
-@media screen and (min-device-width: 570px) and (max-device-width: 1270px) {
+@media screen and (min-device-width: 570px) and (max-device-width: 1270px) and (orientation: landscape) {
   header {
     background: url("../img/bg.jpg") no-repeat 50%;
     -webkit-background-size: cover;
@@ -1394,6 +1395,13 @@ body.open #game.display .menu {
     display: block; } }
 /* #### Desktop #### */
 @media screen and (min-width: 660px) and (max-width: 1000px) {
+  header {
+    background: url("../img/bg.jpg") no-repeat 50%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+
   .section#play {
     display: none; }
 
@@ -1453,8 +1461,17 @@ body.open #game.display .menu {
   #about .desk {
     height: 330px; }
 
+  #contact #map {
+    height: 350px; }
+
   #contact .square {
-    left: 45%; } }
+    width: 45%;
+    height: 350px;
+    right: 0%;
+    left: initial; }
+
+  #contact .listContact {
+    width: 87%; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   header {
     max-height: 100%; } }

@@ -1,5 +1,5 @@
 /* #### Smartphone Portrait #### */
-@media screen and (max-device-width: 550px) and (-webkit-min-device-pixel-ratio: 1) and (orientation : portrait){
+@media screen and (max-device-width: 721px) and (orientation : portrait){
 
 	header{
 
@@ -715,7 +715,7 @@
 
 }
 /* #### Tablets Portrait or Landscape #### */
-@media screen and (min-device-width: 570px) and (max-device-width: 1270px) {
+@media screen and (min-device-width: 570px) and (max-device-width: 1270px) and (orientation:landscape) {
 
 	header{
 
@@ -933,6 +933,17 @@
 /* #### Desktop #### */
 @media screen and (min-width: 660px) and (max-width: 1000px) {
 
+
+	header{
+
+		background: url("../img/bg.jpg") no-repeat 50% ;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+
+	}
+
 	.section#play{
 		
 		display: none;
@@ -1050,10 +1061,23 @@
 
 	}
 
+
+	#contact #map{
+		height: 350px;
+	}
 	#contact .square{
+		
+		width: 45%;
+		height:350px;
+
+		right: 0%;
+		left:initial;
 	
-		left:45%;
-	
+	}
+
+	#contact .listContact {
+
+		width: 87%;
 	}
 	
 }
