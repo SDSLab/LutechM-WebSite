@@ -13,6 +13,7 @@
 	background:rgb(240,240,240);
 
 	border: 1px solid #cccccc;
+	z-index: 1;
 	
 }
 
@@ -20,7 +21,7 @@
 
 	position:absolute;
 
-	width:275px;
+	width:260px;
 	height:100%;
 
 	top:0;
@@ -31,43 +32,45 @@
 
 	@include transition(left);
 
+	z-index: 1;
+
 }
 
 .contentSim.cup #game .appcup{
 
-	opacity: 1;
+
 	display: block;
 
 }
 
 .contentSim.park #game .parking{
 
-	opacity: 1;
+
 	display: block;
 }
 
 .contentSim.cross #game .crossland{
 
-	opacity: 1;
+
 	display: block;
 }
 
 .contentSim.cards #game .mycards{
 
-	opacity: 1;
+
 	display: block;
 }
 
 #game .appcup, .parking, .crossland, .mycards{
 
-	opacity:0;
+
 	display: none;
-	-webkit-transition:opacity 0.5s;
-	transition:opacity 0.5s;
+	
 
 }
 
 #game img.background{
+
 
 	width:100%;
 	height:auto;
@@ -75,7 +78,9 @@
 	top:35px;
 	left:0;
 
+	z-index: -1;
 }
+
 
 #game.display .contentPlay .headerBar{
 
@@ -110,6 +115,11 @@
 	@include size;
 
 }
+body.open #game.display .contentPlay .overlay{
+
+	z-index:200;
+
+}
 
 #game.display .contentPlay .overlay{
 
@@ -122,14 +132,10 @@
 	left:0;
 
 	z-index:-100;
+	
 
 }
 
-body.open #game.display .contentPlay .overlay{
-
-	z-index:200;
-
-}
 
 body.open #game.display .contentPlay .headerBar{
 
@@ -288,6 +294,8 @@ body.open #game.display .menu{
 
 	color:#CCCCCC;
 	font-size: 12px;
+
+	z-index: 1;
 }
 
 .button:hover{

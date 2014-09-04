@@ -1,8 +1,8 @@
 <header>
 	<nav>
 		<i class="fa fa-bars"></i>
-		<a href="#main"du-smooth-scroll><img class="logo white" src="assets/img/logoB.png"></a>
-		<a href="#main"du-smooth-scroll><img class="logo black" src="assets/img/logoG.png"></a>
+		<a href="#main" du-smooth-scroll><img class="logo white" src="assets/img/logoB.png"></a>
+		<a href="#main" du-smooth-scroll><img class="logo black" src="assets/img/logoG.png"></a>
 		<ul>
 			<li><a href="#play" du-smooth-scroll du-scrollspy offset="70">{{text.header.play}}</a>
 			</li><li><a href="#features" du-smooth-scroll du-scrollspy offset="70">{{text.header.features}}</a>

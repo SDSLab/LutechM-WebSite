@@ -253,11 +253,11 @@ img.ipad {
   display: none;
   margin: 50px 0 0 -58px; }
 
+.contentSim.cat img.ipad {
+  display: block; }
+
 .contentSim.cat #game {
   display: none; }
-
-.contentSim.cat img.ipad {
-  display: initial; }
 
 .contentSim.cat img.iphone {
   display: none; }
@@ -545,11 +545,12 @@ img.ipad {
   left: 14px;
   overflow: hidden;
   background: #f0f0f0;
-  border: 1px solid #cccccc; }
+  border: 1px solid #cccccc;
+  z-index: 1; }
 
 #game.display .contentPlay {
   position: absolute;
-  width: 275px;
+  width: 260px;
   height: 100%;
   top: 0;
   left: 0;
@@ -573,35 +574,30 @@ img.ipad {
   -webkit-perspective: 1000;
   perspective: 1000;
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
+  backface-visibility: hidden;
+  z-index: 1; }
 
 .contentSim.cup #game .appcup {
-  opacity: 1;
   display: block; }
 
 .contentSim.park #game .parking {
-  opacity: 1;
   display: block; }
 
 .contentSim.cross #game .crossland {
-  opacity: 1;
   display: block; }
 
 .contentSim.cards #game .mycards {
-  opacity: 1;
   display: block; }
 
 #game .appcup, .parking, .crossland, .mycards {
-  opacity: 0;
-  display: none;
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s; }
+  display: none; }
 
 #game img.background {
   width: 100%;
   height: auto;
   top: 35px;
-  left: 0; }
+  left: 0;
+  z-index: -1; }
 
 #game.display .contentPlay .headerBar {
   position: absolute;
@@ -631,6 +627,9 @@ img.ipad {
   -o-box-sizing: border-box;
   box-sizing: border-box; }
 
+body.open #game.display .contentPlay .overlay {
+  z-index: 200; }
+
 #game.display .contentPlay .overlay {
   position: absolute;
   width: 100%;
@@ -638,9 +637,6 @@ img.ipad {
   top: 0;
   left: 0;
   z-index: -100; }
-
-body.open #game.display .contentPlay .overlay {
-  z-index: 200; }
 
 body.open #game.display .contentPlay .headerBar {
   left: 10px; }
@@ -741,7 +737,8 @@ body.open #game.display .menu {
   display: none;
   z-index: 100;
   color: #CCCCCC;
-  font-size: 12px; }
+  font-size: 12px;
+  z-index: 1; }
 
 .button:hover {
   cursor: url("../img/touch.png"), auto; }
@@ -1477,4 +1474,4 @@ body.open #game.display .menu {
     max-height: 100%; } }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-device-width: 1280px) {
   #game.display .contentPlay {
-    width: 260px; } }
+    width: 275px; } }

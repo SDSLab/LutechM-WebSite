@@ -200,20 +200,22 @@ img.ipad{
 
 }
 
+.contentSim.cat img.ipad{
+
+	display: block;
+	
+}
+
 .contentSim.cat #game{
 
 	display: none;
 	
 }
 
-.contentSim.cat img.ipad{
-
-	display: initial;
-	
-}
-
 .contentSim.cat img.iphone{
+
 	display: none;
+
 }
 
 #play .apps{
