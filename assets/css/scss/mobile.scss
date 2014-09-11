@@ -170,7 +170,7 @@
 
 	#features img.anydev{
 	
-		width:98px;
+		width:119px;
 	
 	}
 	
@@ -234,12 +234,12 @@
 	}
 
 	#about .row.colored p {
-		margin: 20px 10px 25px 10px;
+		margin: 20px auto 25px auto;
 	
 	}
 
 	#about .row.colored h2 {
-		margin: 0px 20px 35px 20px;
+		margin: 0px 20px 30px 20px;
 	
 	}
 
@@ -833,6 +833,13 @@
 	
 	}
 
+	#features img.anydev {
+		width: 130px;
+	}
+
+	#features img.any {
+margin: 40px 0 0px 0;
+	}	
 	#features .elementService {
 
 		margin: 35px 10px 30px 10px;
@@ -911,17 +918,19 @@
 	#about .desk{
 
 		height: 330px;
+		margin-left:25px;
 
 	}
 
 	#about .row.colored p {
-		margin: 20px 10px 40px 10px;
+		margin: 20px auto 40px auto;
+		width: 95%;
 }
 
 	#contact .listContact {
 
 		width: 87%;
-		margin: 10px auto 0 auto;
+		margin: 35px auto 0 auto;
 	}
 
 
@@ -1056,7 +1065,7 @@
 
 	}
 
-#about .desk{
+	#about .desk{
 
 		height: 330px;
 
@@ -1082,6 +1091,7 @@
 	}
 	
 }
+
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2){ 
 

@@ -34,8 +34,8 @@
 	<script src="assets/js/lib/angular-resource.min.js"></script>
 	<script src="assets/js/app.js"></script>
 	<script src="assets/js/main.js"></script>
-	<script src="assets/js/game.js"></script>
 
+	<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
 
 	<!--compatibilita' ie-->
 	<!--[if IE]>

@@ -187,8 +187,10 @@ nav .language a.active{
 
 img.iphone{
 
-	height:600px;
-	margin:50px 0 0 0;
+	position: relative;
+
+	margin:20px;
+	display: none;
 
 }
 
@@ -200,15 +202,16 @@ img.ipad{
 
 }
 
+iframe{
+
+	position: relative;
+	
+	overflow: hidden;
+} 
+
 .contentSim.cat img.ipad{
 
 	display: block;
-	
-}
-
-.contentSim.cat #game{
-
-	display: none;
 	
 }
 
@@ -217,6 +220,34 @@ img.ipad{
 	display: none;
 
 }
+.contentSim.cat iframe{
+
+	display: none;
+
+}
+
+.contentSim.cards iframe {
+	display: none;
+}
+
+.contentSim.park iframe{
+	display: none;
+
+}
+
+.contentSim.cup iframe {
+
+	display: inline-block;
+
+}
+
+.contentSim.park img.iphone.park {
+	display: inline-block;
+}
+.contentSim.cards img.iphone.cards {
+	display: inline-block;
+}
+
 
 #play .apps{
 
@@ -370,7 +401,7 @@ img.ipad{
 
 	width: 74%;
 
-	margin:40px auto 0 auto;
+	margin:90px auto 0 auto;
 
 	text-align: left;
 
@@ -382,7 +413,7 @@ img.ipad{
 
 	width: 286px;
 
-	top: 134px;
+	top: 100px;
 	margin: 0 0 0 67px;
 	
 	display: inline-block;
@@ -495,7 +526,7 @@ img.ipad{
 #features .elementService h3{
 
 	color:white;
-	margin: 0 0 20px 0;
+	margin: -7px 0 20px 0;
 	
 }
 
@@ -529,8 +560,9 @@ img.ipad{
 
 #about .row.colored p{
 
-	margin:20px 0 40px 0;
+	margin: 20px auto 40px auto;
 	color: white;
+	width: 87%;
 
 }
 

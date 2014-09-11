@@ -1,8 +1,5 @@
 var LutechMobile = {
 
-	positionSection: 0,
-
-
 	initialize: function(){
 		LutechMobile.events();
 	},
@@ -13,10 +10,6 @@ var LutechMobile = {
 			LutechMobile.mapContact();
 			LutechMobile.openMenu();
 			LutechMobile.accordionMenu();
-
-			if (navigator.userAgent.search("MSIE") >= 0) {
-                    $('body').addClass("msie");
-            }
 		});
 
 		$(window).on('scroll',function(){

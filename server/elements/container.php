@@ -10,7 +10,6 @@
 						<p>APPCUP</p>
 						<p class="state">ACTIVE</p>
 					</li>
-
 					<li class="park" ng-click="appChoose='park'; descrText=text.play.park;" ng-class="{active: appChoose=='park'}">
 						<i class="icon-parking-meter"></i>
 						<p>PARKING</p>
@@ -29,9 +28,10 @@
 				</ul>
 			</div>
 			<div class="contentSim" ng-class="[appChoose]">
-				<img class="iphone" src="assets/img/iphone.jpeg">
+				<img class="iphone park" src="assets/img/park.png">
+				<img class="iphone cards" src="assets/img/cards.png">
 				<img class="ipad" src="assets/img/catalog.png">
-				<?php include 'server/elements/play.html'; ?>
+				<iframe width="396" height="834" src="//invis.io/D61B7LNQV" frameborder="0" scrolling="no" seamless="seamless" allowfullscreen></iframe>
 				<div class="descriptionApp">
 					<h3>{{text.play.description}}</h3><br>
 					<p ng-bind-html="descrText"></p>

@@ -245,22 +245,42 @@ nav .language a.active {
   top: 130px; }
 
 img.iphone {
-  height: 600px;
-  margin: 50px 0 0 0; }
+  position: relative;
+  margin: 20px;
+  display: none; }
 
 img.ipad {
   width: 783px;
   display: none;
   margin: 50px 0 0 -58px; }
 
+iframe {
+  position: relative;
+  overflow: hidden; }
+
 .contentSim.cat img.ipad {
   display: block; }
 
-.contentSim.cat #game {
-  display: none; }
-
 .contentSim.cat img.iphone {
   display: none; }
+
+.contentSim.cat iframe {
+  display: none; }
+
+.contentSim.cards iframe {
+  display: none; }
+
+.contentSim.park iframe {
+  display: none; }
+
+.contentSim.cup iframe {
+  display: inline-block; }
+
+.contentSim.park img.iphone.park {
+  display: inline-block; }
+
+.contentSim.cards img.iphone.cards {
+  display: inline-block; }
 
 #play .apps {
   position: relative;
@@ -389,13 +409,13 @@ img.ipad {
 #play .contentSim {
   position: relative;
   width: 74%;
-  margin: 40px auto 0 auto;
+  margin: 90px auto 0 auto;
   text-align: left; }
 
 #play .contentSim .descriptionApp {
   position: absolute;
   width: 286px;
-  top: 134px;
+  top: 100px;
   margin: 0 0 0 67px;
   display: inline-block;
   text-align: justify; }
@@ -470,7 +490,7 @@ img.ipad {
 
 #features .elementService h3 {
   color: white;
-  margin: 0 0 20px 0; }
+  margin: -7px 0 20px 0; }
 
 #features .elementService i {
   font-size: 65px;
@@ -488,8 +508,9 @@ img.ipad {
   background: #ff6c00; }
 
 #about .row.colored p {
-  margin: 20px 0 40px 0;
-  color: white; }
+  margin: 20px auto 40px auto;
+  color: white;
+  width: 87%; }
 
 #about .desk {
   position: relative;
@@ -536,360 +557,6 @@ img.ipad {
 
 .mapMobile {
   display: none; }
-
-#play #game.display {
-  position: absolute;
-  width: 260px;
-  height: 420px;
-  top: 138px;
-  left: 14px;
-  overflow: hidden;
-  background: #f0f0f0;
-  border: 1px solid #cccccc;
-  z-index: 1; }
-
-#game.display .contentPlay {
-  position: absolute;
-  width: 260px;
-  height: 100%;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  overflow-y: auto;
-  -webkit-transition: left 0.35s;
-  -moz-transition: left 0.35s;
-  -ms-transition: left 0.35s;
-  -o-transition: left 0.35s;
-  transition: left 0.35s;
-  -webkit-animation-timing-function: ease-in-out;
-  -moz-animation-timing-function: ease-in-out;
-  -ms-animation-timing-function: ease-in-out;
-  -o-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-perspective: 1000;
-  perspective: 1000;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  z-index: 1; }
-
-.contentSim.cup #game .appcup {
-  display: block; }
-
-.contentSim.park #game .parking {
-  display: block; }
-
-.contentSim.cross #game .crossland {
-  display: block; }
-
-.contentSim.cards #game .mycards {
-  display: block; }
-
-#game .appcup, .parking, .crossland, .mycards {
-  display: none; }
-
-#game img.background {
-  width: 100%;
-  height: auto;
-  top: 35px;
-  left: 0;
-  z-index: -1; }
-
-#game.display .contentPlay .headerBar {
-  position: absolute;
-  width: 100%;
-  height: 35px;
-  padding: 8px 0 8px 10px;
-  top: 0;
-  left: 0;
-  background: #2C8ED4;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box; }
-
-#game.display .contentPlay .headerBar h3 {
-  position: relative;
-  width: 80%;
-  margin: -2px auto 0 auto;
-  font-size: 18px;
-  font-weight: 400;
-  color: white;
-  text-align: center;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box; }
-
-body.open #game.display .contentPlay .overlay {
-  z-index: 200; }
-
-#game.display .contentPlay .overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -100; }
-
-body.open #game.display .contentPlay .headerBar {
-  left: 10px; }
-
-body.open #game.display .contentPlay {
-  left: 200px;
-  overflow: hidden; }
-
-#game.display .menu {
-  position: absolute;
-  width: 200px;
-  height: 100%;
-  top: 0;
-  left: -200px;
-  -webkit-transition: left 0.35s;
-  -moz-transition: left 0.35s;
-  -ms-transition: left 0.35s;
-  -o-transition: left 0.35s;
-  transition: left 0.35s;
-  -webkit-animation-timing-function: ease-in-out;
-  -moz-animation-timing-function: ease-in-out;
-  -ms-animation-timing-function: ease-in-out;
-  -o-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -webkit-perspective: 1000;
-  perspective: 1000;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; }
-
-#game.display .menu img {
-  width: 100%; }
-
-body.open #game.display .menu {
-  left: 0; }
-
-.appcup.home .contentPlay .headerBar i.fa-bars {
-  display: block !important; }
-
-.appcup.newhome .contentPlay .headerBar i.fa-bars {
-  display: block !important; }
-
-.appcup.newhome .contentPlay .headerBar i.fa-angle-left {
-  display: none !important; }
-
-.appcup.newpren .contentPlay .headerBar i.fa-bars {
-  display: block !important; }
-
-.appcup.prenotati .contentPlay .headerBar i.fa-bars {
-  display: block !important; }
-
-.appcup.effettuati .contentPlay .headerBar i.fa-bars {
-  display: block !important; }
-
-.appcup.checkin .contentPlay .headerBar i.fa-times {
-  display: block !important; }
-
-.appcup.new .contentPlay .headerBar i.fa-angle-left {
-  display: block !important; }
-
-.appcup.blank .contentPlay .headerBar i.fa-angle-left {
-  display: block !important; }
-
-.appcup.detail .contentPlay .headerBar i.fa-angle-left {
-  display: block !important; }
-
-.appcup.pay .contentPlay .headerBar i.fa-angle-left {
-  display: block !important; }
-
-.appcup.checkin .contentPlay .headerBar i.fa-angle-left {
-  display: none !important; }
-
-.appcup.newpren .contentPlay .headerBar i.fa-angle-left {
-  display: none !important; }
-
-.appcup.prenotati .contentPlay .headerBar i.fa-angle-left {
-  display: none !important; }
-
-.appcup.effettuati .contentPlay .headerBar i.fa-angle-left {
-  display: none !important; }
-
-#game.display .contentPlay .headerBar i {
-  position: absolute;
-  left: 10px;
-  display: none;
-  color: white;
-  font-size: 21px; }
-
-#game.display .contentPlay .headerBar i:hover {
-  cursor: url("../img/touch.png"), auto; }
-
-.button {
-  position: absolute;
-  display: none;
-  z-index: 100;
-  color: #CCCCCC;
-  font-size: 12px;
-  z-index: 1; }
-
-.button:hover {
-  cursor: url("../img/touch.png"), auto; }
-
-.button.menubt.home {
-  width: 157px;
-  height: 20px;
-  top: 43px;
-  left: 10px;
-  display: block; }
-
-.button.menubt.new {
-  width: 157px;
-  height: 20px;
-  top: 112px;
-  left: 11px;
-  display: block; }
-
-.button.menubt.list {
-  width: 157px;
-  height: 20px;
-  top: 77px;
-  left: 10px;
-  display: block; }
-
-.button.list.home {
-  width: 30px;
-  height: 30px;
-  top: 55px;
-  left: 125px; }
-
-.button.new.home {
-  width: 30px;
-  height: 30px;
-  top: 55px;
-  left: 180px; }
-
-.button.detail.home {
-  width: 215px;
-  height: 115px;
-  top: 195px;
-  left: 30px; }
-
-.appcup.newhome .button.detail.home {
-  width: 215px;
-  height: 115px;
-  top: 285px;
-  left: 30px; }
-
-.button.effe.ef {
-  width: 128px;
-  height: 33px;
-  top: 384px;
-  left: 129px; }
-
-.button.effe.pren {
-  width: 128px;
-  height: 33px;
-  top: 384px;
-  left: 0px; }
-
-.button.effe.pay {
-  width: 218px;
-  height: 66px;
-  top: 44px;
-  left: 10px; }
-
-.button.new.newapp {
-  width: 234px;
-  height: 31px;
-  top: 578px;
-  left: 13px; }
-
-.button.new.check {
-  width: 234px;
-  height: 31px;
-  top: 333px;
-  left: 13px; }
-
-.button.new.docheck {
-  width: 234px;
-  height: 31px;
-  top: 250px;
-  left: 13px; }
-
-.appcup.home .button.home {
-  display: block; }
-
-.appcup.newhome .button.home {
-  display: block; }
-
-.appcup.prenotati .button.effe {
-  display: block; }
-
-.appcup.effettuati .button.effe.pren {
-  display: block; }
-
-.appcup.newpren .button.effe {
-  display: block; }
-
-.appcup.new .button.new.newapp {
-  display: block; }
-
-.appcup.detail .button.new.check {
-  display: block; }
-
-.appcup.checkin .button.new.docheck {
-  display: block; }
-
-.accordion {
-  position: absolute;
-  width: 100%;
-  height: 300px;
-  top: 38px;
-  display: none; }
-
-.accordion.visible {
-  display: block; }
-
-.accordion h3 {
-  height: 40px;
-  margin: 0 0 3px 0;
-  padding: 6px;
-  background: #2C8ED4;
-  color: white;
-  text-align: center;
-  outline: none;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.accordion h3:hover:first-child {
-  cursor: url("../img/touch.png"), auto; }
-
-.accordion h3.ui-accordion-header-active {
-  background: #39b54a; }
-
-.accordion div {
-  position: relative;
-  width: 100%;
-  height: 75px;
-  top: 0px; }
-
-.accordion div img {
-  position: relative;
-  width: 95%; }
-
-.accordion div a:hover {
-  cursor: url("../img/touch.png"), auto; }
 
 /* #### Smartphone Portrait #### */
 @media screen and (max-device-width: 721px) and (orientation: portrait) {
@@ -983,7 +650,7 @@ body.open #game.display .menu {
     margin: 15px 7px 0px 0; }
 
   #features img.anydev {
-    width: 98px; }
+    width: 119px; }
 
   #features img.ipApp {
     width: 30px;
@@ -1018,10 +685,10 @@ body.open #game.display .menu {
     width: 100%; }
 
   #about .row.colored p {
-    margin: 20px 10px 25px 10px; }
+    margin: 20px auto 25px auto; }
 
   #about .row.colored h2 {
-    margin: 0px 20px 35px 20px; }
+    margin: 0px 20px 30px 20px; }
 
   #about .desk {
     position: relative;
@@ -1335,6 +1002,12 @@ body.open #game.display .menu {
   #features img {
     width: 70%; }
 
+  #features img.anydev {
+    width: 130px; }
+
+  #features img.any {
+    margin: 40px 0 0px 0; }
+
   #features .elementService {
     margin: 35px 10px 30px 10px; }
 
@@ -1379,14 +1052,16 @@ body.open #game.display .menu {
     font-size: 50px; }
 
   #about .desk {
-    height: 330px; }
+    height: 330px;
+    margin-left: 25px; }
 
   #about .row.colored p {
-    margin: 20px 10px 40px 10px; }
+    margin: 20px auto 40px auto;
+    width: 95%; }
 
   #contact .listContact {
     width: 87%;
-    margin: 10px auto 0 auto; }
+    margin: 35px auto 0 auto; }
 
   .loader .load {
     display: block; } }
