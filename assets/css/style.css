@@ -416,7 +416,7 @@ iframe {
   position: absolute;
   width: 286px;
   top: 100px;
-  margin: 0 0 0 67px;
+  left: 470px;
   display: inline-block;
   text-align: justify; }
 
@@ -427,6 +427,7 @@ iframe {
   position: relative;
   width: 100%;
   top: 0;
+  left: 0;
   margin: 40px 0 0 20px; }
 
 #features .aniSmart img.ipApp {
