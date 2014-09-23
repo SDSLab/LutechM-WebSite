@@ -135,6 +135,9 @@
 			<p>+39 02/25427011</p>
 			<i class="icon-mail-1"></i>
 			<p>sales@lutechmobile.com</p>
+			<i class="icon-mail-1"></i>
+			<p class="iva">P.IVA c.s</p>
+			<p class="copy">Copyright© 2014 – All rights reserved</p>
 		</div>
 	</div>
 </div>

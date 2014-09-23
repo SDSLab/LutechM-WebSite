@@ -606,6 +606,20 @@ iframe{
 	color: white;
 
 }
+
+#contact .listContact p.copy{
+
+	font-size:14px;
+	color: white;
+	margin:20px 0 0 0;
+
+}
+#contact .listContact p.iva{
+
+	font-size:18px;
+	color: white;
+
+}
 #contact .listContact i{
 	
 	display: block;
@@ -632,7 +646,7 @@ iframe{
 	position: absolute;
 
 	width:450px;
-	height:350px;
+	height:425px;
 	
 	top: 0;
 	left:50%;
@@ -641,6 +655,7 @@ iframe{
 	background: $blue;
 
 }
+
 
 .mapMobile{
 	display: none;
