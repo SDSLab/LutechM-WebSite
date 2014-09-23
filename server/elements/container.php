@@ -136,7 +136,7 @@
 			<i class="icon-mail-1"></i>
 			<p>sales@lutechmobile.com</p>
 			<i class="icon-business-chart-2"></i>
-			<p class="iva">P.IVA c.s</p>
+			<p class="iva">PI: 08161720969 &nbsp;&nbsp;&nbsp;&nbsp; C.S:€10.000,00 i.v</p>
 			<p class="copy">Copyright© 2014 – All rights reserved</p>
 		</div>
 	</div>
